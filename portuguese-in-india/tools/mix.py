@@ -93,9 +93,36 @@ def heartbeat(**_):
     one = lambda d, f: np.sin(2 * np.pi * f * tt(d)) * env(int(d * SR), 0.004, 7)
     x = np.concatenate([one(0.16, 58), np.zeros(int(0.09 * SR)), one(0.2, 52) * 0.75]); return lp(x, 300) * 1.0
 
-FX = dict(inhale=inhale, heartbeat=heartbeat, whoosh=whoosh, slide=slide, pop=pop, plop=plop, gulp=gulp, boing=boing, bubbles=bubbles, sizzle=sizzle,
+# ---------- story effects (all soft, low-passed; no harsh transients) ----------
+def rustle(d=0.6, **_):
+    n = bp(noise(d), 700, 4200); k = np.linspace(0, 1, len(n)); e = np.sin(np.pi * k) ** 0.8 * (0.6 + 0.4 * np.abs(np.sin(k * 23)))
+    return n / (np.abs(n).max() + 1e-9) * e * 0.5
+def quill(d=1.0, **_):
+    n = bp(noise(d), 1500, 4500); k = np.arange(len(n)) / SR; e = (0.5 + 0.5 * np.sin(2 * np.pi * 9 * k + np.sin(k * 7) * 2)) ** 2
+    e *= np.minimum(1, k / 0.05) * np.minimum(1, (d - k) / 0.1); return n / (np.abs(n).max() + 1e-9) * e * 0.25
+def seal(**_): return thud() * 0.7 + lp(noise(0.35), 600) * env(int(0.35 * SR), 0.002, 9) * 0.2
+def waves(d=4.0, **_):
+    n = lp(noise(d), 600); k = np.arange(len(n)) / SR; e = 0.55 + 0.45 * np.sin(2 * np.pi * k / 2.6) ** 2
+    e *= np.minimum(1, k / 0.8) * np.minimum(1, (d - k) / 0.8); return n / (np.abs(n).max() + 1e-9) * e * 0.5
+def wind(d=2.0, **_):
+    n = bp(noise(d), 250, 1100); k = np.linspace(0, 1, len(n)); e = np.sin(np.pi * k) ** 1.5; return n / (np.abs(n).max() + 1e-9) * e * 0.5
+def creak(**_):
+    d = 0.7; t = tt(d); f = 140 + 40 * np.sin(2 * np.pi * 1.3 * t); x = np.sign(np.sin(2 * np.pi * np.cumsum(f) / SR)) * 0.3
+    return lp(x, 900) * np.sin(np.pi * np.linspace(0, 1, len(t))) * 0.5
+def splash(**_):
+    d = 0.6; n = lp(noise(d), 1800); return n / (np.abs(n).max() + 1e-9) * env(len(n), 0.01, 6) * 0.6
+def coins(d=1.0, **_):
+    x = np.zeros(int(d * SR) + SR // 4)
+    for k in range(int(d * 9)):
+        st = int(rng.uniform(0, d) * SR); f = rng.uniform(1800, 2600); n = int(0.12 * SR); c = (np.sin(2 * np.pi * f * tt(0.12)) + 0.4 * np.sin(2 * np.pi * f * 1.5 * tt(0.12))) * env(n, 0.001, 9)
+        x[st:st + n] += c[:len(x) - st] * rng.uniform(0.2, 0.5)
+    return lp(x, 4000)
+def cannon(**_):
+    d = 1.4; t = tt(d); x = np.sin(2 * np.pi * (40 + 30 * np.exp(-t * 8)) * t) * env(len(t), 0.01, 4); return lp(x + lp(noise(d), 180) * env(len(t), 0.01, 5) * 0.6, 400) * 0.9
+
+FX = dict(rustle=rustle, quill=quill, seal=seal, waves=waves, wind=wind, creak=creak, splash=splash, coins=coins, cannon=cannon, inhale=inhale, heartbeat=heartbeat, whoosh=whoosh, slide=slide, pop=pop, plop=plop, gulp=gulp, boing=boing, bubbles=bubbles, sizzle=sizzle,
           sparkle=sparkle, thud=thud, slam=slam, tock=tock, zip=zip_, alarm=alarm)
-LEVEL = dict(inhale=-15, heartbeat=-8, whoosh=-17, slide=-19, pop=-14, plop=-15, gulp=-11, boing=-15, bubbles=-21, sizzle=-18, sparkle=-17,
+LEVEL = dict(rustle=-17, quill=-22, seal=-12, waves=-24, wind=-23, creak=-24, splash=-21, coins=-21, cannon=-20, inhale=-15, heartbeat=-8, whoosh=-17, slide=-19, pop=-14, plop=-15, gulp=-11, boing=-15, bubbles=-21, sizzle=-18, sparkle=-17,
              thud=-11, slam=-9, tock=-18, zip=-14, alarm=-17)
 
 
@@ -133,6 +160,34 @@ def music_tension():
     x = lp(x, 2200); fade = np.ones(N); fo = int(1.5 * SR); fade[-fo:] = np.linspace(1, 0, fo); fi = int(0.8 * SR); fade[:fi] *= np.linspace(0, 1, fi)
     return x / (np.abs(x).max() + 1e-9) * fade
 
+def music_resolve():
+    """warm resolved cadence for the last chapter: slow I-IV-I-V-I pad, no arpeggio"""
+    bar = 2.4; chords = [[261.6, 329.6, 392.0], [174.6, 220.0, 261.6], [261.6, 329.6, 392.0], [196.0, 246.9, 293.7], [261.6, 329.6, 392.0]]
+    x = np.zeros(N)
+    for b in range(int(np.ceil(DUR / bar)) + 1):
+        ch = chords[min(b % 6, 4)]; st = int(b * bar * SR); n = int(bar * SR)
+        if st >= N: break
+        t = tt(bar); e = np.minimum(1, t / 0.6) * np.minimum(1, (bar - t) / 0.6)
+        pad = sum(np.sin(2 * np.pi * f / 2 * t) + 0.3 * np.sin(2 * np.pi * f * t) + 0.12 * np.sin(4 * np.pi * f * t) for f in ch) * e * 0.12
+        x[st:st + n] += pad[:max(0, min(n, N - st))]
+    x = lp(x, 2600); return x / (np.abs(x).max() + 1e-9)
+
+def music_chapters():
+    """one score in sections from data/chapters.json + script "music_by_chapter", 1 s crossfades"""
+    chs = json.loads((P / 'data/chapters.json').read_text())['chapters']; kinds = script.get('music_by_chapter', {})
+    beds = {'bed': music_bed(), 'tension': music_tension(), 'resolve': music_resolve()}
+    gains = {'bed': 1.0, 'tension': 1.0, 'resolve': 0.9}
+    out = np.zeros(N); xf = int(1.0 * SR)
+    for c in chs:
+        kind = kinds.get(str(c['chapter']), 'bed'); a = int(max(0, c['start'] - 0.5) * SR); b = int(min(DUR, c['end'] + 0.5) * SR)
+        if c['chapter'] == chs[-1]['chapter']: b = N
+        w = np.zeros(N); w[a:b] = 1
+        if a > 0: w[a:a + xf] = np.linspace(0, 1, min(xf, N - a))
+        if b < N: w[max(0, b - xf):b] = np.linspace(1, 0, b - max(0, b - xf))
+        out += beds[kind] * w * gains[kind]
+    fade = np.ones(N); fo = int(2.0 * SR); fade[-fo:] = np.linspace(1, 0, fo); fade[:int(0.6 * SR)] *= np.linspace(0, 1, int(0.6 * SR))
+    return out / (np.abs(out).max() + 1e-9) * fade
+
 def load_audio(f):
     out = subprocess.run(['ffmpeg', '-v', 'error', '-i', str(f), '-f', 'f32le', '-ac', '2', '-ar', str(SR), '-'], capture_output=True, check=True).stdout
     a = np.frombuffer(out, dtype=np.float32).reshape(-1, 2).astype(np.float64); return a
@@ -149,7 +204,7 @@ if vf.exists():
 # music
 mus = script.get('music', 'bed')
 if mus and mus != 'none':
-    m = music_bed() if mus == 'bed' else music_tension() if mus == 'tension' else None
+    m = music_bed() if mus == 'bed' else music_tension() if mus == 'tension' else music_chapters() if mus == 'chapters' else None
     if m is None:
         a = load_audio(P / mus)[:N]; m = np.zeros(N); m[:len(a)] = a.mean(1); m /= np.abs(m).max() + 1e-9
     m = np.stack([m, m], 1) * db(-24 if voice is not None else -20)

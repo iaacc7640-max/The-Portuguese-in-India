@@ -1,7 +1,7 @@
 // Frame-exact capture through headless Chrome. No npm packages (Node 22+). Run from the project folder.
 //   node tools/capture.mjs check                         boot, list shots + captions, report errors
 //   node tools/capture.mjs cues                          write data/cues.json (the sound cues, for tools/mix.py)
-//   node tools/capture.mjs sheet review/all.jpg [step=0.5] [cols=9]   contact sheet, a frame every `step` s, time-stamped
+//   node tools/capture.mjs sheet review/all.jpg [step=0.5] [cols=9] [start end]   contact sheet, a frame every `step` s, time-stamped
 //   node tools/capture.mjs frames review/full "1.2,8.4"  full-size JPEGs of those times
 //   node tools/capture.mjs video renders/out.mp4 [start end] [--draft]   the film (30 fps) with data/mix.wav if it exists
 //   node tools/capture.mjs preview                       serve the project and print a URL to watch it in a browser
@@ -96,8 +96,9 @@ else {
       console.log(dir);
     } else if (mode === 'sheet') {
       const out = path.resolve(ROOT, rest[0] || 'review/all.jpg'), step = +(rest[1] || 0.5), cols = +(rest[2] || 9);
+      const s0 = rest[3] != null ? +rest[3] : 0, s1 = rest[4] != null ? Math.min(+rest[4], dur) : dur;   // optional time range
       const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'fs-sheet-')); let n = 0;
-      for (let t = step / 2; t < dur; t += step) fs.writeFileSync(path.join(tmp, `f${String(n++).padStart(4, '0')}.jpg`), jpg(await P.ev(FRAME(t, 0.8, true))));
+      for (let t = s0 + step / 2; t < s1; t += step) fs.writeFileSync(path.join(tmp, `f${String(n++).padStart(4, '0')}.jpg`), jpg(await P.ev(FRAME(t, 0.8, true))));
       const rows = Math.ceil(n / cols); fs.mkdirSync(path.dirname(out), { recursive: true });
       const r = spawnSync('ffmpeg', ['-v', 'error', '-y', '-framerate', '1', '-i', path.join(tmp, 'f%04d.jpg'), '-vf', `scale=216:384,tile=${cols}x${rows}:padding=4:color=black`, '-frames:v', '1', '-q:v', '3', out]);
       fs.rmSync(tmp, { recursive: true, force: true });

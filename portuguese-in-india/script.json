@@ -1,26 +1,765 @@
 {
-  "title": "How One Bakery Burned Down London",
-  "voice": "bm_george",
-  "speed": 1.0,
-  "lead": 0.4,
-  "outro": 1.1,
-  "gap": 0.3,
-  "music": "tension",
-  "sources": [
-    "London Museum, 'The Great Fire of London' (began 2 September 1666 in Thomas Farriner's bakery on Pudding Lane; burned for four days; about 13,200 houses, 87 parish churches and St Paul's Cathedral destroyed)",
-    "Royal Museums Greenwich, 'The Great Fire of London' (wooden houses, strong east wind, the Lord Mayor's dismissive response, houses blown up to create firebreaks)",
-    "Rebuilding Act 1667: new buildings in brick and stone"
-  ],
-  "lines": [
-    { "text": "In sixteen sixty-six, a tiny bakery fire burned down most of London.", "caps": "In *1666, | a tiny *bakery fire | burned down *London." },
-    { "text": "It started just after midnight, in Thomas Farriner's bakery on Pudding Lane.", "caps": "Just after *midnight, | in Farriner's *bakery | on Pudding *Lane." },
-    { "text": "London was packed with wooden houses, and a strong wind was blowing,", "caps": "Packed with *wooden houses, | a strong *wind" },
-    { "text": "so the flames jumped from roof to roof.", "caps": "Flames *jumped | roof to *roof." },
-    { "text": "The Lord Mayor was woken up, but he shrugged it off.", "caps": "The Lord *Mayor | shrugged it *off." },
-    { "text": "For four days, the city burned.", "caps": "For four *days, | the city *burned." },
-    { "text": "Thirteen thousand houses, eighty-seven churches, and St Paul's Cathedral were gone.", "caps": "*13,000 houses, | *87 churches, | and St Paul's | were *gone." },
-    { "text": "In the end, they blew up whole streets to stop it spreading.", "caps": "They *blew up | whole *streets | to *stop it." },
-    { "text": "And when London was rebuilt, it was built in brick and stone.", "caps": "London was *rebuilt | in *brick | and *stone." },
-    { "text": "All because of one small bakery.", "caps": "All *because of | one small *bakery.", "gap": 0.2 }
-  ]
+ "title": "First In, Last Out: The Portuguese in India",
+ "voice": "bm_george",
+ "speed": 0.97,
+ "lead": 0.5,
+ "outro": 2.2,
+ "gap": 0.3,
+ "music": "chapters",
+ "music_by_chapter": {
+  "0": "bed",
+  "1": "bed",
+  "2": "bed",
+  "3": "tension",
+  "4": "tension",
+  "5": "bed",
+  "6": "bed",
+  "7": "tension",
+  "8": "resolve"
+ },
+ "cards": {
+  "1": {
+   "year": "1453",
+   "title": "The Spice Problem"
+  },
+  "2": {
+   "year": "1498",
+   "title": "Hello, Calicut"
+  },
+  "3": {
+   "year": "1500",
+   "title": "Traders Become Raiders"
+  },
+  "4": {
+   "year": "1505",
+   "title": "Rule the Water"
+  },
+  "5": {
+   "year": "1510",
+   "title": "Albuquerque's Goa"
+  },
+  "6": {
+   "year": "1580",
+   "title": "Priests and Emperors"
+  },
+  "7": {
+   "year": "1632",
+   "title": "The Fall"
+  },
+  "8": {
+   "year": "1961",
+   "title": "Last to Leave"
+  }
+ },
+ "sources": [
+  "Rajiv Ahir, A Brief History of Modern India, ch. 3 \"Advent of the Europeans in India\" (Portuguese section): core narrative, Albuquerque sati ban, persecution in Goa, Hooghly slave trade and Mumtaz Mahal episode, the Portuguese governor's sword-and-cross remark (paraphrased)",
+  "Corrections to Ahir applied: 1508 defeat at Chaul (not \"off Diu\" 1507); pilot unnamed (\"a Gujarati pilot\"); Nuno da Cunha; Bahadur Shah died 13 Feb 1537 after talks aboard a Portuguese ship",
+  "Bartolomeu Dias rounded the Cape early 1488 (Wikipedia \"Bartolomeu Dias\"; SAHO; History.com)",
+  "Vasco da Gama reached Calicut 20 May 1498 (Wikipedia \"Portuguese India\"; herodote.net)",
+  "Fort Manuel, Cochin, 1503: first European fort in India (Wikipedia \"Fort Emmanuel\"; WorldHistory.org \"Portuguese Cochin\")",
+  "Battle of Chaul March 1508, Lourenco de Almeida killed; Battle of Diu 3 Feb 1509 (Wikipedia \"Battle of Chaul\"; Britannica \"Lourenco de Almeida\")",
+  "Goa taken March 1510, lost May 1510, retaken 25 Nov 1510 (Britannica \"History of Goa\"; Wikipedia \"Portuguese conquest of Goa\")",
+  "Capital moved from Cochin to Goa 1530 (Wikipedia \"Portuguese India\")",
+  "Bahadur Shah died 13 Feb 1537 off Diu during talks aboard a Portuguese ship; accounts differ on how (Wikipedia \"Bahadur Shah of Gujarat\", \"Siege of Diu (1538)\")",
+  "Jesuit mission (Acquaviva, Monserrate, Henriques) reached Fatehpur Sikri Feb/March 1580 (Dawn; Wikipedia \"Antoni de Montserrat\")",
+  "William Hawkins at Surat, August 1608 (GKToday); Battle of Swally, Nov 1612 (Wikipedia \"Battle of Swally\")",
+  "Siege of Hooghly, June-Sept 1632, about three months (Wikipedia \"Siege of Hooghly\"; Royal Collection \"The Capture of Port Hugli\")",
+  "Dutch take Cochin (Jan 1663) and Cannanore (Feb 1663) (Wikipedia \"Dutch conquest of Malabar\")",
+  "Marathas take Bassein 1739 (not independently re-checked this session)",
+  "Operation Vijay, 18-19 Dec 1961: Goa, Daman and Diu annexed by India (Wikipedia \"Annexation of Goa\"; USI of India)"
+ ],
+ "lines": [
+  {
+   "chapter": 0,
+   "text": "In fourteen ninety-eight,",
+   "caps": "In *1498,",
+   "shot": "dawn sea, 4 parallax layers, sun lifts → \"ninety-eight\""
+  },
+  {
+   "chapter": 0,
+   "text": "three small ships dropped anchor off the coast of Kerala.",
+   "caps": "three small *ships | off *Kerala.",
+   "shot": "3 caravels slide in from right, anchors drop → \"anchor\""
+  },
+  {
+   "chapter": 0,
+   "text": "Their crews had sailed for almost eleven months,",
+   "caps": "almost eleven *months,",
+   "shot": "deck close-up: hourglass, calendar leaves peel off → \"months\""
+  },
+  {
+   "chapter": 0,
+   "text": "all the way around Africa,",
+   "caps": "all the way | around *Africa,",
+   "shot": "real map, crimson route Lisbon→Cape→Calicut draws on → \"Africa\""
+  },
+  {
+   "chapter": 0,
+   "text": "for one thing: pepper.",
+   "caps": "for one thing: | *pepper.",
+   "shot": "pepper vine close-up, a peppercorn rolls into a sack → \"pepper\""
+  },
+  {
+   "chapter": 0,
+   "text": "They had just started a story",
+   "caps": "they had just | started a *story",
+   "shot": "quill writes a first line, page lifts"
+  },
+  {
+   "chapter": 0,
+   "text": "that would last four hundred and sixty-three years.",
+   "caps": "that would last | *463 years.",
+   "shot": "gold ribbon 1498 → 1961, slip FIRST IN, LAST OUT → \"years\"",
+   "gap": 2.0
+  },
+  {
+   "chapter": 1,
+   "text": "In fourteen fifty-three,",
+   "caps": "In *1453,",
+   "shot": "map Europe–Med, era bar tick 1453 turns crimson"
+  },
+  {
+   "chapter": 1,
+   "text": "the Ottoman Turks captured Constantinople,",
+   "caps": "the Ottomans took | *Constantinople,",
+   "shot": "Constantinople seal turns crimson → \"captured\""
+  },
+  {
+   "chapter": 1,
+   "text": "and the old roads to the East fell into other hands.",
+   "caps": "the old roads | to the *East",
+   "shot": "land route gets a padlock → \"hands\""
+  },
+  {
+   "chapter": 1,
+   "text": "Indian pepper, silk and cotton still reached Europe,",
+   "caps": "pepper, silk | and *cotton | still reached *Europe,",
+   "shot": "three goods pop on the route one by one"
+  },
+  {
+   "chapter": 1,
+   "text": "but only through Arab middlemen,",
+   "caps": "only through | *middlemen,",
+   "shot": "sack passes hand to hand along 4 merchants"
+  },
+  {
+   "chapter": 1,
+   "text": "and every one of them took a cut.",
+   "caps": "every one | took a *cut.",
+   "shot": "a coin drops at each hand, price slip grows"
+  },
+  {
+   "chapter": 1,
+   "text": "So little Portugal, on the edge of the Atlantic,",
+   "caps": "so little *Portugal, | on the *edge",
+   "shot": "map pulls back: tiny Portugal at the Atlantic edge"
+  },
+  {
+   "chapter": 1,
+   "text": "made a bold bet:",
+   "caps": "made a bold *bet:",
+   "shot": "compass needle spins, \"idea\" flash"
+  },
+  {
+   "chapter": 1,
+   "text": "if you can't go through, go around.",
+   "caps": "can't go *through? | go *around.",
+   "shot": "arrow hits padlock, bends around Africa → \"around\""
+  },
+  {
+   "chapter": 1,
+   "text": "Prince Henry, the Navigator,",
+   "caps": "Prince Henry, | the *Navigator,",
+   "shot": "Henry (dark hood) points at wall map"
+  },
+  {
+   "chapter": 1,
+   "text": "pushed ship after ship down the coast of Africa,",
+   "caps": "ship after *ship | down *Africa's coast,",
+   "shot": "caravels step down the coast, each leaves a pin"
+  },
+  {
+   "chapter": 1,
+   "text": "and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope.",
+   "caps": "in *1488, | Dias rounded | the *Cape",
+   "shot": "Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE"
+  },
+  {
+   "chapter": 1,
+   "text": "The door to the Indian Ocean was open.",
+   "caps": "the door | was *open.",
+   "shot": "paper wall, door-shaped gap swings open, sea light → \"open\"",
+   "gap": 2.0
+  },
+  {
+   "chapter": 2,
+   "text": "Ten years later, Vasco da Gama walked through it.",
+   "caps": "ten years *later, | Vasco da *Gama",
+   "shot": "da Gama steps through the paper door"
+  },
+  {
+   "chapter": 2,
+   "text": "In East Africa, he picked up a Gujarati pilot",
+   "caps": "in East *Africa, | a Gujarati *pilot",
+   "shot": "Malindi harbour, pilot with kamal boards → \"pilot\""
+  },
+  {
+   "chapter": 2,
+   "text": "who knew the monsoon winds,",
+   "caps": "who knew | the *monsoon winds,",
+   "shot": "wind arrows push the sail across the map"
+  },
+  {
+   "chapter": 2,
+   "text": "and in May fourteen ninety-eight, he reached Kalikut.",
+   "caps": "in May *1498, | he reached *Calicut.",
+   "shot": "Calicut pin + gold ribbon → \"Calicut\""
+  },
+  {
+   "chapter": 2,
+   "text": "Kalikut's Hindu king, the Zam-oh-rin,",
+   "caps": "Calicut's Hindu *king, | the *Zamorin,",
+   "shot": "palace court, Zamorin under parasol"
+  },
+  {
+   "chapter": 2,
+   "text": "grew rich by welcoming traders,",
+   "caps": "grew *rich | by welcoming *traders,",
+   "shot": "many-coloured sails in port, coins into chest"
+  },
+  {
+   "chapter": 2,
+   "text": "so he welcomed this one too.",
+   "caps": "so he welcomed | this one *too.",
+   "shot": "gifts exchanged, da Gama bows"
+  },
+  {
+   "chapter": 2,
+   "text": "The Arab merchants were far less happy.",
+   "caps": "the Arab *merchants | far less *happy.",
+   "shot": "Arab merchant frowns over his ledger"
+  },
+  {
+   "chapter": 2,
+   "text": "For centuries, Indians, Arabs, Africans and Chinese",
+   "caps": "for *centuries, | Indians, Arabs, | Africans, *Chinese",
+   "shot": "ocean map fills with small sails of 4 colours"
+  },
+  {
+   "chapter": 2,
+   "text": "had shared this ocean by unwritten rules:",
+   "caps": "shared this *ocean | by unwritten *rules:",
+   "shot": "dashed lanes criss-cross, no flags"
+  },
+  {
+   "chapter": 2,
+   "text": "everyone traded, but nobody owned the sea.",
+   "caps": "everyone *traded, | nobody *owned it.",
+   "shot": "sails trade places freely"
+  },
+  {
+   "chapter": 2,
+   "text": "The Portuguese wanted to own it.",
+   "caps": "the Portuguese | wanted to *own it.",
+   "shot": "one blue sail grows, the others shrink back → \"own\""
+  },
+  {
+   "chapter": 2,
+   "text": "Da Gama sailed home with a cargo worth a fortune,",
+   "caps": "da Gama sailed *home | worth a *fortune,",
+   "shot": "laden ship sails west on the route"
+  },
+  {
+   "chapter": 2,
+   "text": "because pepper that cost little in Kerala",
+   "caps": "pepper that cost | *little in Kerala",
+   "shot": "spice scale: one sack vs two coins"
+  },
+  {
+   "chapter": 2,
+   "text": "sold for many times as much in Europe.",
+   "caps": "sold for *many times | as much in *Europe.",
+   "shot": "the coin stack grows tall → \"many\"",
+   "gap": 2.0
+  },
+  {
+   "chapter": 3,
+   "text": "The next fleet, under Pedro Cabral,",
+   "caps": "the next fleet, | under *Cabral,",
+   "shot": "Cabral on deck (helmet, red sash)"
+  },
+  {
+   "chapter": 3,
+   "text": "set up a trading post in Kalikut in fifteen hundred.",
+   "caps": "a trading *post | in *1500.",
+   "shot": "factory hut with blue flag goes up"
+  },
+  {
+   "chapter": 3,
+   "text": "Locals attacked it,",
+   "caps": "locals *attacked it,",
+   "shot": "the hut door slams shut"
+  },
+  {
+   "chapter": 3,
+   "text": "and several Portuguese died.",
+   "caps": "several Portuguese | *died.",
+   "shot": "torn flag, empty stools, dropped cap (no people)"
+  },
+  {
+   "chapter": 3,
+   "text": "Cabral struck back:",
+   "caps": "Cabral struck *back:",
+   "shot": "night wash, caravel silhouette turns"
+  },
+  {
+   "chapter": 3,
+   "text": "he burned Arab ships in the harbour",
+   "caps": "he *burned | Arab ships",
+   "shot": "far-horizon dhows, orange glow + smoke"
+  },
+  {
+   "chapter": 3,
+   "text": "and turned his cannons on the city.",
+   "caps": "turned his *cannons | on the city.",
+   "shot": "cannon puff, crimson-tinted smoke (muffled boom)"
+  },
+  {
+   "chapter": 3,
+   "text": "Then he sailed south, and made friends with Kalikut's rivals,",
+   "caps": "then he sailed *south, | made *friends",
+   "shot": "map: ship slides south along Malabar"
+  },
+  {
+   "chapter": 3,
+   "text": "Cochin and Kanna-nore.",
+   "caps": "*Cochin | and Cannanore.",
+   "shot": "handshake slips pinned on Cochin + Cannanore"
+  },
+  {
+   "chapter": 3,
+   "text": "When da Gama returned,",
+   "caps": "when da Gama | *returned,",
+   "shot": "da Gama's blue sail back on the horizon"
+  },
+  {
+   "chapter": 3,
+   "text": "and demanded that the Zam-oh-rin expel every Arab trader,",
+   "caps": "he demanded | *every Arab trader | be *expelled,",
+   "shot": "da Gama holds out a demand letter"
+  },
+  {
+   "chapter": 3,
+   "text": "the Zam-oh-rin refused,",
+   "caps": "the Zamorin | *refused,",
+   "shot": "Zamorin shakes head, tears the paper"
+  },
+  {
+   "chapter": 3,
+   "text": "and the trading posts quietly grew walls and guns.",
+   "caps": "trading posts grew | *walls | and guns.",
+   "shot": "the hut grows walls"
+  },
+  {
+   "chapter": 3,
+   "text": "In fifteen-oh-three, the first Portuguese fort rose at Cochin.",
+   "caps": "in *1503, | the first *fort | at Cochin.",
+   "shot": "walls → towers, ribbon \"Cochin 1503\"",
+   "gap": 2.0
+  },
+  {
+   "chapter": 4,
+   "text": "In fifteen-oh-five, Portugal sent its first governor,",
+   "caps": "in *1505, | its first *governor,",
+   "shot": "Almeida arrives (grey beard, armour)"
+  },
+  {
+   "chapter": 4,
+   "text": "Francisco de Al-may-da, with a simple plan:",
+   "caps": "Francisco de *Almeida, | a simple *plan:",
+   "shot": "Almeida unrolls a map"
+  },
+  {
+   "chapter": 4,
+   "text": "forget the land, control the water.",
+   "caps": "forget the *land, | control the *water.",
+   "shot": "blue wash floods the sea on the map → \"water\""
+  },
+  {
+   "chapter": 4,
+   "text": "Every ship now needed a Portuguese pass,",
+   "caps": "every ship needed | a *pass,",
+   "shot": "cartaz paper, seal stamps on → \"pass\""
+  },
+  {
+   "chapter": 4,
+   "text": "or risked being seized.",
+   "caps": "or risked being | *seized.",
+   "shot": "a dhow with no pass: chain across its bow"
+  },
+  {
+   "chapter": 4,
+   "text": "That threatened Gujarat, Egypt,",
+   "caps": "that threatened | *Gujarat, | *Egypt,",
+   "shot": "Gujarat and Cairo pins light"
+  },
+  {
+   "chapter": 4,
+   "text": "and even the merchants of Venice,",
+   "caps": "and even | *Venice,",
+   "shot": "Venice pin, crimson thread links the three"
+  },
+  {
+   "chapter": 4,
+   "text": "so Egypt and Gujarat joined forces.",
+   "caps": "so they joined | *forces.",
+   "shot": "crimson-brown sails gather"
+  },
+  {
+   "chapter": 4,
+   "text": "In fifteen-oh-eight, at Chowl, they beat the Portuguese,",
+   "caps": "in *1508, | at *Chaul, | they *won,",
+   "shot": "night: one Portuguese ship silhouette sinks under navy wash"
+  },
+  {
+   "chapter": 4,
+   "text": "and Al-may-da's own son was killed.",
+   "caps": "Almeida's own *son | was killed.",
+   "shot": "empty helmet on a table, candle"
+  },
+  {
+   "chapter": 4,
+   "text": "A year later, off Dee-oo,",
+   "caps": "a year *later, | off *Diu,",
+   "shot": "dawn sea, Diu pin"
+  },
+  {
+   "chapter": 4,
+   "text": "Al-may-da destroyed their fleet.",
+   "caps": "Almeida *destroyed | their fleet.",
+   "shot": "their paper sails fall one by one"
+  },
+  {
+   "chapter": 4,
+   "text": "His lesson was clear:",
+   "caps": "his lesson | was *clear:",
+   "shot": "Almeida close-up"
+  },
+  {
+   "chapter": 4,
+   "text": "whoever rules the sea holds India.",
+   "caps": "rule the *sea, | hold *India.",
+   "shot": "slip \"Rule the sea, hold India\" — paraphrase · Almeida",
+   "gap": 2.0
+  },
+  {
+   "chapter": 5,
+   "text": "His successor, Afonso de Al-boo-kerk, went further.",
+   "caps": "Afonso de *Albuquerque | went *further.",
+   "shot": "Albuquerque (very long white beard, tall hat)"
+  },
+  {
+   "chapter": 5,
+   "text": "He built strongholds at every gate of the ocean,",
+   "caps": "strongholds at | every *gate",
+   "shot": "map: padlock-forts on the sea's doors"
+  },
+  {
+   "chapter": 5,
+   "text": "from Hor-mooz to Muh-lakka,",
+   "caps": "from *Hormuz | to *Malacca,",
+   "shot": "pins pop at Hormuz, then Malacca"
+  },
+  {
+   "chapter": 5,
+   "text": "and in fifteen-ten, he captured Goa from the Sultan of Bee-jah-poor.",
+   "caps": "in *1510, | he took *Goa | from *Bijapur.",
+   "shot": "Goa flag swaps Bijapur → Portugal"
+  },
+  {
+   "chapter": 5,
+   "text": "He told his men to marry local women and settle down.",
+   "caps": "marry *local women, | settle *down.",
+   "shot": "wedding garland, two small houses"
+  },
+  {
+   "chapter": 5,
+   "text": "They brought tobacco and cashew,",
+   "caps": "they brought | *tobacco | and cashew,",
+   "shot": "tobacco + cashew plants grow"
+  },
+  {
+   "chapter": 5,
+   "text": "and Al-boo-kerk banned sati in Goa.",
+   "caps": "Albuquerque banned | *sati in Goa.",
+   "shot": "law scroll, wax seal stamps → \"banned\""
+  },
+  {
+   "chapter": 5,
+   "text": "But Muslims, Portugal's old rivals,",
+   "caps": "but *Muslims, | Portugal's old rivals,",
+   "shot": "Goa street at dusk"
+  },
+  {
+   "chapter": 5,
+   "text": "were bitterly persecuted.",
+   "caps": "were bitterly | *persecuted.",
+   "shot": "mosque door closes, padlock"
+  },
+  {
+   "chapter": 5,
+   "text": "By fifteen-thirty, Goa was the capital,",
+   "caps": "by *1530, | Goa was the *capital,",
+   "shot": "Goa skyline with church, \"capital\" seal"
+  },
+  {
+   "chapter": 5,
+   "text": "and in fifteen thirty-seven, Sultan Bahadur Shah of Gujarat",
+   "caps": "in *1537, | Bahadur *Shah | of Gujarat",
+   "shot": "Bahadur Shah (crimson-brown)"
+  },
+  {
+   "chapter": 5,
+   "text": "went aboard a Portuguese ship for talks,",
+   "caps": "went *aboard | for *talks,",
+   "shot": "he steps onto a ship at dusk"
+  },
+  {
+   "chapter": 5,
+   "text": "and never came home.",
+   "caps": "and never | came *home.",
+   "shot": "his turban floating on dark water",
+   "gap": 2.0
+  },
+  {
+   "chapter": 6,
+   "text": "In fifteen-eighty, two Jesuit priests from Goa",
+   "caps": "in *1580, | two *Jesuit priests",
+   "shot": "two priests on the road"
+  },
+  {
+   "chapter": 6,
+   "text": "reached the court of Emperor Akbar,",
+   "caps": "the court of | *Akbar,",
+   "shot": "Fatehpur Sikri arch"
+  },
+  {
+   "chapter": 6,
+   "text": "who loved debating religion.",
+   "caps": "who loved | *debating | religion.",
+   "shot": "Akbar among scholars of several faiths"
+  },
+  {
+   "chapter": 6,
+   "text": "The Portuguese dreamed that if the emperor converted,",
+   "caps": "if the emperor | *converted,",
+   "shot": "thought bubble rises"
+  },
+  {
+   "chapter": 6,
+   "text": "Mughal India would follow.",
+   "caps": "Mughal India | would *follow.",
+   "shot": "bubble map turns blue"
+  },
+  {
+   "chapter": 6,
+   "text": "He didn't.",
+   "caps": "he *didn't.",
+   "shot": "bubble pops"
+  },
+  {
+   "chapter": 6,
+   "text": "Back in Goa, after the Inquisition arrived,",
+   "caps": "back in *Goa, | the *Inquisition",
+   "shot": "Goa church"
+  },
+  {
+   "chapter": 6,
+   "text": "Hindus were persecuted too.",
+   "caps": "Hindus were | *persecuted too.",
+   "shot": "temple door closes"
+  },
+  {
+   "chapter": 6,
+   "text": "Then, in sixteen-oh-eight, an Englishman, William Hawkins,",
+   "caps": "in *1608, | William *Hawkins,",
+   "shot": "Hawkins steps off at Surat"
+  },
+  {
+   "chapter": 6,
+   "text": "landed at Surat with a letter from his king.",
+   "caps": "landed at *Surat | a *letter | from his king.",
+   "shot": "letter with red seal"
+  },
+  {
+   "chapter": 6,
+   "text": "The Portuguese tried everything to stop him,",
+   "caps": "the Portuguese tried | to *stop him,",
+   "shot": "Jesuit blocks a doorway"
+  },
+  {
+   "chapter": 6,
+   "text": "but in sixteen twelve, English ships beat a Portuguese fleet near Surat,",
+   "caps": "in *1612, | English ships *won | near Surat,",
+   "shot": "small English sails vs bigger fleet; big sails tear"
+  },
+  {
+   "chapter": 6,
+   "text": "and Emperor Jah-hahn-geer, who had no navy, was impressed.",
+   "caps": "Jahangir, | with no *navy, | was *impressed.",
+   "shot": "Jahangir raises an eyebrow",
+   "gap": 2.0
+  },
+  {
+   "chapter": 7,
+   "text": "The worst blow came in Bengal.",
+   "caps": "the worst *blow | came in *Bengal.",
+   "shot": "map: Bengal, Hooghly pin"
+  },
+  {
+   "chapter": 7,
+   "text": "At Hoog-lee, Portuguese traders ran a cruel slave trade,",
+   "caps": "at *Hooghly, | a cruel | *slave trade,",
+   "shot": "Hooghly river port"
+  },
+  {
+   "chapter": 7,
+   "text": "seizing Hindu and Muslim children,",
+   "caps": "seizing *children, | Hindu and Muslim",
+   "shot": "ledger page with a broken chain"
+  },
+  {
+   "chapter": 7,
+   "text": "and, chroniclers say, even took two slave girls of Empress Mum-taz Mahal.",
+   "caps": "chroniclers say, | two girls of | *Mumtaz Mahal.",
+   "shot": "Mughal seal over an empty doorway"
+  },
+  {
+   "chapter": 7,
+   "text": "In sixteen thirty-two, Shah Jahan's army besieged Hoog-lee,",
+   "caps": "in *1632, | Shah *Jahan | besieged Hooghly,",
+   "shot": "seal stamps the map, tents ring the port"
+  },
+  {
+   "chapter": 7,
+   "text": "and three months later, the Portuguese were gone from Bengal.",
+   "caps": "three months *later, | they were *gone.",
+   "shot": "calendar flips 3 pages, flag lowers"
+  },
+  {
+   "chapter": 7,
+   "text": "Everything else was slipping too.",
+   "caps": "everything was | *slipping too.",
+   "shot": "map tilts, pins slide"
+  },
+  {
+   "chapter": 7,
+   "text": "Portugal's crown had passed to Spain,",
+   "caps": "Portugal's *crown | passed to *Spain,",
+   "shot": "crown slides onto a Spanish crown"
+  },
+  {
+   "chapter": 7,
+   "text": "dragging it into Spain's wars,",
+   "caps": "dragging it into | Spain's *wars,",
+   "shot": "smoke on a far horizon"
+  },
+  {
+   "chapter": 7,
+   "text": "Brazil was now worth more than India,",
+   "caps": "*Brazil was worth | more than India,",
+   "shot": "map swings west, coins roll to Brazil"
+  },
+  {
+   "chapter": 7,
+   "text": "and the sea route was no longer a secret.",
+   "caps": "the sea route | no longer a *secret.",
+   "shot": "route map copied onto Dutch + English parchment"
+  },
+  {
+   "chapter": 7,
+   "text": "By sixteen sixty-three, the Dutch had taken every Portuguese fort on the Malabar coast.",
+   "caps": "by *1663, | the *Dutch | took Malabar's forts.",
+   "shot": "Malabar forts flip to Dutch flags one by one"
+  },
+  {
+   "chapter": 7,
+   "text": "In seventeen thirty-nine, the Marathas took Bassein.",
+   "caps": "in *1739, | the *Marathas | took Bassein.",
+   "shot": "Bassein flag → saffron"
+  },
+  {
+   "chapter": 7,
+   "text": "One Portuguese governor put it best:",
+   "caps": "as one governor | put it:",
+   "shot": "slip with the speaker's name"
+  },
+  {
+   "chapter": 7,
+   "text": "they came with a sword in one hand and a cross in the other,",
+   "caps": "a *sword in one hand, | a *cross in the other,",
+   "shot": "paper figure holds sword + cross"
+  },
+  {
+   "chapter": 7,
+   "text": "filled their pockets with gold,",
+   "caps": "pockets full | of *gold,",
+   "shot": "pockets bulge with coins"
+  },
+  {
+   "chapter": 7,
+   "text": "and grew too heavy to hold either.",
+   "caps": "too *heavy | to hold either.",
+   "shot": "drops both; slip \"paraphrase · Portuguese governor (de Souza)\"",
+   "gap": 2.0
+  },
+  {
+   "chapter": 8,
+   "text": "And yet, Goa, Duh-mun and Dee-oo stayed Portuguese.",
+   "caps": "and *yet, | Goa, Daman, Diu | stayed *Portuguese.",
+   "shot": "three blue pins"
+  },
+  {
+   "chapter": 8,
+   "text": "They outlasted the Mughals, the Marathas, even the British.",
+   "caps": "they *outlasted | Mughals, Marathas, | even the *British.",
+   "shot": "other powers' flags fade around them"
+  },
+  {
+   "chapter": 8,
+   "text": "Only in nineteen sixty-one did India take them back,",
+   "caps": "only in *1961 | did India | take them *back,",
+   "shot": "era bar races to 1961, Indian tricolour rises over Goa"
+  },
+  {
+   "chapter": 8,
+   "text": "four hundred and sixty-three years after da Gama reached Kalikut.",
+   "caps": "*463 years | after da Gama.",
+   "shot": "ribbon 1498 → 1961"
+  },
+  {
+   "chapter": 8,
+   "text": "The first Europeans to arrive",
+   "caps": "the *first | to arrive",
+   "shot": "the cold-open dawn sea, three caravels"
+  },
+  {
+   "chapter": 8,
+   "text": "were the last to leave.",
+   "caps": "were the *last | to leave.",
+   "shot": "caravels sail out left"
+  },
+  {
+   "chapter": 8,
+   "text": "And it all began with three small ships,",
+   "caps": "it all began | with three *ships,",
+   "shot": "caravels on the horizon"
+  },
+  {
+   "chapter": 8,
+   "text": "and a taste for pepper.",
+   "caps": "and a taste | for *pepper.",
+   "shot": "peppercorn rolls into the sack (loops to cut 5), end card"
+  }
+ ]
 }

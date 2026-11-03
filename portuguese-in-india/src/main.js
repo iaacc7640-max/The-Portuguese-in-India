@@ -38,6 +38,7 @@ function draw(t) {
     const script = await (await fetch('script.json', { cache: 'no-store' })).json();
     await loadTiming(); await loadGeo();
     buildCaptions(script);
+    OP.script = script;
     const { shots, cues, overlay } = buildShots();
     OP._overlay = overlay || null;
     shots.sort((a, b) => a.at - b.at);
