@@ -3,6 +3,7 @@
 // Mercator. Places are pinned with slips; labels must stay above y 1450 (caption strip below).
 import { ctx, W, H, TAU, clamp, lerp, eio, eob, seg, rnd, circle, line } from './lib.js';
 import { P, cut, P_poly, P_rr, parchment, slip, compass, dashedRoute } from './paper.js';
+import { mixColor } from './scene.js';
 
 let GEO = null, BOX = [];
 export async function loadGeo() {
@@ -63,9 +64,8 @@ export function realMap(v, o = {}) {
       ctx.closePath();
     });
   };
-  cut(path, o.land || P.land, { shadow: 0.7, edge: Math.max(3, Math.min(6, k * 0.15)) });
+  cut(path, o.land || (o.dim ? mixColor(P.land, P.edge, Math.min(1, o.dim * 2)) : P.land), { shadow: 0.7, edge: Math.max(3, Math.min(6, k * 0.15)) });
   if (o.gold && o.gold.includes('portugal')) { cut(P_poly(PORTUGAL.map((ll) => proj(v, ll))), P.gold, { shadow: 0.3, edge: 3 }); }
-  if (o.dim) { ctx.save(); ctx.globalAlpha = o.dim; ctx.fillStyle = P.parch; ctx.fillRect(-400, -400, W + 800, H + 800); ctx.restore(); }
   if (o.frame !== false) { ctx.save(); ctx.strokeStyle = P.ink; ctx.lineWidth = 5; ctx.strokeRect(36, 36, W - 72, H - 72); ctx.restore(); }
   if (o.compassAt !== false) compass(...(o.compassAt || [930, 1360]), 0.42);
   return (ll) => proj(v, ll);

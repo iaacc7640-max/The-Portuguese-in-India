@@ -58,20 +58,20 @@ C3o   131.93 → 135.33  (3.40 s)  the post grows stone walls on "walls", a cann
 C3p   135.33 → 138.50  (3.17 s)  walls grow towers and a gate: the first fort; ribbon 1503
 C3q   138.50 → 140.06  (1.56 s)  Malabar map: a royal-blue fort icon rises on Cochin, slip COCHIN 1503
 CARD4 140.06 → 141.60  (1.54 s)  chapter card 1505: Rule the Water
-C4L49 141.60 → 145.23  (3.63 s)  [storyboard] Almeida arrives (grey beard, armour)
-C4L50 145.23 → 148.69  (3.46 s)  [storyboard] Almeida unrolls a map
-C4L51 148.69 → 151.31  (2.63 s)  [storyboard] blue wash floods the sea on the map → "water"
-C4L52 151.31 → 153.88  (2.57 s)  [storyboard] cartaz paper, seal stamps on → "pass"
-C4L53 153.88 → 155.76  (1.87 s)  [storyboard] a dhow with no pass: chain across its bow
-C4L54 155.76 → 158.25  (2.49 s)  [storyboard] Gujarat and Cairo pins light
-C4L55 158.25 → 160.20  (1.95 s)  [storyboard] Venice pin, crimson thread links the three
-C4L56 160.20 → 163.37  (3.17 s)  [storyboard] crimson-brown sails gather
-C4L57 163.37 → 167.21  (3.84 s)  [storyboard] night: one Portuguese ship silhouette sinks under navy wash
-C4L58 167.21 → 169.59  (2.39 s)  [storyboard] empty helmet on a table, candle
-C4L59 169.59 → 171.68  (2.09 s)  [storyboard] dawn sea, Diu pin
-C4L60 171.68 → 173.88  (2.19 s)  [storyboard] their paper sails fall one by one
-C4L61 173.88 → 175.45  (1.57 s)  [storyboard] Almeida close-up
-C4L62 175.45 → 178.18  (2.73 s)  [storyboard] slip "Rule the sea, hold India" — paraphrase · Almeida
+C4a   141.60 → 145.23  (3.63 s)  Almeida (grey beard, armour) arrives at the rail; ribbon 1505; FIRST GOVERNOR slip
+C4b   145.23 → 148.69  (3.46 s)  Almeida unrolls a sea chart on a table; slip FRANCISCO DE ALMEIDA
+C4c   148.69 → 151.31  (2.63 s)  ocean map: land fades on "land", a royal-blue wash floods the sea on "water" (Blue Water Policy)
+C4d   151.31 → 153.88  (2.57 s)  the cartaz pass; the wax seal stamps on "pass"
+C4e   153.88 → 155.76  (1.87 s)  a dhow without a pass: a chain snaps across its bow, a caravel looms alongside
+C4f   155.76 → 158.25  (2.49 s)  map: Gujarat (Diu) and Egypt (Cairo) light up in crimson-brown
+C4g   158.25 → 160.20  (1.95 s)  map widens to Venice; a crimson thread links Venice, Cairo and Gujarat
+C4h   160.20 → 163.37  (3.17 s)  crimson-brown dhow sails converge into one fleet on "forces"
+C4i   163.37 → 167.21  (3.84 s)  night off Chaul: ribbon 1508; one Portuguese ship silhouette sinks on "beat" (no people)
+C4j   167.21 → 169.59  (2.39 s)  night interior: an empty helmet beside a candle on a table
+C4k   169.59 → 171.68  (2.09 s)  dawn off Diu: ribbon 1509, Almeida's caravels line up facing the brown fleet
+C4l   171.68 → 173.88  (2.19 s)  the brown paper sails fall one by one like cut-outs, starting on "destroyed" (no people)
+C4m   173.88 → 175.45  (1.57 s)  Almeida close-up, looking out to sea
+C4n   175.45 → 178.18  (2.73 s)  torn slip "Rule the sea, hold India." labelled paraphrase · Almeida, over the blue-water map
 CARD5 178.18 → 179.72  (1.54 s)  chapter card 1510: Albuquerque's Goa
 C5L63 179.72 → 183.66  (3.94 s)  [storyboard] Albuquerque (very long white beard, tall hat)
 C5L64 183.66 → 186.61  (2.95 s)  [storyboard] map: padlock-forts on the sea's doors
