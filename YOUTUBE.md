@@ -11,13 +11,13 @@ first Europeans to arrive the last to leave? A cut-paper animated history for st
 Chapters
 0:00 Cold open
 0:17 1453: The Spice Problem
-0:55 1498: Hello, Calicut
-1:41 1500: Traders Become Raiders
-2:20 1505: Rule the Water
-2:58 1510: Albuquerque's Goa
-3:38 1580: Priests and Emperors
-4:19 1632: The Fall
-5:17 1961: Last to Leave
+0:56 1498: Hello, Calicut
+1:44 1500: Traders Become Raiders
+2:25 1505: Rule the Water
+3:04 1510: Albuquerque's Goa
+3:47 1580: Priests and Emperors
+4:29 1632: The Fall
+5:29 1961: Last to Leave
 
 Sources
 - Rajiv Ahir, A Brief History of Modern India, ch. 3 "Advent of the Europeans in India" (Portuguese section): core narrative, Albuquerque sati ban, persecution in Goa, Hooghly slave trade and Mumtaz Mahal episode, the Portuguese governor's sword-and-cross remark (paraphrased)
@@ -44,7 +44,7 @@ All art is drawn in code (cut-paper style); maps use public-domain Natural Earth
 ## Hashtags
 #History #IndianHistory #Portuguese #VascoDaGama #Goa #UPSC #AnimatedHistory #ModernIndia
 
-## Shorts (9:16, renders/shorts/)
+## Shorts (9:16, renders/shorts/) — made from the earlier 9:16 cut; not updated for the 16:9 revision
 | file | hook line (on screen) | span of the film |
 |---|---|---|
 | short1_calicut.mp4 | Why a king welcomed Vasco da Gama | 0:54–1:40 (CH2) + end card |
@@ -57,4 +57,4 @@ Suggested Short titles: the hook line + " #Shorts #History".
 - AI disclosure: YouTube's Help Center says unrealistic / animated content does not need the "altered or synthetic"
   disclosure (https://support.google.com/youtube/answer/14328491). The narration is a synthetic (text-to-speech) voice
   that does not imitate a real person. Re-check that page on upload day; YouTube may add its own label.
-- Cover: renders/cover.png (caravel + route map + 1498 ribbon).
+- Cover / thumbnail (16:9): renders/cover_16x9.jpg. The portrait cover renders/cover.png is for the Shorts.

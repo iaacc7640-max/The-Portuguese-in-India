@@ -25,7 +25,7 @@ function good(kind, x, y, s) {
 }
 /** the middlemen: a row of four traders; the sack sits with trader k (fractional = passing) */
 function middlemen(lt, t, at, coins = -1) {
-  K.parchment(13); K.cut(K.P_rr(-200, 1320, W + 400, 700, 0), '#C9A878', { shadow: 0, edge: 0 });
+  K.parchment(13); K.cut(K.P_rr(-1100, 1320, W + 2200, 700, 0), '#C9A878', { shadow: 0, edge: 0 });
   const xs = [150, 400, 650, 900], roles = ['merchant', 'arab', 'merchant', 'arab'];
   xs.forEach((x, k) => K.person({ role: roles[k], x, y: 1330, h: 430, dir: 1, arm: 55, prop: 'none', t }));
   const k = clamp(at, 0, 3), i = Math.floor(k), f = k - i, x = lerp(xs[i], xs[Math.min(3, i + 1)], eio(f)) + 90, y = 1030 - Math.sin(f * Math.PI) * 80;
@@ -43,18 +43,23 @@ export default function (B) {
     } });
     cue(st + 0.1, 'pop', { gain: 0.5 }); }
 
-  // 1 · the Ottoman Turks captured Constantinople, : a crimson seal stamps on the city
+  // 1 · the Ottoman Turks captured Constantinople, : an army marches to the walled city; when it arrives the city burns
+  //     (spec 001-video-16x9 FR-5: marching and fire only, no fighting or bodies)
   { const i = I(1), st = cut_(i), ca = Wd('captured', i) - st;
-    add({ id: 'C1b', ch, at: st, year: 1453, note: 'a crimson Ottoman seal stamps onto Constantinople on "captured"', draw(lt, d, t) {
-      const pr = K.realMap(K.lerpView(K.VIEWS.med, EAST, 0.5 + 0.5 * eio(clamp(lt / d)))); K.pin(pr, 'CONSTANTINOPLE', { side: 'up' });
-      if (lt > ca) { const [x, y] = pr('CONSTANTINOPLE'), k = clamp((lt - ca) / 0.25); ctx.save(); ctx.globalAlpha = clamp(k * 3); K.seal(x, y + 70, lerp(2.2, 0.85, eo(k)), 'O'); ctx.restore(); }
+    add({ id: 'C1b', ch, at: st, year: 1453, note: 'Ottoman army marches to the walls of Constantinople; on "captured" fire and smoke rise over the city', draw(lt, d, t) {
+      const c = K.cam(lt, d, { x: -60, zoom: 1.0 }, { x: 60, zoom: 1.05 }), arrive = clamp(lt / ca), fire = clamp((lt - ca) / 0.6);
+      K.layer(c, 0.15, () => K.sky(0.45 + 0.35 * fire, 460, 1150));
+      K.layer(c, 0.45, () => { K.walledCity(980, 1180, 1.0); for (let k = 0; k < 5; k++) { K.flame(640 + k * 170, 1060 - (k % 2) * 120, fire * (0.7 + 0.3 * Math.sin(k)), t, k); } for (let k = 0; k < 3; k++) K.smokeColumn(700 + k * 250, 980, 0.9, t + k, fire); K.glow(980, 1000, 600 * fire, '#E0782E', 0.45 * fire); });
+      K.layer(c, 0.8, () => { K.cut(K.P_rr(-1100, 1180, W + 2200, 900, 0), '#A88A5E', { shadow: 0.4, edge: 5 }); K.cut(K.P_poly([[-1100, 1300], [600, 1230], [700, 1260], [-1100, 1420]]), '#C9A878', { shadow: 0, edge: 3 }); });
+      K.layer(c, 1.0, () => { const front = lerp(-500, 520, eio(arrive)); for (let r = 0; r < 3; r++) for (let k = 0; k < 9; k++) { const x = front - k * 120 - r * 40, y = 1330 + r * 55; if (x > 600) continue; K.marcher(x, y, 0.75 + r * 0.08, lt * 9 + k + r * 2); } });
+      K.slip('CONSTANTINOPLE', 980, 640, eob(seg(lt, 0.2, 0.5)), -0.02, 50);
     } });
-    cue(st + ca, 'seal'); }
+    for (let k = 0; k < 6; k++) cue(st + 0.1 + k * 0.35, 'thud', { gain: 0.25 }); cue(st + ca, 'sizzle', { dur: 1.6, gain: 0.5 }); }
 
   // 2 · and the old roads to the East fell into other hands. : the land road draws east, a padlock snaps on
   { const i = I(2), st = cut_(i), ha = Wd('hands', i) - st;
     add({ id: 'C1c', ch, year: 1453, at: st, note: 'ink land road Venice -> Constantinople -> east; padlock snaps on at "hands"', draw(lt, d, t) {
-      const pr = K.realMap(EAST); landRoad(pr, eio(clamp(lt / (ha * 0.9))), clamp((lt - ha) / 0.3)); K.pin(pr, 'VENICE', { side: 'up', size: 32 }); const [x, y] = pr('CONSTANTINOPLE'); K.seal(x, y + 70, 0.85, 'O');
+      const pr = K.realMap(EAST); landRoad(pr, eio(clamp(lt / (ha * 0.9))), clamp((lt - ha) / 0.3)); K.pin(pr, 'VENICE', { side: 'up', size: 32 }); K.pin(pr, 'CONSTANTINOPLE', { side: 'up' });
       K.slip('TO INDIA →', 860, pr([70, 30])[1] - 70, eob(seg(lt, 0.6, 0.9)), 0.02, 36);
     } });
     cue(st + 0.1, 'quill', { dur: 1.4, gain: 0.5 }); cue(st + ha + 0.1, 'thud', { gain: 0.6 }); }
@@ -62,7 +67,7 @@ export default function (B) {
   // 3 · Indian pepper, silk and cotton still reached Europe, : three goods pop along the road
   { const i = I(3), st = cut_(i), w = ['pepper', 'silk', 'cotton'].map((x) => Wd(x, i) - st), eu = Wd('europe', i) - st;
     add({ id: 'C1d', ch, at: st, year: 1453, note: 'pepper, silk, cotton pop onto the road one by one and slide west to Europe', draw(lt, d, t) {
-      const pr = K.realMap(EAST); landRoad(pr, 1, 1); const [x, y] = pr('CONSTANTINOPLE'); K.seal(x, y + 70, 0.85, 'O');
+      const pr = K.realMap(EAST); landRoad(pr, 1, 1); K.pin(pr, 'CONSTANTINOPLE', { side: 'up' });
       ['pepper', 'silk', 'cotton'].forEach((kind, k) => { const a = w[k], sl = eio(clamp((lt - eu) / 0.9)); const [gx, gy] = pr([[64, 30], [56, 30.5], [48, 33]][k]); const [ex, ey] = pr('VENICE'); good(kind, lerp(gx, ex + k * 40, sl), lerp(gy - 70, ey - 70 - k * 30, sl), eob(clamp((lt - a) / 0.3)) * 1.1); });
     } });
     w.forEach((a) => cue(st + a, 'pop', { gain: 0.45 })); }
@@ -114,9 +119,9 @@ export default function (B) {
   { const i = I(9), st = cut_(i), na = Wd('navigator', i) - st;
     add({ id: 'C1j', ch, at: st, year: 1453, note: 'Prince Henry (dark hood) points at a wall map of Africa', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.04, x: 20 }, { zoom: 1.1, x: -20 });
-      K.layer(c, 0.4, () => { K.parchment(18); K.cut(K.P_rr(-200, 300, W + 400, 1200, 0), P.stone, { shadow: 0, edge: 0 }); K.cut(K.P_rr(470, 380, 520, 760, 8), P.sepia, { shadow: 0.8, edge: 5 });
+      K.layer(c, 0.4, () => { K.parchment(18); K.cut(K.P_rr(-1100, 300, W + 2200, 1200, 0), P.stone, { shadow: 0, edge: 0 }); K.cut(K.P_rr(470, 380, 520, 760, 8), P.sepia, { shadow: 0.8, edge: 5 });
         ctx.save(); ctx.beginPath(); ctx.rect(490, 400, 480, 720); ctx.clip(); ctx.translate(730, 760); ctx.scale(0.45, 0.45); ctx.translate(-540, -960); K.realMap(K.VIEWS.africa, { gold: ['portugal'], frame: false, compassAt: false }); ctx.restore(); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-200, 1450, W + 400, 600, 0), '#8C6B4A', { shadow: 0, edge: 0 }); K.person({ role: 'henry', x: 300, y: 1470, h: 760, arm: lerp(20, 75, eob(clamp(lt / 0.6))), t }); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1450, W + 2200, 600, 0), '#8C6B4A', { shadow: 0, edge: 0 }); K.person({ role: 'henry', x: 300, y: 1470, h: 760, arm: lerp(20, 75, eob(clamp(lt / 0.6))), t }); });
       if (lt > na) K.slip('PRINCE HENRY', 300, 560, eob(seg(lt, na, na + 0.3)), -0.03, 48);
     } });
     cue(st, 'whoosh', { gain: 0.6 }); cue(st + na, 'pop', { gain: 0.5 }); }
@@ -143,7 +148,6 @@ export default function (B) {
       const pr = K.realMap({ lon: 20, lat: -28, w: 34 }); const pts = [[10, -30], [14, -35], [19, -36.5], [25, -35.5], [30, -33]];
       const p = eio(clamp(lt / (d * 0.95))), head = K.placeRoute(pr, pts, p); K.caravel(head[0], head[1] - 20, 0.3, t);
       const cp = cape - (s2 - st); if (lt > cp) K.pin(pr, 'CAPE OF GOOD HOPE', { side: 'up', sc: eob(seg(lt, cp, cp + 0.3)), dx: -120, size: 40 });
-      K.slip('BARTOLOMEU DIAS', 540, 420, eob(seg(lt, 0.05, 0.35)), 0.02, 48);
     } });
     cue(st + 0.1, 'pop', { gain: 0.5 }); cue(s2, 'whoosh', { gain: 0.6 }); cue(s2 + 0.1, 'waves', { dur: 2, gain: 0.5 }); }
 

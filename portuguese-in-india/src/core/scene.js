@@ -24,13 +24,13 @@ export function layer(c, depth, fn) {
 export function sky(night = 0, sunY = 420, sunX = 800) {
   parchment(5);
   const top = night < 0.5 ? mix(P.sky, P.dusk, night * 2) : mix(P.dusk, P.navy, (night - 0.5) * 2);
-  ctx.save(); ctx.globalAlpha = 0.55; ctx.fillStyle = top; ctx.fillRect(-400, -400, W + 800, 1500); ctx.restore();
+  ctx.save(); ctx.globalAlpha = 0.55; ctx.fillStyle = top; ctx.fillRect(-1100, -400, W + 2200, 1500); ctx.restore();
   if (night < 0.8) cut(P_circ(sunX, sunY + night * 260, 90), night < 0.4 ? '#EFC66A' : '#E39A5A', { shadow: 0.4, edge: 5 });
 }
 /** the Paper Atlas night: the same page under a navy wash (+ paper stars when fully dark) */
 export function nightWash(n, seed = 1) {
   if (n <= 0) return;
-  ctx.save(); ctx.globalAlpha = 0.78 * clamp(n); ctx.fillStyle = P.navy; ctx.fillRect(-400, -400, W + 800, H + 800); ctx.restore();
+  ctx.save(); ctx.globalAlpha = 0.78 * clamp(n); ctx.fillStyle = P.navy; ctx.fillRect(-1100, -400, W + 2200, H + 800); ctx.restore();
   if (n > 0.6) { ctx.save(); ctx.globalAlpha = clamp((n - 0.6) * 2.5); for (let i = 0; i < 28; i++) circle(rnd(i + seed) * W, 120 + rnd(i + 40 + seed) * 700, 3 + rnd(i) * 3, P.parch); ctx.restore(); }
 }
 /** a soft glow (fire on the horizon, a lamp), drawn after the night wash */
@@ -42,7 +42,7 @@ export function glow(x, y, r, color = '#E0782E', a = 0.6) {
 // ═════════════════════════ PAPER SEA ═════════════════════════
 /** one cut-paper wave strip at height y (fills down to the page bottom) */
 export function wave(y, t, { amp = 22, len = 0.011, speed = 1.2, phase = 0, color = P.sea, shadow = 0.7 } = {}) {
-  cut(() => { ctx.beginPath(); ctx.moveTo(-500, H + 400); ctx.lineTo(-500, y); for (let x = -500; x <= W + 500; x += 36) ctx.lineTo(x, y + Math.sin(x * len + t * speed + phase) * amp); ctx.lineTo(W + 500, H + 400); ctx.closePath(); }, color, { shadow, edge: 5 });
+  cut(() => { ctx.beginPath(); ctx.moveTo(-1200, H + 400); ctx.lineTo(-1200, y); for (let x = -1200; x <= W + 1200; x += 36) ctx.lineTo(x, y + Math.sin(x * len + t * speed + phase) * amp); ctx.lineTo(W + 1200, H + 400); ctx.closePath(); }, color, { shadow, edge: 5 });
 }
 /** height of a wave strip at x (to float ships on it) */
 export const waveY = (x, y, t, { amp = 22, len = 0.011, speed = 1.2, phase = 0 } = {}) => y + Math.sin(x * len + t * speed + phase) * amp;
@@ -80,7 +80,6 @@ export function eraBar(active = -1, p = null, a = 1) {
 /** a parchment page turns over, the YEAR rides in on a gold ribbon, the hook title on a torn slip, a wax seal stamps on */
 export function chapterCard(lt, d, { year, title, n, letter = 'P', seed = 20 }) {
   parchment(seed);
-  ctx.save(); ctx.strokeStyle = 'rgba(62,44,30,0.35)'; ctx.lineWidth = 3; ctx.strokeRect(70, 330, 940, 1110); ctx.strokeRect(86, 346, 908, 1078); ctx.restore();
   ctx.font = `700 40px ${SERIF}`; ctx.letterSpacing = '10px'; ctx.textAlign = 'center'; ctx.fillStyle = P.sepia; ctx.fillText(`CHAPTER ${n}`, 540, 560); ctx.letterSpacing = '0px';
   line([[300, 610], [780, 610]], P.sepia, 3);
   ribbon(String(year), 540, 820, eob(seg(lt, 0.3, 0.6)) * 1.15, 120);
@@ -124,7 +123,16 @@ export function flag(x, y, kind, t = 0, s = 1, { lower = 0, torn: tr = 0, h = 42
   ctx.save(); ctx.shadowColor = 'rgba(70,45,20,0.3)'; ctx.shadowBlur = 10; ctx.shadowOffsetY = 6;
   const umax = 1 - tr * 0.45;
   switch (kind) {
-    case 'portugal': quad(0, 0, umax, 1, P.white); quad(0.42, 0, 0.58, 1, P.royal); quad(0, 0.4, umax, 0.6, P.royal); break;
+    case 'portugal': {   // the owner's flag (spec 001-video-16x9 FR-11): green hoist 2/5, red fly, yellow armillary sphere + shield
+      quad(0, 0, Math.min(0.4, umax), 1, '#1F5E3B'); if (umax > 0.4) quad(0.4, 0, umax, 1, P.crimson);
+      const [cx, cy] = pt(0.4, 0.5); ctx.restore(); ctx.save();
+      ctx.strokeStyle = '#E8C23A'; ctx.lineWidth = 6; ctx.beginPath(); ctx.arc(cx, cy, 44, 0, TAU); ctx.stroke();
+      ctx.lineWidth = 4; for (const k of [-0.5, 0, 0.5]) { ctx.beginPath(); ctx.ellipse(cx, cy + k * 30, 44, 12, 0, 0, TAU); ctx.stroke(); }
+      ctx.beginPath(); ctx.ellipse(cx, cy, 14, 44, 0, 0, TAU); ctx.stroke();
+      const sh = (w, h) => { ctx.beginPath(); ctx.moveTo(cx - w, cy - h); ctx.lineTo(cx + w, cy - h); ctx.lineTo(cx + w, cy + h * 0.3); ctx.quadraticCurveTo(cx + w, cy + h, cx, cy + h * 1.1); ctx.quadraticCurveTo(cx - w, cy + h, cx - w, cy + h * 0.3); ctx.closePath(); };
+      sh(26, 30); ctx.fillStyle = P.white; ctx.fill(); sh(23, 27); ctx.fillStyle = P.crimson; ctx.fill(); sh(14, 17); ctx.fillStyle = P.white; ctx.fill();
+      for (const [dx, dy] of [[0, -9], [-8, 0], [0, 0], [8, 0], [0, 9]]) { ctx.beginPath(); ctx.arc(cx + dx, cy + dy, 3.2, 0, TAU); ctx.fillStyle = P.royal; ctx.fill(); }
+      break; }
     case 'england': quad(0, 0, umax, 1, P.white); quad(0.42, 0, 0.58, 1, P.crimson); quad(0, 0.4, umax, 0.6, P.crimson); break;
     case 'dutch': quad(0, 0, umax, 1 / 3, P.orange); quad(0, 1 / 3, umax, 2 / 3, P.white); quad(0, 2 / 3, umax, 1, P.royal); break;
     case 'calicut': quad(0, 0, umax, 1, P.forest); quad(0, 0.42, umax, 0.58, P.gold); break;

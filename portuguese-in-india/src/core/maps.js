@@ -45,16 +45,16 @@ const PORTUGAL = [[-8.9, 41.9], [-8.2, 42.1], [-6.2, 41.6], [-6.9, 41.0], [-6.9,
  */
 export function realMap(v, o = {}) {
   parchment(o.seed ?? 3);
-  ctx.save(); ctx.globalAlpha = 0.9; ctx.fillStyle = P.sea; ctx.fillRect(-400, -400, W + 800, H + 800); ctx.restore();
-  if (o.seaTint) { ctx.save(); ctx.globalAlpha = o.seaTint[1]; ctx.fillStyle = o.seaTint[0]; ctx.fillRect(-400, -400, W + 800, H + 800); ctx.restore(); }
+  ctx.save(); ctx.globalAlpha = 0.9; ctx.fillStyle = P.sea; ctx.fillRect(-1100, -400, W + 2200, H + 800); ctx.restore();
+  if (o.seaTint) { ctx.save(); ctx.globalAlpha = o.seaTint[1]; ctx.fillStyle = o.seaTint[0]; ctx.fillRect(-1100, -400, W + 2200, H + 800); ctx.restore(); }
   // graticule every 10 degrees (or 2 on close views)
   const step = v.w > 40 ? 10 : v.w > 12 ? 5 : 2, k = W / v.w;
   ctx.save(); ctx.strokeStyle = 'rgba(62,44,30,0.16)'; ctx.lineWidth = 2; ctx.beginPath();
-  for (let lon = Math.floor((v.lon - v.w) / step) * step; lon <= v.lon + v.w; lon += step) { const [x] = proj(v, [lon, 0]); ctx.moveTo(x, -400); ctx.lineTo(x, H + 400); }
+  for (let lon = Math.floor((v.lon - v.w * 2.2) / step) * step; lon <= v.lon + v.w * 2.2; lon += step) { const [x] = proj(v, [lon, 0]); ctx.moveTo(x, -400); ctx.lineTo(x, H + 400); }
   for (let lat = -60; lat <= 70; lat += step) { const [, y] = proj(v, [0, lat]); ctx.moveTo(-400, y); ctx.lineTo(W + 400, y); }
   ctx.stroke(); ctx.restore();
   // land: every polygon that touches the frame, one cut-paper path
-  const lon0 = v.lon - v.w * 0.75, lon1 = v.lon + v.w * 0.75, hh = (H / W) * v.w * 0.8;
+  const lon0 = v.lon - v.w * 1.8, lon1 = v.lon + v.w * 1.8, hh = (H / W) * v.w * 0.8;   // 16:9 shows ~2.5x the stage width
   const path = () => {
     ctx.beginPath();
     GEO.land.forEach((p, i) => {
@@ -66,7 +66,6 @@ export function realMap(v, o = {}) {
   };
   cut(path, o.land || (o.dim ? mixColor(P.land, P.edge, Math.min(1, o.dim * 2)) : P.land), { shadow: 0.7, edge: Math.max(3, Math.min(6, k * 0.15)) });
   if (o.gold && o.gold.includes('portugal')) { cut(P_poly(PORTUGAL.map((ll) => proj(v, ll))), P.gold, { shadow: 0.3, edge: 3 }); }
-  if (o.frame !== false) { ctx.save(); ctx.strokeStyle = P.ink; ctx.lineWidth = 5; ctx.strokeRect(36, 36, W - 72, H - 72); ctx.restore(); }
   if (o.compassAt !== false) compass(...(o.compassAt || [930, 1360]), 0.42);
   return (ll) => proj(v, ll);
 }
@@ -84,7 +83,7 @@ export function pin(pr, name, o = {}) {
   if (side === 'down' && y + gap > 1430) side = 'up';
   const [lx, ly] = side === 'up' ? [x, y - gap] : side === 'down' ? [x, y + gap] : side === 'left' ? [x - 30 - (o.text || name).length * size * 0.36, y] : [x + 30 + (o.text || name).length * size * 0.36, y];
   ctx.font = `700 ${size}px Caladea`; const hw = (ctx.measureText(o.text || name).width + 70) / 2;   // keep the slip inside the frame
-  const sx = clamp(lx + dx, 50 + hw, W - 50 - hw);
+  const sx = clamp(lx + dx, -700 + hw, W + 700 - hw);   // the visible 16:9 width in stage coordinates
   slip(o.text || name, sx, Math.min(1430, ly + dy), sc, o.rot ?? (rnd(x) - 0.5) * 0.06, size);
   return [x, y];
 }

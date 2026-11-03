@@ -4,11 +4,11 @@ import * as K from '../core/kit.js';
 const { P } = K;
 
 /** the dawn arrival: shared with the CH8 callback. ships 0..1 = how far the caravels have slid in, anchor 0..1 */
-export function dawnArrival(lt, d, t, ships = 1, anchor = 0, c = null) {
+export function dawnArrival(lt, d, t, ships = 1, anchor = 0, c = null, leave = 0) {
   c = c || K.cam(lt, d, { x: 40, zoom: 1.0 }, { x: -40, zoom: 1.06 });
   K.seascape({ t, c, night: 0.38, horizon: 980, sunY: lerp(470, 400, clamp(lt / d)), sunX: 760,
     far: () => { for (let i = 0; i < 6; i++) K.palm(-40 + i * 60, 1000, 0.25 + (i % 2) * 0.06, t + i, P.forest); cut_coast(); },
-    mid: (tt) => { [[620, 0.42], [820, 0.36], [990, 0.3]].forEach(([x, s], k) => { const xx = lerp(x + 700, x - 140, eo(clamp(ships - k * 0.12))); const y = K.waveY(xx, 1100, tt, { amp: 16, len: 0.013, speed: 0.9, phase: 1 }) + 10; K.caravel(xx, y, s, tt + k, { rot: Math.sin(tt * 1.3 + k) * 0.03 });
+    mid: (tt) => { [[620, 0.42], [820, 0.36], [990, 0.3]].forEach(([x, s], k) => { const xx = lerp(x + 1500, x - 140, eo(clamp(ships - k * 0.12))) - eio(clamp(leave * 1.15 - k * 0.08)) * 1900; const y = K.waveY(xx, 1100, tt, { amp: 16, len: 0.013, speed: 0.9, phase: 1 }) + 10; K.caravel(xx, y, s, tt + k, { rot: Math.sin(tt * 1.3 + k) * 0.03 });
       if (anchor > 0) { const a = eo(clamp(anchor * 1.4 - k * 0.2)); line([[xx - 240 * s, y - 20 * s], [xx - 260 * s, y + a * 160 * s]], P.ink, 4); } }); },
   });
 }
@@ -17,8 +17,8 @@ function cut_coast() { K.cut(() => { ctx.beginPath(); ctx.moveTo(-500, 1010); ct
 /** pepper vine close-up; a peppercorn falls from the spike and rolls into the sack at roll 0..1 */
 export function pepperShot(lt, d, t, roll) {
   const c = K.cam(lt, d, { x: 0, y: 0, zoom: 1.04 }, { x: 30, y: 20, zoom: 1.12 });
-  K.layer(c, 0.15, () => { K.parchment(14); ctx.save(); ctx.globalAlpha = 0.5; ctx.fillStyle = P.sky; ctx.fillRect(-400, -400, W + 800, H + 800); ctx.restore(); for (let i = 0; i < 4; i++) K.palm(100 + i * 300, 1500, 0.9, t + i, '#9AA374'); });
-  K.layer(c, 0.6, () => { K.cut(K.P_rr(-400, 1340, W + 800, 900, 0), '#A88A5E', { shadow: 0.3, edge: 5 }); K.pepperVine(330, 1360, 1.35, t); });
+  K.layer(c, 0.15, () => { K.parchment(14); ctx.save(); ctx.globalAlpha = 0.5; ctx.fillStyle = P.sky; ctx.fillRect(-1100, -400, W + 2200, H + 800); ctx.restore(); for (let i = 0; i < 4; i++) K.palm(100 + i * 300, 1500, 0.9, t + i, '#9AA374'); });
+  K.layer(c, 0.6, () => { K.cut(K.P_rr(-1100, 1340, W + 2200, 900, 0), '#A88A5E', { shadow: 0.3, edge: 5 }); K.pepperVine(330, 1360, 1.35, t); });
   K.layer(c, 1.0, () => { K.sack(760, 1380, 1.25);
     const r = eo(clamp(roll)); const x = lerp(285, 760, r), y = r < 0.5 ? lerp(700, 1280, (r / 0.5) ** 2) : lerp(1280, 990 + Math.abs(Math.sin(r * 9)) * 40 * (1 - r), (r - 0.5) * 2);
     if (roll < 1.05) K.peppercorn(x, roll > 0.98 ? 1010 : y, 22); });
@@ -42,7 +42,7 @@ export default function (B) {
   { const st = cut_(2), mo = ['JUL 1497', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC', 'JAN 1498', 'FEB', 'MAR', 'APR', 'MAY 1498'];
     add({ id: 'C0c', ch, at: st, note: 'deck: hourglass runs, calendar peels JUL 1497 -> MAY 1498', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.08, y: -20 });
-      K.layer(c, 0.2, () => { K.parchment(12); for (let i = 0; i < 12; i++) K.cut(K.P_rr(-60, 300 + i * 130, W + 120, 120, 0), i % 2 ? '#A88A5E' : '#B49668', { shadow: 0.2, edge: 3 }); });
+      K.layer(c, 0.2, () => { K.parchment(12); for (let i = 0; i < 12; i++) K.cut(K.P_rr(-1100, 300 + i * 130, W + 2200, 120, 0), i % 2 ? '#A88A5E' : '#B49668', { shadow: 0.2, edge: 3 }); });
       K.layer(c, 0.7, () => { line([[-100, 280], [1200, 260]], P.sepia, 14); K.hourglass(270, 1000, 1.1, clamp(lt / d)); });
       K.layer(c, 1.0, () => K.calendar(720, 960, 1.15, mo, clamp(lt / (d * 0.92)) * (mo.length - 1)));
       K.layer(c, 1.4, () => { K.cut(() => { ctx.beginPath(); ctx.moveTo(-100, 200); ctx.quadraticCurveTo(300, 260, 1180, 120); ctx.lineTo(1180, 150); ctx.quadraticCurveTo(300, 290, -100, 230); ctx.closePath(); }, P.sepia, { shadow: 0.6, edge: 3 }); });

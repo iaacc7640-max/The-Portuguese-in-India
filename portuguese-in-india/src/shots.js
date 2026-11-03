@@ -29,14 +29,15 @@ export function buildShots() {
   const add = (o) => (S.push(o), o), cue = (t, type, o = {}) => CUES.push({ t: +t.toFixed(3), type, ...o });
   const cut_ = (i) => (i === 0 ? 0 : L(i) - 0.08);
   const lines = script.lines;
-  const first = (c) => lines.findIndex((l) => l.chapter === c), last = (c) => lines.length - 1 - [...lines].reverse().findIndex((l) => l.chapter === c);
+  const first = (c) => lines.findIndex((l) => l.chapter === c && !l.card), last = (c) => lines.length - 1 - [...lines].reverse().findIndex((l) => l.chapter === c);
   const B = { add, cue, cut_, L, Le, Wd, T, lines, script, first, last, chapterOf: (i) => lines[i].chapter };
 
   CHAPTERS.forEach((build, c) => build({ ...B, ch: c, i0: first(c), i1: last(c) }));
 
   // chapter cards: from just after the previous chapter's last word to just before this chapter's first cut
   for (let c = 1; c < CHAPTERS.length; c++) {
-    const i0 = first(c), st = Le(i0 - 1) + 0.38, card = script.cards[String(c)];
+    // the card plays under its spoken line "Chapter N. Title." (the line just before the chapter's first cut)
+    const i0 = first(c), st = Le(i0 - 2) + 0.3, card = script.cards[String(c)];
     S.filter((s) => s.at >= st && s.at < cut_(i0)).forEach((s) => (s.at = cut_(i0)));       // nothing else may start inside the card
     add({ id: `CARD${c}`, at: st, card: true, zoom: 0.02, note: `chapter card ${card.year}: ${card.title}`, draw(lt, d) { K.chapterCard(lt, d, { year: card.year, title: card.title, n: c, letter: card.year === '1961' ? 'I' : 'P', seed: 20 + c }); } });
     cue(st, 'rustle'); cue(st + 0.9, 'seal');

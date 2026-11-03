@@ -21,7 +21,7 @@ export default function (B) {
   { const i = I(0), st = cut_(i), je = Wd('jesuit', i) - st;
     add({ id: 'C6a', ch, at: st, year: 1580, note: 'two Jesuit priests walk the road north from Goa; ribbon 1580', draw(lt, d, t) {
       const c = K.cam(lt, d, { x: -30 }, { x: 30, zoom: 1.04 }); K.layer(c, 0.2, () => { K.sky(0.15, 420, 820); for (let k = 0; k < 6; k++) K.palm(-40 + k * 220, 1120, 0.5, t + k, '#9AA374'); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1300, W + 600, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); K.cut(K.P_poly([[300, 1300], [780, 1300], [1300, 2000], [-200, 2000]]), '#B49668', { shadow: 0, edge: 3 });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1300, W + 2200, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); K.cut(K.P_poly([[300, 1300], [780, 1300], [1300, 2000], [-200, 2000]]), '#B49668', { shadow: 0, edge: 3 });
         const x = lerp(260, 520, eio(clamp(lt / d))); K.person({ role: 'jesuit', x, y: 1480, h: 600, walk: lt * 6, t }); K.person({ role: 'jesuit', x: x + 220, y: 1460, h: 560, walk: lt * 6 + 1, t }); });
       K.ribbon('1580', 540, 400, eob(seg(lt, 0.1, 0.45)), 96); if (lt > je) K.slip('JESUITS FROM GOA', 540, 580, eob(seg(lt, je, je + 0.3)), -0.02, 46);
     } });
@@ -60,7 +60,7 @@ export default function (B) {
   // 6 · Back in Goa, after the Inquisition arrived, : the Goa church at dusk
   { const i = I(6), st = cut_(i), iq = Wd('inquisition', i) - st;
     add({ id: 'C6g', ch, at: st, year: 1580, note: 'Goa at dusk: the white church; slip THE INQUISITION', draw(lt, d, t) {
-      const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.08 }); K.layer(c, 0.2, () => K.sky(0.55, 500, 260)); K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1400, W + 600, 700, 0), '#C9A878', { shadow: 0.4, edge: 5 }); K.church(540, 1400, 1.4); });
+      const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.08 }); K.layer(c, 0.2, () => K.sky(0.55, 500, 260)); K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1400, W + 2200, 700, 0), '#C9A878', { shadow: 0.4, edge: 5 }); K.church(540, 1400, 1.4); });
       if (lt > iq) K.slip('THE INQUISITION', 540, 420, eob(seg(lt, iq, iq + 0.3)), -0.02, 50);
     } });
     cue(st, 'wind', { dur: 2.2, gain: 0.4 }); cue(st + iq, 'thud', { gain: 0.3 }); }
@@ -79,7 +79,7 @@ export default function (B) {
     const s2 = st + wh - 0.08;
     add({ id: 'C6j', ch, at: s2, year: 1608, note: 'Hawkins (tall black hat, ruff) steps onto the Surat quay; slip WILLIAM HAWKINS', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.06 }); K.layer(c, 0.3, () => { K.sky(0.15, 420, 820); K.wave(1050, t, { color: P.seaDark }); K.flagShip(820, 1100, 0.5, t, 'england'); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1360, W + 600, 700, 0), P.stone, { shadow: 0.5, edge: 5 }); K.person({ role: 'hawkins', x: lerp(520, 400, eio(clamp(lt / d))), y: 1500, h: 780, walk: lt * 5, arm: 20, t }); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1360, W + 2200, 700, 0), P.stone, { shadow: 0.5, edge: 5 }); K.person({ role: 'hawkins', x: lerp(520, 400, eio(clamp(lt / d))), y: 1500, h: 780, walk: lt * 5, arm: 20, t }); });
       K.slip('WILLIAM HAWKINS', 540, 420, eob(seg(lt, 0.1, 0.4)), -0.02, 50);
     } });
     cue(st, 'waves', { dur: 2, gain: 0.5 }); cue(st + 0.1, 'pop', { gain: 0.4 }); cue(s2 + 0.1, 'pop', { gain: 0.4 }); }
@@ -87,7 +87,7 @@ export default function (B) {
   // 9 · landed at Surat with a letter from his king. : the letter with its red seal, close
   { const i = I(9), st = cut_(i), le = Wd('letter', i) - st;
     add({ id: 'C6k', ch, at: st, year: 1608, note: 'Surat: Hawkins holds out the king\'s letter with its red wax seal', draw(lt, d, t) {
-      const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.1, x: 40 }); K.layer(c, 0.3, () => { K.parchment(32); K.cut(K.P_rr(-200, 300, W + 400, 1200, 0), P.stone, { shadow: 0, edge: 0 }); });
+      const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.1, x: 40 }); K.layer(c, 0.3, () => { K.parchment(32); K.cut(K.P_rr(-1100, 300, W + 2200, 1200, 0), P.stone, { shadow: 0, edge: 0 }); });
       K.layer(c, 1, () => { K.person({ role: 'hawkins', x: 330, y: 1520, h: 820, arm: lerp(10, 75, eob(clamp((lt - le + 0.3) / 0.4))), t }); });
       K.slip('SURAT', 540, 420, eob(seg(lt, 0.1, 0.4)), -0.02, 52); if (lt > le) K.slip("THE KING'S LETTER", 760, 600, eob(seg(lt, le, le + 0.3)), 0.03, 44);
     } });

@@ -12,7 +12,7 @@ function postScene(lt, d, t, { grow = 0, night = 0, door = 0, torn = 0, c = null
   c = c || K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.06 });
   K.layer(c, 0.15, () => K.sky(night * 0.6, 420, 800));
   K.layer(c, 0.4, () => { K.wave(1000, t, { amp: 8, len: 0.02, speed: 0.6, color: P.seaDark, shadow: 0.3 }); for (let k = 0; k < 5; k++) K.palm(-60 + k * 70, 1050, 0.3, t + k); for (let k = 0; k < 4; k++) K.palm(880 + k * 70, 1060, 0.32, t + k); });
-  K.layer(c, 0.8, () => { K.cut(K.P_rr(-400, 1060, W + 800, 1000, 0), '#D8C08E', { shadow: 0.3, edge: 5 }); K.factoryFort(540, 1360, 0.9, grow, t, { tornFlag: torn });
+  K.layer(c, 0.8, () => { K.cut(K.P_rr(-1100, 1060, W + 2200, 1000, 0), '#D8C08E', { shadow: 0.3, edge: 5 }); K.factoryFort(540, 1360, 0.9, grow, t, { tornFlag: torn });
     if (door > 0 && grow < 0.5) { const k = eo(clamp(door)); K.cut(K.P_rr(540 - 54, 1360 - 171, 108 * lerp(0.15, 1, k), 171, 2), '#6E4E30', { shadow: 0.3, edge: 3 }); } extra && extra(); });
   K.nightWash(clamp((night - 0.5) / 0.5) * 0.9, 4);
 }
@@ -34,7 +34,7 @@ export default function (B) {
     add({ id: 'C3a', ch, at: st, year: 1500, note: 'Cabral (helmet, red sash) at the rail; a fleet of caravels behind', draw(lt, d, t) {
       const c = K.cam(lt, d, { x: 30 }, { x: -30, zoom: 1.05 });
       K.seascape({ t, c, night: 0.1, horizon: 900, far: (tt) => { for (let k = 0; k < 5; k++) K.caravel(120 + k * 210, 930 + (k % 2) * 20, 0.2, tt + k); },
-        fore: () => { K.cut(K.P_rr(-300, 1380, W + 600, 700, 0), P.sepia, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 9; k++) K.cut(K.P_rr(-40 + k * 140, 1300, 26, 110, 6), '#6E4E30', { shadow: 0.4, edge: 3 }); K.cut(K.P_rr(-300, 1290, W + 600, 30, 8), '#6E4E30', { shadow: 0.4, edge: 3 }); K.person({ role: 'cabral', x: 560, y: 1520, h: 820, arm: 15, t }); } });
+        fore: () => { K.cut(K.P_rr(-1100, 1380, W + 2200, 700, 0), P.sepia, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 9; k++) K.cut(K.P_rr(-40 + k * 140, 1300, 26, 110, 6), '#6E4E30', { shadow: 0.4, edge: 3 }); K.cut(K.P_rr(-1100, 1290, W + 2200, 30, 8), '#6E4E30', { shadow: 0.4, edge: 3 }); K.person({ role: 'cabral', x: 560, y: 1520, h: 820, arm: 15, t }); } });
       if (lt > ca) K.slip('PEDRO CABRAL', 540, 420, eob(seg(lt, ca, ca + 0.3)), -0.03, 56);
     } });
     cue(st, 'whoosh'); cue(st, 'waves', { dur: 3, gain: 0.5 }); cue(st + ca, 'pop', { gain: 0.5 }); }
@@ -87,7 +87,7 @@ export default function (B) {
       K.layer(c, 0.2, () => { K.sky(0.7, 400, 820); for (let k = 0; k < 8; k++) K.cut(K.P_poly([[k * 140 - 20, 1000], [k * 140 + 50, 930 - (k % 3) * 20], [k * 140 + 120, 1000]]), SIL, { shadow: 0, edge: 0 }); K.wave(1000, t, { amp: 8, color: P.seaDark }); });
       K.nightWash(0.75, 6);
       K.layer(c, 0.6, () => { K.glow(500, 960, 300, '#E0782E', 0.4); K.smokeColumn(420, 950, 0.5, t, 0.6); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1250, W + 600, 900, 0), '#4A3A2E', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(-300, 1180, W + 600, 90, 10), '#5E4836', { shadow: 0.4, edge: 4 }); K.cannon(700, 1150, 1.3, -1, lt > cn ? clamp((lt - cn) / 1.2) : -1); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1250, W + 2200, 900, 0), '#4A3A2E', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(-1100, 1180, W + 2200, 90, 10), '#5E4836', { shadow: 0.4, edge: 4 }); K.cannon(700, 1150, 1.3, -1, lt > cn ? clamp((lt - cn) / 1.2) : -1); });
     } });
     cue(st + cn, 'cannon'); }
 

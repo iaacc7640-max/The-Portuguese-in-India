@@ -13,7 +13,7 @@ export default function (B) {
     add({ id: 'C4a', ch, at: st, year: 1505, note: 'Almeida (grey beard, armour) arrives at the rail; ribbon 1505; FIRST GOVERNOR slip', draw(lt, d, t) {
       const c = K.cam(lt, d, { x: -20 }, { x: 20, zoom: 1.06 });
       K.seascape({ t, c, night: 0.15, horizon: 900, far: (tt) => { for (let k = 0; k < 4; k++) K.caravel(160 + k * 240, 930, 0.22, tt + k); },
-        fore: () => { K.cut(K.P_rr(-300, 1380, W + 600, 700, 0), P.sepia, { shadow: 0.6, edge: 5 }); K.cut(K.P_rr(-300, 1290, W + 600, 30, 8), '#6E4E30', { shadow: 0.4, edge: 3 }); K.person({ role: 'almeida', x: 520, y: 1520, h: 820, arm: 10, t }); } });
+        fore: () => { K.cut(K.P_rr(-1100, 1380, W + 2200, 700, 0), P.sepia, { shadow: 0.6, edge: 5 }); K.cut(K.P_rr(-1100, 1290, W + 2200, 30, 8), '#6E4E30', { shadow: 0.4, edge: 3 }); K.person({ role: 'almeida', x: 520, y: 1520, h: 820, arm: 10, t }); } });
       K.ribbon('1505', 540, 400, eob(seg(lt, 0.1, 0.45)), 100); if (lt > go) K.slip('FIRST GOVERNOR', 540, 590, eob(seg(lt, go, go + 0.3)), -0.02, 50);
     } });
     cue(st + 0.1, 'pop', { gain: 0.5 }); cue(st, 'waves', { dur: 3, gain: 0.5 }); cue(st + go, 'pop', { gain: 0.4 }); }
@@ -22,7 +22,7 @@ export default function (B) {
   { const i = I(1), st = cut_(i), pl = Wd('plan', i) - st;
     add({ id: 'C4b', ch, at: st, year: 1505, note: 'Almeida unrolls a sea chart on a table; slip FRANCISCO DE ALMEIDA', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.04 }, { zoom: 1.1, y: 30 });
-      K.layer(c, 0.4, () => { K.parchment(23); K.cut(K.P_rr(-200, 300, W + 400, 1200, 0), P.stone, { shadow: 0, edge: 0 }); });
+      K.layer(c, 0.4, () => { K.parchment(23); K.cut(K.P_rr(-1100, 300, W + 2200, 1200, 0), P.stone, { shadow: 0, edge: 0 }); });
       K.layer(c, 1, () => { K.person({ role: 'almeida', x: 300, y: 1500, h: 760, arm: 55, t }); K.cut(K.P_rr(380, 1180, 700, 60, 8), '#6E4E30', { shadow: 0.7, edge: 4 });
         const u = eo(clamp((lt - pl + 0.3) / 0.6)); ctx.save(); ctx.beginPath(); ctx.rect(440, 900, 560 * u, 290); ctx.clip(); ctx.translate(720, 1045); ctx.scale(0.27, 0.15); ctx.translate(-540, -960); K.realMap(K.VIEWS.ocean, { frame: false, compassAt: false }); ctx.restore();
         K.cut(K.P_rr(430 + 560 * u, 890, 30, 310, 15), P.sepia, { shadow: 0.4, edge: 3 }); });
@@ -94,7 +94,7 @@ export default function (B) {
   { const i = I(9), st = cut_(i);
     add({ id: 'C4j', ch, at: st, year: 1508, note: 'night interior: an empty helmet beside a candle on a table', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.1, y: 40 });
-      K.layer(c, 0.4, () => { K.parchment(25); K.cut(K.P_rr(-200, 300, W + 400, 1200, 0), P.stoneDark, { shadow: 0, edge: 0 }); });
+      K.layer(c, 0.4, () => { K.parchment(25); K.cut(K.P_rr(-1100, 300, W + 2200, 1200, 0), P.stoneDark, { shadow: 0, edge: 0 }); });
       K.layer(c, 1, () => { K.cut(K.P_rr(100, 1180, 880, 60, 8), '#6E4E30', { shadow: 0.7, edge: 4 }); K.cut(K.P_rr(160, 1240, 40, 300, 6), '#6E4E30', { shadow: 0.5, edge: 3 }); K.cut(K.P_rr(880, 1240, 40, 300, 6), '#6E4E30', { shadow: 0.5, edge: 3 });
         K.cut(() => { ctx.beginPath(); ctx.moveTo(330, 1180); ctx.quadraticCurveTo(340, 1080, 380, 1040); ctx.quadraticCurveTo(440, 930, 520, 1040); ctx.quadraticCurveTo(560, 1080, 570, 1180); ctx.closePath(); }, '#CFC7B4', { shadow: 0.8, edge: 4 }); K.cut(() => { ctx.beginPath(); ctx.ellipse(450, 1180, 170, 22, 0, 0, Math.PI * 2); }, '#B9B09A', { shadow: 0.4, edge: 3 }); line([[450, 965], [450, 930]], '#B9B09A', 12);
         K.cut(K.P_rr(720, 1060, 40, 120, 6), P.white, { shadow: 0.4, edge: 3 }); });

@@ -4,7 +4,7 @@
 > invent parallel vocabulary. Update in the same change as the thing it describes.
 
 ## Overview
-The video "First In, Last Out: The Portuguese in India", as a Paper Atlas project in `portuguese-in-india/`. `script.json` (built from `PLAN.md` by `tools/plan_to_script.py`) holds the narration, captions and sources. The Kokoro voice gives line times; shots are drawn on a canvas per chapter; headless Chrome captures frames; ffmpeg writes the MP4.
+The video "First In, Last Out: The Portuguese in India", as a Paper Atlas project in `portuguese-in-india/`. `script.json` (built from `PLAN.md` by `tools/plan_to_script.py`) holds the narration, captions and sources. The Kokoro voice gives line times; shots are drawn on a canvas per chapter; headless Chrome captures frames; ffmpeg writes the MP4. The film is 16:9 (1920x1080): shots draw in a 1080x1920 design stage that main.js scales (0.7) and centres; captions, the era bar (top-left) and the single border are drawn in screen space (spec 001-video-16x9).
 
 ## Components and repositories
 | Component | Responsibility | Tech | Owner |
@@ -15,7 +15,7 @@ The video "First In, Last Out: The Portuguese in India", as a Paper Atlas projec
 | tools/ | capture (frames/sheets/video), mix (sound), map bake, script build, chapters, Shorts | Node, Python, bash | Pratik Mekhe |
 
 ## Data flow
-PLAN.md -> plan_to_script.py -> script.json -> voice.py -> data/narration.wav + lines.json -> words.py -> words.json -> chapters.py -> chapters.json -> capture.mjs cues -> mix.py -> data/mix.wav -> capture.mjs video -> renders/portuguese-in-india.mp4.
+PLAN.md -> plan_to_script.py (adds the spoken chapter-card lines) -> script.json -> tools/voice.py (project copy; fixed phonemes for Akbar, Jahangir) -> data/narration.wav + lines.json -> words.py -> words.json -> chapters.py -> chapters.json -> capture.mjs cues -> mix.py -> data/mix.wav -> capture.mjs video -> renders/portuguese-in-india.mp4.
 
 ## Tech stack and tools
 JavaScript canvas 2D, Node 22, Python 3.11 (numpy, scipy, kokoro-onnx), ffmpeg, Chromium via Playwright. data/geo.json from Natural Earth 1:50m (public domain).

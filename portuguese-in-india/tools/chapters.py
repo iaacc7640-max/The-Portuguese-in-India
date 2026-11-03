@@ -7,7 +7,7 @@ R = Path(__file__).resolve().parent.parent
 S = json.loads((R / 'script.json').read_text()); Ls = json.loads((R / 'data/lines.json').read_text())
 lines, dur = Ls['lines'], Ls['duration']; out = []
 for c in sorted(set(l['chapter'] for l in S['lines'])):
-    idx = [i for i, l in enumerate(S['lines']) if l['chapter'] == c]
+    idx = [i for i, l in enumerate(S['lines']) if l['chapter'] == c]          # includes the spoken card line
     start = 0.0 if c == 0 else round(lines[idx[0] - 1]['end'] + 0.38, 2)     # the card starts right after the last word of the previous chapter
     card = S.get('cards', {}).get(str(c))
     out.append({'chapter': c, 'title': f"{card['year']}: {card['title']}" if card else 'Cold open', 'start': start, 'first_line': lines[idx[0]]['start'], 'lines': [idx[0], idx[-1]]})

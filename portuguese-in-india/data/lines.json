@@ -1,5 +1,5 @@
 {
- "duration": 346.176,
+ "duration": 358.928,
  "voice": "bm_george",
  "speed": 0.97,
  "lines": [
@@ -47,645 +47,693 @@
   },
   {
    "i": 7,
-   "text": "In fourteen fifty-three,",
-   "start": 19.258,
-   "end": 20.698
+   "text": "Chapter one. The Spice Problem.",
+   "start": 17.958,
+   "end": 20.226
   },
   {
    "i": 8,
-   "text": "the Ottoman Turks captured Constantinople,",
-   "start": 21.078,
-   "end": 23.548
+   "text": "In fourteen fifty-three,",
+   "start": 20.826,
+   "end": 22.266
   },
   {
    "i": 9,
-   "text": "and the old roads to the East fell into other hands.",
-   "start": 23.968,
-   "end": 27.078
+   "text": "the Ottoman Turks captured Constantinople,",
+   "start": 22.646,
+   "end": 25.116
   },
   {
    "i": 10,
-   "text": "Indian pepper, silk and cotton still reached Europe,",
-   "start": 27.378,
-   "end": 30.358
+   "text": "and the old roads to the East fell into other hands.",
+   "start": 25.536,
+   "end": 28.646
   },
   {
    "i": 11,
-   "text": "but only through Arab middlemen,",
-   "start": 30.828,
-   "end": 32.568
+   "text": "Indian pepper, silk and cotton still reached Europe,",
+   "start": 28.946,
+   "end": 31.926
   },
   {
    "i": 12,
-   "text": "and every one of them took a cut.",
-   "start": 32.888,
-   "end": 34.605
+   "text": "but only through Arab middlemen,",
+   "start": 32.396,
+   "end": 34.136
   },
   {
    "i": 13,
-   "text": "So little Portugal, on the edge of the Atlantic,",
-   "start": 34.905,
-   "end": 37.885
+   "text": "and every one of them took a cut.",
+   "start": 34.456,
+   "end": 36.172
   },
   {
    "i": 14,
-   "text": "made a bold bet:",
-   "start": 38.065,
-   "end": 39.135
+   "text": "So little Portugal, on the edge of the Atlantic,",
+   "start": 36.472,
+   "end": 39.452
   },
   {
    "i": 15,
-   "text": "if you can't go through, go around.",
-   "start": 39.535,
-   "end": 41.551
+   "text": "made a bold bet:",
+   "start": 39.632,
+   "end": 40.702
   },
   {
    "i": 16,
-   "text": "Prince Henry, the Navigator,",
-   "start": 41.851,
-   "end": 43.471
+   "text": "if you can't go through, go around.",
+   "start": 41.102,
+   "end": 43.119
   },
   {
    "i": 17,
-   "text": "pushed ship after ship down the coast of Africa,",
-   "start": 43.811,
-   "end": 46.361
+   "text": "Prince Henry, the Navigator,",
+   "start": 43.419,
+   "end": 45.039
   },
   {
    "i": 18,
-   "text": "and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope.",
-   "start": 46.801,
-   "end": 51.592
+   "text": "pushed ship after ship down the coast of Africa,",
+   "start": 45.379,
+   "end": 47.929
   },
   {
    "i": 19,
-   "text": "The door to the Indian Ocean was open.",
-   "start": 51.892,
-   "end": 54.671
+   "text": "and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope.",
+   "start": 48.369,
+   "end": 53.16
   },
   {
    "i": 20,
-   "text": "Ten years later, Vasco da Gama walked through it.",
-   "start": 56.671,
-   "end": 60.06
+   "text": "The door to the Indian Ocean was open.",
+   "start": 53.46,
+   "end": 56.238
   },
   {
    "i": 21,
-   "text": "In East Africa, he picked up a Gujarati pilot",
-   "start": 60.36,
-   "end": 63.53
+   "text": "Chapter two. Hello, Kalikut.",
+   "start": 56.938,
+   "end": 59.208
   },
   {
    "i": 22,
-   "text": "who knew the monsoon winds,",
-   "start": 63.76,
-   "end": 65.38
+   "text": "Ten years later, Vasco da Gama walked through it.",
+   "start": 59.808,
+   "end": 63.198
   },
   {
    "i": 23,
-   "text": "and in May fourteen ninety-eight, he reached Kalikut.",
-   "start": 65.79,
-   "end": 68.804
+   "text": "In East Africa, he picked up a Gujarati pilot",
+   "start": 63.498,
+   "end": 66.668
   },
   {
    "i": 24,
-   "text": "Kalikut's Hindu king, the Zam-oh-rin,",
-   "start": 69.104,
-   "end": 71.584
+   "text": "who knew the monsoon winds,",
+   "start": 66.898,
+   "end": 68.518
   },
   {
    "i": 25,
-   "text": "grew rich by welcoming traders,",
-   "start": 71.924,
-   "end": 73.774
+   "text": "and in May fourteen ninety-eight, he reached Kalikut.",
+   "start": 68.928,
+   "end": 71.942
   },
   {
    "i": 26,
-   "text": "so he welcomed this one too.",
-   "start": 74.124,
-   "end": 75.815
+   "text": "Kalikut's Hindu king, the Zam-oh-rin,",
+   "start": 72.242,
+   "end": 74.722
   },
   {
    "i": 27,
-   "text": "The Arab merchants were far less happy.",
-   "start": 76.115,
-   "end": 78.738
+   "text": "grew rich by welcoming traders,",
+   "start": 75.062,
+   "end": 76.912
   },
   {
    "i": 28,
-   "text": "For centuries, Indians, Arabs, Africans and Chinese",
-   "start": 79.038,
-   "end": 82.913
+   "text": "so he welcomed this one too.",
+   "start": 77.262,
+   "end": 78.952
   },
   {
    "i": 29,
-   "text": "had shared this ocean by unwritten rules:",
-   "start": 82.913,
-   "end": 85.608
+   "text": "The Arab merchants were far less happy.",
+   "start": 79.252,
+   "end": 81.875
   },
   {
    "i": 30,
-   "text": "everyone traded, but nobody owned the sea.",
-   "start": 86.058,
-   "end": 88.698
+   "text": "For centuries, Indians, Arabs, Africans and Chinese",
+   "start": 82.175,
+   "end": 86.051
   },
   {
    "i": 31,
-   "text": "The Portuguese wanted to own it.",
-   "start": 88.998,
-   "end": 91.354
+   "text": "had shared this ocean by unwritten rules:",
+   "start": 86.051,
+   "end": 88.745
   },
   {
    "i": 32,
-   "text": "Da Gama sailed home with a cargo worth a fortune,",
-   "start": 91.654,
-   "end": 95.224
+   "text": "everyone traded, but nobody owned the sea.",
+   "start": 89.195,
+   "end": 91.835
   },
   {
    "i": 33,
-   "text": "because pepper that cost little in Kerala",
-   "start": 95.694,
-   "end": 97.944
+   "text": "The Portuguese wanted to own it.",
+   "start": 92.135,
+   "end": 94.492
   },
   {
    "i": 34,
-   "text": "sold for many times as much in Europe.",
-   "start": 98.254,
-   "end": 100.773
+   "text": "Da Gama sailed home with a cargo worth a fortune,",
+   "start": 94.792,
+   "end": 98.362
   },
   {
    "i": 35,
-   "text": "The next fleet, under Pedro Cabral,",
-   "start": 102.773,
-   "end": 105.083
+   "text": "because pepper that cost little in Kerala",
+   "start": 98.832,
+   "end": 101.082
   },
   {
    "i": 36,
-   "text": "set up a trading post in Kalikut in fifteen hundred.",
-   "start": 105.423,
-   "end": 108.833
+   "text": "sold for many times as much in Europe.",
+   "start": 101.392,
+   "end": 103.911
   },
   {
    "i": 37,
-   "text": "Locals attacked it,",
-   "start": 109.133,
-   "end": 110.393
+   "text": "Chapter three. Traders Become Raiders.",
+   "start": 104.611,
+   "end": 107.4
   },
   {
    "i": 38,
-   "text": "and several Portuguese died.",
-   "start": 110.693,
-   "end": 112.533
+   "text": "The next fleet, under Pedro Cabral,",
+   "start": 108.0,
+   "end": 110.31
   },
   {
    "i": 39,
-   "text": "Cabral struck back:",
-   "start": 112.833,
-   "end": 113.903
+   "text": "set up a trading post in Kalikut in fifteen hundred.",
+   "start": 110.65,
+   "end": 114.06
   },
   {
    "i": 40,
-   "text": "he burned Arab ships in the harbour",
-   "start": 114.293,
-   "end": 116.083
+   "text": "Locals attacked it,",
+   "start": 114.36,
+   "end": 115.62
   },
   {
    "i": 41,
-   "text": "and turned his cannons on the city.",
-   "start": 116.283,
-   "end": 118.133
+   "text": "and several Portuguese died.",
+   "start": 115.92,
+   "end": 117.761
   },
   {
    "i": 42,
-   "text": "Then he sailed south, and made friends with Kalikut's rivals,",
-   "start": 118.433,
-   "end": 122.043
+   "text": "Cabral struck back:",
+   "start": 118.061,
+   "end": 119.131
   },
   {
    "i": 43,
-   "text": "Cochin and Kanna-nore.",
-   "start": 122.323,
-   "end": 123.896
+   "text": "he burned Arab ships in the harbour",
+   "start": 119.521,
+   "end": 121.311
   },
   {
    "i": 44,
-   "text": "When da Gama returned,",
-   "start": 124.196,
-   "end": 125.656
+   "text": "and turned his cannons on the city.",
+   "start": 121.511,
+   "end": 123.361
   },
   {
    "i": 45,
-   "text": "and demanded that the Zam-oh-rin expel every Arab trader,",
-   "start": 126.056,
-   "end": 129.646
+   "text": "Then he sailed south, and made friends with Kalikut's rivals,",
+   "start": 123.661,
+   "end": 127.271
   },
   {
    "i": 46,
-   "text": "the Zam-oh-rin refused,",
-   "start": 130.106,
-   "end": 131.616
+   "text": "Cochin and Kanna-nore.",
+   "start": 127.551,
+   "end": 129.123
   },
   {
    "i": 47,
-   "text": "and the trading posts quietly grew walls and guns.",
-   "start": 132.006,
-   "end": 135.108
+   "text": "When da Gama returned,",
+   "start": 129.423,
+   "end": 130.883
   },
   {
    "i": 48,
-   "text": "In fifteen-oh-three, the first Portuguese fort rose at Cochin.",
-   "start": 135.408,
-   "end": 139.678
+   "text": "and demanded that the Zam-oh-rin expel every Arab trader,",
+   "start": 131.283,
+   "end": 134.873
   },
   {
    "i": 49,
-   "text": "In fifteen-oh-five, Portugal sent its first governor,",
-   "start": 141.678,
-   "end": 144.938
+   "text": "the Zam-oh-rin refused,",
+   "start": 135.333,
+   "end": 136.843
   },
   {
    "i": 50,
-   "text": "Francisco de Al-may-da, with a simple plan:",
-   "start": 145.308,
-   "end": 148.348
+   "text": "and the trading posts quietly grew walls and guns.",
+   "start": 137.233,
+   "end": 140.335
   },
   {
    "i": 51,
-   "text": "forget the land, control the water.",
-   "start": 148.768,
-   "end": 151.093
+   "text": "In fifteen-oh-three, the first Portuguese fort rose at Cochin.",
+   "start": 140.635,
+   "end": 144.905
   },
   {
    "i": 52,
-   "text": "Every ship now needed a Portuguese pass,",
-   "start": 151.393,
-   "end": 153.643
+   "text": "Chapter four. Rule the Water.",
+   "start": 145.605,
+   "end": 147.844
   },
   {
    "i": 53,
-   "text": "or risked being seized.",
-   "start": 153.963,
-   "end": 155.536
+   "text": "In fifteen-oh-five, Portugal sent its first governor,",
+   "start": 148.444,
+   "end": 151.704
   },
   {
    "i": 54,
-   "text": "That threatened Gujarat, Egypt,",
-   "start": 155.836,
-   "end": 158.006
+   "text": "Francisco de Al-may-da, with a simple plan:",
+   "start": 152.074,
+   "end": 155.114
   },
   {
    "i": 55,
-   "text": "and even the merchants of Venice,",
-   "start": 158.326,
-   "end": 159.906
+   "text": "forget the land, control the water.",
+   "start": 155.534,
+   "end": 157.86
   },
   {
    "i": 56,
-   "text": "so Egypt and Gujarat joined forces.",
-   "start": 160.276,
-   "end": 163.146
+   "text": "Every ship now needed a Portuguese pass,",
+   "start": 158.16,
+   "end": 160.41
   },
   {
    "i": 57,
-   "text": "In fifteen-oh-eight, at Chowl, they beat the Portuguese,",
-   "start": 163.446,
-   "end": 166.936
+   "text": "or risked being seized.",
+   "start": 160.73,
+   "end": 162.303
   },
   {
    "i": 58,
-   "text": "and Al-may-da's own son was killed.",
-   "start": 167.286,
-   "end": 169.371
+   "text": "That threatened Gujarat, Egypt,",
+   "start": 162.603,
+   "end": 164.773
   },
   {
    "i": 59,
-   "text": "A year later, off Dee-oo,",
-   "start": 169.671,
-   "end": 171.471
+   "text": "and even the merchants of Venice,",
+   "start": 165.093,
+   "end": 166.673
   },
   {
    "i": 60,
-   "text": "Al-may-da destroyed their fleet.",
-   "start": 171.761,
-   "end": 173.656
+   "text": "so Egypt and Gujarat joined forces.",
+   "start": 167.043,
+   "end": 169.913
   },
   {
    "i": 61,
-   "text": "His lesson was clear:",
-   "start": 173.956,
-   "end": 175.176
+   "text": "In fifteen-oh-eight, at Chowl, they beat the Portuguese,",
+   "start": 170.213,
+   "end": 173.703
   },
   {
    "i": 62,
-   "text": "whoever rules the sea holds India.",
-   "start": 175.526,
-   "end": 177.799
+   "text": "and Al-may-da's own son was killed.",
+   "start": 174.053,
+   "end": 176.138
   },
   {
    "i": 63,
-   "text": "His successor, Afonso de Al-boo-kerk, went further.",
-   "start": 179.799,
-   "end": 183.443
+   "text": "A year later, off Dee-oo,",
+   "start": 176.438,
+   "end": 178.238
   },
   {
    "i": 64,
-   "text": "He built strongholds at every gate of the ocean,",
-   "start": 183.743,
-   "end": 186.313
+   "text": "Al-may-da destroyed their fleet.",
+   "start": 178.528,
+   "end": 180.423
   },
   {
    "i": 65,
-   "text": "from Hor-mooz to Muh-lakka,",
-   "start": 186.693,
-   "end": 188.213
+   "text": "His lesson was clear:",
+   "start": 180.723,
+   "end": 181.943
   },
   {
    "i": 66,
-   "text": "and in fifteen-ten, he captured Goa from the Sultan of Bee-jah-poor.",
-   "start": 188.623,
-   "end": 193.218
+   "text": "whoever rules the sea holds India.",
+   "start": 182.293,
+   "end": 184.566
   },
   {
    "i": 67,
-   "text": "He told his men to marry local women and settle down.",
-   "start": 193.518,
-   "end": 197.339
+   "text": "Chapter five. Al-boo-kerk's Goa.",
+   "start": 185.266,
+   "end": 187.777
   },
   {
    "i": 68,
-   "text": "They brought tobacco and cashew,",
-   "start": 197.639,
-   "end": 199.369
+   "text": "His successor, Afonso de Al-boo-kerk, went further.",
+   "start": 188.377,
+   "end": 192.02
   },
   {
    "i": 69,
-   "text": "and Al-boo-kerk banned sati in Goa.",
-   "start": 199.719,
-   "end": 202.13
+   "text": "He built strongholds at every gate of the ocean,",
+   "start": 192.32,
+   "end": 194.89
   },
   {
    "i": 70,
-   "text": "But Muslims, Portugal's old rivals,",
-   "start": 202.43,
-   "end": 204.99
+   "text": "from Hor-mooz to Muh-lakka,",
+   "start": 195.27,
+   "end": 196.79
   },
   {
    "i": 71,
-   "text": "were bitterly persecuted.",
-   "start": 205.28,
-   "end": 206.772
+   "text": "and in fifteen-ten, he captured Goa from the Sultan of Bee-jah-poor.",
+   "start": 197.2,
+   "end": 201.796
   },
   {
    "i": 72,
-   "text": "By fifteen-thirty, Goa was the capital,",
-   "start": 207.072,
-   "end": 209.692
+   "text": "He told his men to marry local women and settle down.",
+   "start": 202.096,
+   "end": 205.917
   },
   {
    "i": 73,
-   "text": "and in fifteen thirty-seven, Sultan Bahadur Shah of Gujarat",
-   "start": 210.142,
-   "end": 214.232
+   "text": "They brought tobacco and cashew,",
+   "start": 206.217,
+   "end": 207.947
   },
   {
    "i": 74,
-   "text": "went aboard a Portuguese ship for talks,",
-   "start": 214.572,
-   "end": 216.872
+   "text": "and Al-boo-kerk banned sati in Goa.",
+   "start": 208.297,
+   "end": 210.708
   },
   {
    "i": 75,
-   "text": "and never came home.",
-   "start": 217.232,
-   "end": 218.374
+   "text": "But Muslims, Portugal's old rivals,",
+   "start": 211.008,
+   "end": 213.568
   },
   {
    "i": 76,
-   "text": "In fifteen-eighty, two Jesuit priests from Goa",
-   "start": 220.374,
-   "end": 223.544
+   "text": "were bitterly persecuted.",
+   "start": 213.858,
+   "end": 215.349
   },
   {
    "i": 77,
-   "text": "reached the court of Emperor Akbar,",
-   "start": 223.784,
-   "end": 225.714
+   "text": "By fifteen-thirty, Goa was the capital,",
+   "start": 215.649,
+   "end": 218.269
   },
   {
    "i": 78,
-   "text": "who loved debating religion.",
-   "start": 226.144,
-   "end": 228.135
+   "text": "and in fifteen thirty-seven, Sultan Bahadur Shah of Gujarat",
+   "start": 218.719,
+   "end": 222.809
   },
   {
    "i": 79,
-   "text": "The Portuguese dreamed that if the emperor converted,",
-   "start": 228.435,
-   "end": 231.625
+   "text": "went aboard a Portuguese ship for talks,",
+   "start": 223.149,
+   "end": 225.449
   },
   {
    "i": 80,
-   "text": "Mughal India would follow.",
-   "start": 231.995,
-   "end": 233.757
+   "text": "and never came home.",
+   "start": 225.809,
+   "end": 226.952
   },
   {
    "i": 81,
-   "text": "He didn't.",
-   "start": 234.057,
-   "end": 234.925
+   "text": "Chapter six. Priests and Emperors.",
+   "start": 227.652,
+   "end": 230.201
   },
   {
    "i": 82,
-   "text": "Back in Goa, after the Inquisition arrived,",
-   "start": 235.225,
-   "end": 238.005
+   "text": "In fifteen-eighty, two Jesuit priests from Goa",
+   "start": 230.801,
+   "end": 233.971
   },
   {
    "i": 83,
-   "text": "Hindus were persecuted too.",
-   "start": 238.335,
-   "end": 240.151
+   "text": "reached the court of Emperor Akbar,",
+   "start": 234.191,
+   "end": 235.981
   },
   {
    "i": 84,
-   "text": "Then, in sixteen-oh-eight, an Englishman, William Hawkins,",
-   "start": 240.451,
-   "end": 244.281
+   "text": "who loved debating religion.",
+   "start": 236.421,
+   "end": 238.457
   },
   {
    "i": 85,
-   "text": "landed at Surat with a letter from his king.",
-   "start": 244.651,
-   "end": 247.107
+   "text": "The Portuguese dreamed that if the emperor converted,",
+   "start": 238.757,
+   "end": 241.947
   },
   {
    "i": 86,
-   "text": "The Portuguese tried everything to stop him,",
-   "start": 247.407,
-   "end": 249.897
+   "text": "Mughal India would follow.",
+   "start": 242.317,
+   "end": 244.08
   },
   {
    "i": 87,
-   "text": "but in sixteen twelve, English ships beat a Portuguese fleet near Surat,",
-   "start": 250.327,
-   "end": 254.777
+   "text": "He didn't.",
+   "start": 244.38,
+   "end": 245.248
   },
   {
    "i": 88,
-   "text": "and Emperor Jah-hahn-geer, who had no navy, was impressed.",
-   "start": 255.237,
-   "end": 259.148
+   "text": "Back in Goa, after the Inquisition arrived,",
+   "start": 245.548,
+   "end": 248.328
   },
   {
    "i": 89,
-   "text": "The worst blow came in Bengal.",
-   "start": 261.148,
-   "end": 263.393
+   "text": "Hindus were persecuted too.",
+   "start": 248.658,
+   "end": 250.474
   },
   {
    "i": 90,
-   "text": "At Hoog-lee, Portuguese traders ran a cruel slave trade,",
-   "start": 263.693,
-   "end": 267.233
+   "text": "Then, in sixteen-oh-eight, an Englishman, William Hawkins,",
+   "start": 250.774,
+   "end": 254.604
   },
   {
    "i": 91,
-   "text": "seizing Hindu and Muslim children,",
-   "start": 267.653,
-   "end": 270.213
+   "text": "landed at Surat with a letter from his king.",
+   "start": 254.974,
+   "end": 257.43
   },
   {
    "i": 92,
-   "text": "and, chroniclers say, even took two slave girls of Empress Mum-taz Mahal.",
-   "start": 270.283,
-   "end": 275.182
+   "text": "The Portuguese tried everything to stop him,",
+   "start": 257.73,
+   "end": 260.22
   },
   {
    "i": 93,
-   "text": "In sixteen thirty-two, Shah Jahan's army besieged Hoog-lee,",
-   "start": 275.482,
-   "end": 279.672
+   "text": "but in sixteen twelve, English ships beat a Portuguese fleet near Surat,",
+   "start": 260.65,
+   "end": 265.1
   },
   {
    "i": 94,
-   "text": "and three months later, the Portuguese were gone from Bengal.",
-   "start": 280.082,
-   "end": 283.846
+   "text": "and Emperor Jahangir, who had no navy, was impressed.",
+   "start": 265.56,
+   "end": 269.322
   },
   {
    "i": 95,
-   "text": "Everything else was slipping too.",
-   "start": 284.146,
-   "end": 286.451
+   "text": "Chapter seven. The Fall.",
+   "start": 270.022,
+   "end": 271.917
   },
   {
    "i": 96,
-   "text": "Portugal's crown had passed to Spain,",
-   "start": 286.751,
-   "end": 289.031
+   "text": "The worst blow came in Bengal.",
+   "start": 272.517,
+   "end": 274.762
   },
   {
    "i": 97,
-   "text": "dragging it into Spain's wars,",
-   "start": 289.351,
-   "end": 291.181
+   "text": "At Hoog-lee, Portuguese traders ran a cruel slave trade,",
+   "start": 275.062,
+   "end": 278.602
   },
   {
    "i": 98,
-   "text": "Brazil was now worth more than India,",
-   "start": 291.621,
-   "end": 293.801
+   "text": "seizing Hindu and Muslim children,",
+   "start": 279.022,
+   "end": 281.582
   },
   {
    "i": 99,
-   "text": "and the sea route was no longer a secret.",
-   "start": 294.211,
-   "end": 296.769
+   "text": "and, chroniclers say, even took two slave girls of Empress Mum-taz Mahal.",
+   "start": 281.652,
+   "end": 286.551
   },
   {
    "i": 100,
-   "text": "By sixteen sixty-three, the Dutch had taken every Portuguese fort on the Malabar coast.",
-   "start": 297.069,
-   "end": 303.023
+   "text": "In sixteen thirty-two, Shah Jahan's army besieged Hoog-lee,",
+   "start": 286.851,
+   "end": 291.041
   },
   {
    "i": 101,
-   "text": "In seventeen thirty-nine, the Marathas took Bassein.",
-   "start": 303.323,
-   "end": 306.949
+   "text": "and three months later, the Portuguese were gone from Bengal.",
+   "start": 291.451,
+   "end": 295.214
   },
   {
    "i": 102,
-   "text": "One Portuguese governor put it best:",
-   "start": 307.249,
-   "end": 309.409
+   "text": "Everything else was slipping too.",
+   "start": 295.514,
+   "end": 297.82
   },
   {
    "i": 103,
-   "text": "they came with a sword in one hand and a cross in the other,",
-   "start": 309.859,
-   "end": 312.849
+   "text": "Portugal's crown had passed to Spain,",
+   "start": 298.12,
+   "end": 300.4
   },
   {
    "i": 104,
-   "text": "filled their pockets with gold,",
-   "start": 313.259,
-   "end": 314.869
+   "text": "dragging it into Spain's wars,",
+   "start": 300.72,
+   "end": 302.55
   },
   {
    "i": 105,
-   "text": "and grew too heavy to hold either.",
-   "start": 315.219,
-   "end": 317.328
+   "text": "Brazil was now worth more than India,",
+   "start": 302.99,
+   "end": 305.17
   },
   {
    "i": 106,
-   "text": "And yet, Goa, Duh-mun and Dee-oo stayed Portuguese.",
-   "start": 319.328,
-   "end": 322.746
+   "text": "and the sea route was no longer a secret.",
+   "start": 305.58,
+   "end": 308.137
   },
   {
    "i": 107,
-   "text": "They outlasted the Mughals, the Marathas, even the British.",
-   "start": 323.046,
-   "end": 327.004
+   "text": "By sixteen sixty-three, the Dutch had taken every Portuguese fort on the Malabar coast.",
+   "start": 308.437,
+   "end": 314.392
   },
   {
    "i": 108,
-   "text": "Only in nineteen sixty-one did India take them back,",
-   "start": 327.304,
-   "end": 330.764
+   "text": "In seventeen thirty-nine, the Marathas took Bassein.",
+   "start": 314.692,
+   "end": 318.317
   },
   {
    "i": 109,
-   "text": "four hundred and sixty-three years after da Gama reached Kalikut.",
-   "start": 331.324,
-   "end": 335.632
+   "text": "One Portuguese governor put it best:",
+   "start": 318.617,
+   "end": 320.777
   },
   {
    "i": 110,
-   "text": "The first Europeans to arrive",
-   "start": 335.932,
-   "end": 337.832
+   "text": "they came with a sword in one hand and a cross in the other,",
+   "start": 321.227,
+   "end": 324.217
   },
   {
    "i": 111,
-   "text": "were the last to leave.",
-   "start": 338.142,
-   "end": 339.381
+   "text": "filled their pockets with gold,",
+   "start": 324.627,
+   "end": 326.237
   },
   {
    "i": 112,
-   "text": "And it all began with three small ships,",
-   "start": 339.681,
-   "end": 342.011
+   "text": "and grew too heavy to hold either.",
+   "start": 326.587,
+   "end": 328.697
   },
   {
    "i": 113,
+   "text": "Chapter eight. Last to Leave.",
+   "start": 329.397,
+   "end": 331.479
+  },
+  {
+   "i": 114,
+   "text": "And yet, Goa, Duh-mun and Dee-oo stayed Portuguese.",
+   "start": 332.079,
+   "end": 335.497
+  },
+  {
+   "i": 115,
+   "text": "They outlasted the Mughals, the Marathas, even the British.",
+   "start": 335.797,
+   "end": 339.755
+  },
+  {
+   "i": 116,
+   "text": "Only in nineteen sixty-one did India take them back,",
+   "start": 340.055,
+   "end": 343.515
+  },
+  {
+   "i": 117,
+   "text": "four hundred and sixty-three years after da Gama reached Kalikut.",
+   "start": 344.075,
+   "end": 348.384
+  },
+  {
+   "i": 118,
+   "text": "The first Europeans to arrive",
+   "start": 348.684,
+   "end": 350.584
+  },
+  {
+   "i": 119,
+   "text": "were the last to leave.",
+   "start": 350.894,
+   "end": 352.132
+  },
+  {
+   "i": 120,
+   "text": "And it all began with three small ships,",
+   "start": 352.432,
+   "end": 354.762
+  },
+  {
+   "i": 121,
    "text": "and a taste for pepper.",
-   "start": 342.341,
-   "end": 343.676
+   "start": 355.092,
+   "end": 356.428
   }
  ]
 }

@@ -110,7 +110,15 @@
    "text": "that would last four hundred and sixty-three years.",
    "caps": "that would last | *463 years.",
    "shot": "gold ribbon 1498 → 1961, slip FIRST IN, LAST OUT → \"years\"",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 1,
+   "card": true,
+   "text": "Chapter one. The Spice Problem.",
+   "caps": "Chapter *1 | The *Spice Problem",
+   "gap": 0.6,
+   "shot": "chapter card 1453"
   },
   {
    "chapter": 1,
@@ -181,7 +189,7 @@
   {
    "chapter": 1,
    "text": "and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope.",
-   "caps": "in *1488, | Dias rounded | the *Cape",
+   "caps": "in *1488, | Bartholomew *Dias | rounded the *Cape | of Good *Hope.",
    "shot": "Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE"
   },
   {
@@ -189,7 +197,15 @@
    "text": "The door to the Indian Ocean was open.",
    "caps": "the door | was *open.",
    "shot": "paper wall, door-shaped gap swings open, sea light → \"open\"",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 2,
+   "card": true,
+   "text": "Chapter two. Hello, Kalikut.",
+   "caps": "Chapter *2 | Hello, *Calicut",
+   "gap": 0.6,
+   "shot": "chapter card 1498"
   },
   {
    "chapter": 2,
@@ -280,7 +296,15 @@
    "text": "sold for many times as much in Europe.",
    "caps": "sold for *many times | as much in *Europe.",
    "shot": "the coin stack grows tall → \"many\"",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 3,
+   "card": true,
+   "text": "Chapter three. Traders Become Raiders.",
+   "caps": "Chapter *3 | Traders Become *Raiders",
+   "gap": 0.6,
+   "shot": "chapter card 1500"
   },
   {
    "chapter": 3,
@@ -365,7 +389,15 @@
    "text": "In fifteen-oh-three, the first Portuguese fort rose at Cochin.",
    "caps": "in *1503, | the first *fort | at Cochin.",
    "shot": "walls → towers, ribbon \"Cochin 1503\"",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 4,
+   "card": true,
+   "text": "Chapter four. Rule the Water.",
+   "caps": "Chapter *4 | Rule the *Water",
+   "gap": 0.6,
+   "shot": "chapter card 1505"
   },
   {
    "chapter": 4,
@@ -450,7 +482,15 @@
    "text": "whoever rules the sea holds India.",
    "caps": "rule the *sea, | hold *India.",
    "shot": "slip \"Rule the sea, hold India\" — paraphrase · Almeida",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 5,
+   "card": true,
+   "text": "Chapter five. Al-boo-kerk's Goa.",
+   "caps": "Chapter *5 | Albuquerque's *Goa",
+   "gap": 0.6,
+   "shot": "chapter card 1510"
   },
   {
    "chapter": 5,
@@ -529,7 +569,15 @@
    "text": "and never came home.",
    "caps": "and never | came *home.",
    "shot": "his turban floating on dark water",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 6,
+   "card": true,
+   "text": "Chapter six. Priests and Emperors.",
+   "caps": "Chapter *6 | Priests and *Emperors",
+   "gap": 0.6,
+   "shot": "chapter card 1580"
   },
   {
    "chapter": 6,
@@ -605,10 +653,18 @@
   },
   {
    "chapter": 6,
-   "text": "and Emperor Jah-hahn-geer, who had no navy, was impressed.",
+   "text": "and Emperor Jahangir, who had no navy, was impressed.",
    "caps": "Jahangir, | with no *navy, | was *impressed.",
    "shot": "Jahangir raises an eyebrow",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 7,
+   "card": true,
+   "text": "Chapter seven. The Fall.",
+   "caps": "Chapter *7 | The *Fall",
+   "gap": 0.6,
+   "shot": "chapter card 1632"
   },
   {
    "chapter": 7,
@@ -711,7 +767,15 @@
    "text": "and grew too heavy to hold either.",
    "caps": "too *heavy | to hold either.",
    "shot": "drops both; slip \"paraphrase · Portuguese governor (de Souza)\"",
-   "gap": 2.0
+   "gap": 0.7
+  },
+  {
+   "chapter": 8,
+   "card": true,
+   "text": "Chapter eight. Last to Leave.",
+   "caps": "Chapter *8 | Last to *Leave",
+   "gap": 0.6,
+   "shot": "chapter card 1961"
   },
   {
    "chapter": 8,

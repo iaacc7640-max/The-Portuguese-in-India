@@ -29,7 +29,7 @@ Format: `# · narration (spoken) · caps · shot (what moves → which word it l
 | 16 | if you can't go through, go around. | can't go *through? \| go *around. | arrow hits padlock, bends around Africa → "around" |
 | 17 | Prince Henry, the Navigator, | Prince Henry, \| the *Navigator, | Henry (dark hood) points at wall map |
 | 18 | pushed ship after ship down the coast of Africa, | ship after *ship \| down *Africa's coast, | caravels step down the coast, each leaves a pin |
-| 19 | and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope. | in *1488, \| Dias rounded \| the *Cape | Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE |
+| 19 | and in fourteen eighty-eight, Bartholomew Dias rounded the Cape of Good Hope. | in *1488, \| Bartholomew *Dias \| rounded the *Cape \| of Good *Hope. | Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE |
 | 20 | The door to the Indian Ocean was open. | the door \| was *open. | paper wall, door-shaped gap swings open, sea light → "open" |
 
 ## CH2 card "1498: Hello, Calicut" · bed

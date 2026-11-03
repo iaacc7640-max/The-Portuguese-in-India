@@ -150,13 +150,13 @@ export function cannon(x, y, s = 1, dir = 1, puff = -1) {
 export function palm(x, y, s = 1, t = 0, col = P.forest) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); cut(() => { ctx.beginPath(); ctx.moveTo(-14, 0); ctx.quadraticCurveTo(-40, -300, 10, -560); ctx.lineTo(34, -556); ctx.quadraticCurveTo(-10, -300, 16, 0); ctx.closePath(); }, P.sepia, { shadow: 0.5, edge: 3 }); for (let i = 0; i < 7; i++) { ctx.save(); ctx.translate(20, -560); ctx.rotate(-Math.PI + i * Math.PI / 6 + Math.sin(t + i) * 0.05); cut(() => { ctx.beginPath(); ctx.moveTo(0, 0); ctx.quadraticCurveTo(120, -50, 240, 30); ctx.quadraticCurveTo(120, 10, 0, 0); ctx.closePath(); }, col, { shadow: 0.4, edge: 3 }); ctx.restore(); } ctx.restore(); }
 /** Kerala palace court (Calicut): tiled sloping roofs, wooden pillars, forest hangings, a raised seat */
 export function calicutCourt(t = 0) {
-  ctx.fillStyle = P.parch; ctx.fillRect(-400, -400, W + 800, H + 800);
-  cut(P_rr(-200, 300, W + 400, 1200, 0), '#C9A878', { shadow: 0, edge: 0 });
+  ctx.fillStyle = P.parch; ctx.fillRect(-1100, -400, W + 2200, H + 800);
+  cut(P_rr(-1100, 300, W + 2200, 1200, 0), '#C9A878', { shadow: 0, edge: 0 });
   for (const [x, w, y] of [[540, 1300, 320], [540, 900, 160]]) cut(P_poly([[x - w / 2, y + 220], [x - w / 2 + 160, y], [x + w / 2 - 160, y], [x + w / 2, y + 220]]), P.wine, { shadow: 0.6, edge: 5 });
   for (let i = 0; i < 12; i++) line([[-60 + i * 110, 540], [60 + i * 100, 330]], 'rgba(62,44,30,0.25)', 4);
   for (const x of [60, 290, 790, 1020]) { cut(P_rr(x - 26, 540, 52, 900, 6), P.sepia, { shadow: 0.6, edge: 4 }); cut(P_rr(x - 40, 540, 80, 34, 6), '#6E4E30', { shadow: 0, edge: 3 }); }
   for (const x of [175, 905]) cut(P_poly([[x - 70, 560], [x + 70, 560], [x + 70, 1000], [x, 940], [x - 70, 1000]]), P.forest);
-  cut(P_rr(-200, 1440, W + 400, 600, 0), '#8C6B4A', { shadow: 0, edge: 0 }); cut(P_rr(380, 1300, 320, 160, 14), P.forest); cut(P_rr(360, 1280, 360, 40, 14), P.gold);
+  cut(P_rr(-1100, 1440, W + 2200, 600, 0), '#8C6B4A', { shadow: 0, edge: 0 }); cut(P_rr(380, 1300, 320, 160, 14), P.forest); cut(P_rr(360, 1280, 360, 40, 14), P.gold);
 }
 /** the Portuguese factory that becomes a fort: grow 0 = thatched hut + flag, 1 = stone walls, 2 = towers + gate */
 export function factoryFort(x, y, s = 1, grow = 0, t = 0, { flagOn = true, door = 0, tornFlag = 0 } = {}) {
@@ -178,7 +178,7 @@ export function goaSkyline(t = 0, ground = 1400) {
   for (let i = 0; i < 6; i++) palm(60 + i * 200 + (i % 2) * 40, ground - 40, 0.6 + (i % 3) * 0.1, t + i);
   for (let i = 0; i < 6; i++) { const x = 30 + i * 190, h = 220 + (i % 3) * 50; cut(P_rr(x, ground - h, 160, h, 4), i % 2 ? '#E8DCC4' : '#D9B98E', { shadow: 0.6, edge: 4 }); cut(P_poly([[x - 14, ground - h], [x + 80, ground - h - 70], [x + 174, ground - h]]), P.wine, { shadow: 0.5, edge: 4 }); }
   church(540, ground, 1.15);
-  cut(P_rr(-300, ground, W + 600, 700, 0), P.sea, { shadow: 0.4, edge: 4 });
+  cut(P_rr(-1100, ground, W + 2200, 700, 0), P.sea, { shadow: 0.4, edge: 4 });
 }
 export function church(x, y, s = 1, { door = 0 } = {}) {
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
@@ -205,22 +205,22 @@ export function archDoor(x, y, s = 1, kind = 'mosque', close = 1, lock = 0) {
 }
 /** Mughal court arch (Fatehpur Sikri style): red sandstone, a pointed arch, chhatri kiosks */
 export function mughalArch(t = 0) {
-  ctx.fillStyle = P.parch; ctx.fillRect(-400, -400, W + 800, H + 800);
-  cut(P_rr(-100, 360, W + 200, 1200, 0), P.sand, { shadow: 0.5, edge: 5 });
+  ctx.fillStyle = P.parch; ctx.fillRect(-1100, -400, W + 2200, H + 800);
+  cut(P_rr(-1100, 360, W + 2200, 1200, 0), P.sand, { shadow: 0.5, edge: 5 });
   cut(() => { ctx.beginPath(); ctx.moveTo(170, 1560); ctx.lineTo(170, 900); ctx.quadraticCurveTo(170, 620, 540, 520); ctx.quadraticCurveTo(910, 620, 910, 900); ctx.lineTo(910, 1560); ctx.closePath(); }, '#7E4434', { shadow: 0, edge: 5 });
   cut(() => { ctx.beginPath(); ctx.moveTo(250, 1560); ctx.lineTo(250, 940); ctx.quadraticCurveTo(250, 700, 540, 620); ctx.quadraticCurveTo(830, 700, 830, 940); ctx.lineTo(830, 1560); ctx.closePath(); }, '#E7D3B0', { shadow: 0.4, edge: 4 });
   for (const x of [90, 990]) { cut(P_rr(x - 50, 260, 100, 120, 6), P.sand, { shadow: 0.5, edge: 4 }); cut(() => { ctx.beginPath(); ctx.ellipse(x, 260, 70, 60, 0, Math.PI, TAU); ctx.closePath(); }, P.white, { shadow: 0.5, edge: 4 }); }
   for (let i = 0; i < 9; i++) cut(P_rr(-60 + i * 140, 330, 90, 40, 4), '#C98A68', { shadow: 0, edge: 3 });
-  cut(P_rr(-100, 1560, W + 200, 600, 0), '#C9A878', { shadow: 0, edge: 0 });
+  cut(P_rr(-1100, 1560, W + 2200, 600, 0), '#C9A878', { shadow: 0, edge: 0 });
 }
 /** Hooghly river port: a wide river, warehouses with a Portuguese flag, boats */
 export function hooghlyPort(t = 0, { night = 0, flagLower = 0, tents = 0 } = {}) {
-  ctx.fillStyle = P.sky; ctx.fillRect(-400, -400, W + 800, 1100);
-  cut(P_rr(-400, 560, W + 800, 420, 0), P.forest, { shadow: 0.3, edge: 4 });
+  ctx.fillStyle = P.sky; ctx.fillRect(-1100, -400, W + 2200, 1100);
+  cut(P_rr(-1100, 560, W + 2200, 420, 0), P.forest, { shadow: 0.3, edge: 4 });
   for (let i = 0; i < 5; i++) { const x = 90 + i * 200; cut(P_rr(x, 700, 170, 230, 4), i % 2 ? '#D9B98E' : P.stone, { shadow: 0.6, edge: 4 }); cut(P_poly([[x - 12, 704], [x + 85, 640], [x + 182, 704]]), P.wine, { shadow: 0.5, edge: 4 }); rr(x + 60, 820, 50, 110, 4); ctx.fillStyle = P.ink; ctx.fill(); }
   flag(900, 700, 'portugal', t, 0.7, { lower: flagLower, h: 380 });
   if (tents > 0) for (let i = 0; i < 7; i++) { const sc = eob(clamp(tents * 7 - i)); if (sc <= 0) continue; const x = 40 + i * 165; ctx.save(); ctx.translate(x, 600); ctx.scale(sc, sc); cut(P_poly([[-70, 0], [0, -110], [70, 0]]), P.mughal, { shadow: 0.5, edge: 4 }); circle(0, -114, 8, P.gold); ctx.restore(); }
-  cut(P_rr(-400, 960, W + 800, 1000, 0), '#9DA99B', { shadow: 0.4, edge: 5 });
+  cut(P_rr(-1100, 960, W + 2200, 1000, 0), '#9DA99B', { shadow: 0.4, edge: 5 });
   for (let i = 0; i < 4; i++) { const wy = 1040 + i * 110; ctx.strokeStyle = 'rgba(247,239,220,0.5)'; ctx.lineWidth = 5; ctx.beginPath(); for (let x = -100; x < W + 100; x += 30) ctx.lineTo(x, wy + Math.sin(x * 0.02 + t + i) * 8); ctx.stroke(); }
 }
 /** a crown: 'portugal' (gold, blue jewel) or 'spain' (gold, crimson jewel, taller) */
@@ -236,7 +236,36 @@ export function crown(x, y, s = 1, kind = 'portugal', rot = 0) {
 export function paperDoor(p, t, behind) {
   ctx.save(); ctx.beginPath(); ctx.rect(330, 500, 420, 820); ctx.clip(); behind(); ctx.restore();
   const k = eo(clamp(p));
-  cut(() => { ctx.beginPath(); ctx.rect(-400, -400, W + 800, H + 800); ctx.rect(750, 500, -420, 820); }, P.land, { shadow: 0.9, edge: 0 });
+  cut(() => { ctx.beginPath(); ctx.rect(-1100, -400, W + 2200, H + 800); ctx.rect(750, 500, -420, 820); }, P.land, { shadow: 0.9, edge: 0 });
   ctx.save(); ctx.translate(330, 0); ctx.scale(lerp(1, 0.08, k), 1); cut(P_rr(0, 500, 420, 820, 2), '#C9B48A', { shadow: 0.6, edge: 4 }); circle(360, 920, 16, P.ink); ctx.restore();
   ctx.strokeStyle = P.ink; ctx.lineWidth = 6; ctx.strokeRect(330, 500, 420, 820);
+}
+
+// ═════════════════════════ FIRE, ARMIES, CITIES ═════════════════════════
+/** paper flame: layered crimson / orange / gold, flickering (the Paper Atlas example's flame, shared in the kit) */
+export function flame(x, y, s, t, seed = 0) {
+  if (s <= 0) return; ctx.save(); ctx.translate(x, y); ctx.scale(s, s * (1 + 0.08 * Math.sin(t * 9 + seed)));
+  const f = (w, h, c) => cut(() => { ctx.beginPath(); ctx.moveTo(-w, 0); ctx.quadraticCurveTo(-w * 1.1, -h * 0.5, -w * 0.2 + Math.sin(t * 6 + seed) * 8, -h); ctx.quadraticCurveTo(w * 0.2, -h * 0.55, w * 0.5, -h * 0.75 + Math.sin(t * 7 + seed) * 6); ctx.quadraticCurveTo(w * 1.1, -h * 0.4, w, 0); ctx.closePath(); }, c, { shadow: 0.4, edge: 3 });
+  f(70, 190, P.crimson); f(50, 140, '#E0782E'); f(28, 90, '#F2C14E'); ctx.restore();
+}
+/** a small marching paper soldier (tall white cap, wine coat, spear); phase animates the stride */
+export function marcher(x, y, s, phase) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s); const k = Math.sin(phase);
+  for (const sd of [-1, 1]) cut(P_poly([[sd * 10 - 8, -110], [sd * 10 + 8, -110], [sd * 10 + 8 + sd * k * 14, 0], [sd * 10 - 8 + sd * k * 14, 0]]), P.ink, { shadow: 0.3, edge: 2 });
+  cut(P_rr(-26, -200, 52, 100, 14), P.wine, { shadow: 0.4, edge: 3 }); cut(P_circ(0, -228, 26), P.skinD, { shadow: 0.3, edge: 2 });
+  cut(P_poly([[-22, -246], [22, -246], [14, -300], [-14, -300]]), P.white, { shadow: 0.3, edge: 2 });
+  line([[34, -10], [34, -330]], P.sepia, 6); cut(P_poly([[28, -330], [40, -330], [34, -360]]), P.stone, { shadow: 0, edge: 2 });
+  ctx.restore();
+}
+/** a walled city on a hill: walls, towers, domes and minarets (Constantinople) */
+export function walledCity(x, y, s = 1) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  cut(() => { ctx.beginPath(); ctx.moveTo(-520, 0); ctx.quadraticCurveTo(0, -140, 520, 0); ctx.closePath(); }, '#B49668', { shadow: 0.4, edge: 4 });
+  for (const [dx, r] of [[-120, 110], [140, 80]]) { cut(P_rr(dx - r, -300, r * 2, 200, 4), P.stone, { shadow: 0.5, edge: 4 }); cut(() => { ctx.beginPath(); ctx.arc(dx, -300, r, Math.PI, 0); ctx.closePath(); }, P.stoneDark, { shadow: 0.5, edge: 4 }); }
+  for (const dx of [-300, 20, 300]) cut(P_rr(dx - 10, -420, 20, 330, 6), P.stone, { shadow: 0.4, edge: 3 });
+  cut(P_rr(-480, -150, 960, 150, 4), P.stone, { shadow: 0.6, edge: 5 });
+  for (let i = 0; i < 16; i++) cut(P_rr(-480 + i * 62, -180, 40, 34, 3), P.stone, { shadow: 0, edge: 3 });
+  for (const dx of [-480, -160, 160, 480]) { cut(P_rr(dx - 46, -230, 92, 230, 4), P.stoneDark, { shadow: 0.5, edge: 4 }); }
+  rr(-50, -110, 100, 110, 50); ctx.fillStyle = P.ink; ctx.fill();
+  ctx.restore();
 }

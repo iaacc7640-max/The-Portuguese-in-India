@@ -4,7 +4,7 @@ Source: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/ge
 """
 import json, sys
 src, out = sys.argv[1], sys.argv[2]
-BB = (-60.0, -45.0, 135.0, 80.0)
+BB = (-110.0, -60.0, 170.0, 82.0)
 
 
 def clip(poly):

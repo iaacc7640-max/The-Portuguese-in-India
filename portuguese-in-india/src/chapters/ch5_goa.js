@@ -18,7 +18,7 @@ export default function (B) {
   { const i = I(0), st = cut_(i), wf = Wd('went', i) - st;
     add({ id: 'C5a', ch, at: st, year: 1509, note: 'Albuquerque (very long white beard, tall hat) steps forward; name slip', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.06 }); K.layer(c, 0.3, () => { K.sky(0.2, 420, 820); K.wave(1100, t, { color: P.seaDark }); K.caravel(820, 1120, 0.3, t); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1380, W + 600, 700, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.person({ role: 'albuquerque', x: lerp(380, 480, eio(clamp(lt / d))), y: 1500, h: 860, walk: lt * 4, t }); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1380, W + 2200, 700, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.person({ role: 'albuquerque', x: lerp(380, 480, eio(clamp(lt / d))), y: 1500, h: 860, walk: lt * 4, t }); });
       K.slip('AFONSO DE ALBUQUERQUE', 540, 430, eob(seg(lt, 0.3, 0.6)), -0.02, 46);
     } });
     const s2 = st + wf - 0.08;
@@ -51,7 +51,7 @@ export default function (B) {
     const s2 = st + ca - 0.08;
     add({ id: 'C5f', ch, at: s2, year: 1510, note: 'flag swap on Goa: Bijapur brown flag slides down, the Portuguese flag rises', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.06 }); K.layer(c, 0.2, () => { K.sky(0.1, 420, 820); K.wave(1250, t, { color: P.seaDark }); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1240, W + 600, 900, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(100, 1000, 880, 260, 4), P.stone, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 11; k++) K.cut(K.P_rr(100 + k * 82, 966, 56, 40, 3), P.stone, { shadow: 0, edge: 3 });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1240, W + 2200, 900, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(100, 1000, 880, 260, 4), P.stone, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 11; k++) K.cut(K.P_rr(100 + k * 82, 966, 56, 40, 3), P.stone, { shadow: 0, edge: 3 });
         const sw = eio(clamp((lt - 0.2) / 1.2)); K.flag(380, 1000, 'bijapur', t, 1, { lower: sw, h: 560 }); K.flag(680, 1000, 'portugal', t, 1, { lower: 1 - sw, h: 560 }); });
       K.slip('FROM THE SULTAN OF BIJAPUR', 540, 430, eob(seg(lt, 0.2, 0.5)), -0.02, 42);
     } });
@@ -64,14 +64,14 @@ export default function (B) {
     const s2 = st + se - 0.08;
     add({ id: 'C5h', ch, at: s2, year: 1510, note: 'small family houses go up, smoke from the hearths', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.05 }); K.layer(c, 0.2, () => K.sky(0.2, 420, 820));
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1330, W + 600, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); for (let k = 0; k < 4; k++) K.palm(60 + k * 320, 1340, 0.6, t + k); ctx.save(); ctx.translate(0, (1 - eob(clamp(lt / 0.6))) * 300); houses(t, clamp(lt - 0.4)); ctx.restore(); garland(560, 1, t); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1330, W + 2200, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); for (let k = 0; k < 4; k++) K.palm(60 + k * 320, 1340, 0.6, t + k); ctx.save(); ctx.translate(0, (1 - eob(clamp(lt / 0.6))) * 300); houses(t, clamp(lt - 0.4)); ctx.restore(); garland(560, 1, t); });
     } });
     cue(st + 0.3, 'sparkle', { dur: 1, gain: 0.5 }); cue(s2 + 0.2, 'thud', { gain: 0.3 }); }
 
   // 5 · They brought tobacco and cashew, : the two plants grow
   { const i = I(5), st = cut_(i), tb = Wd('tobacco', i) - st, cs = Wd('cashew', i) - st;
     add({ id: 'C5i', ch, at: st, year: 1510, note: 'a tobacco plant then a cashew tree grow from the soil, each on its word', draw(lt, d, t) {
-      K.parchment(27); K.cut(K.P_rr(-300, 1380, W + 600, 700, 0), '#A88A5E', { shadow: 0.4, edge: 5 });
+      K.parchment(27); K.cut(K.P_rr(-1100, 1380, W + 2200, 700, 0), '#A88A5E', { shadow: 0.4, edge: 5 });
       tobacco(330, 1390, 1.4 * eob(clamp((lt - tb + 0.2) / 0.5))); cashew(760, 1390, 1.5 * eob(clamp((lt - cs + 0.2) / 0.5)));
       if (lt > tb) K.slip('TOBACCO', 330, 640, eob(seg(lt, tb, tb + 0.3)), -0.03, 44); if (lt > cs) K.slip('CASHEW', 760, 640, eob(seg(lt, cs, cs + 0.3)), 0.03, 44);
     } });
@@ -89,7 +89,7 @@ export default function (B) {
   { const i = I(7), st = cut_(i);
     add({ id: 'C5k', ch, at: st, year: 1510, note: 'a quiet Goa street at dusk, a mosque at its end', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.12, y: -30 }); K.layer(c, 0.2, () => K.sky(0.5, 500, 260));
-      K.layer(c, 0.7, () => K.archDoor(540, 1360, 0.75, 'mosque', 0, 0)); K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1360, W + 600, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); for (const x of [80, 1000]) K.cut(K.P_rr(x - 140, 900, 280, 470, 4), '#D9B98E', { shadow: 0.6, edge: 4 }); });
+      K.layer(c, 0.7, () => K.archDoor(540, 1360, 0.75, 'mosque', 0, 0)); K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1360, W + 2200, 900, 0), '#C9A878', { shadow: 0.4, edge: 5 }); for (const x of [80, 1000]) K.cut(K.P_rr(x - 140, 900, 280, 470, 4), '#D9B98E', { shadow: 0.6, edge: 4 }); });
     } });
     cue(st, 'wind', { dur: 2.2, gain: 0.4 }); }
 
@@ -114,7 +114,7 @@ export default function (B) {
     const s2 = st + ba - 0.08;
     add({ id: 'C5o', ch, at: s2, year: 1537, note: 'Bahadur Shah (crimson-brown robe and turban) on the shore at Diu', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.08 }); K.layer(c, 0.2, () => { K.sky(0.45, 480, 260); K.wave(1000, t, { color: P.seaDark }); K.caravel(800, 1030, 0.4, t); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1380, W + 600, 700, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.person({ role: 'bahadur', x: 360, y: 1500, h: 820, t }); });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1380, W + 2200, 700, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.person({ role: 'bahadur', x: 360, y: 1500, h: 820, t }); });
       K.slip('BAHADUR SHAH', 540, 430, eob(seg(lt, 0.2, 0.5)), -0.02, 52);
     } });
     cue(st + 0.1, 'pop', { gain: 0.4 }); cue(s2 + 0.2, 'pop', { gain: 0.4 }); }

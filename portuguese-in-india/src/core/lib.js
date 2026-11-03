@@ -1,6 +1,7 @@
 // Inside Out engine: canvas, palette, math and drawing primitives.
 // Every drawing function in the kit uses the shared `ctx` exported here (set once by main.js).
-export const W = 1080, H = 1920, FPS = 30;
+export const W = 1080, H = 1920, FPS = 30;          // stage (design) size; shots draw in these coordinates
+export const SW = 1920, SH = 1080;                  // screen size: the 16:9 frame (main.js places the stage in it)
 export let ctx = null;
 export function setCtx(c) { ctx = c; }
 
@@ -34,7 +35,7 @@ export function line(pts, color, w) {
   for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
   ctx.strokeStyle = color; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.stroke();
 }
-export function fillAll(color) { ctx.fillStyle = color; ctx.fillRect(-300, -300, W + 600, H + 600); }
+export function fillAll(color) { ctx.fillStyle = color; ctx.fillRect(-1100, -300, W + 2200, H + 600); }
 /** outlined bold text (the caption look), centred at x, y */
 export function bigText(text, x, y, size, fill = C.white, rot = 0, sc = 1) {
   ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(sc, sc);

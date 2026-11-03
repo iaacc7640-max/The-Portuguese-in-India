@@ -106,7 +106,7 @@ export default function (B) {
   { const i = I(7), st = cut_(i), le = Wd('less', i) - st;
     add({ id: 'C2h', ch, at: st, note: 'Arab merchant over his ledger frowns at a blue-cross sail in the window', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.06 }, { zoom: 1.12, x: 30 });
-      K.layer(c, 0.3, () => { K.parchment(9); K.cut(K.P_rr(-200, 300, W + 400, 1200, 0), '#C9A878', { shadow: 0, edge: 0 }); ctx.save(); ctx.beginPath(); ctx.roundRect(560, 420, 400, 520, [200, 200, 0, 0]); ctx.clip(); K.sky(0.1, 520, 820); K.wave(760, t, { amp: 10 }); K.caravel(790, 800, 0.32, t); ctx.restore(); ctx.strokeStyle = P.sepia; ctx.lineWidth = 16; ctx.beginPath(); ctx.roundRect(560, 420, 400, 520, [200, 200, 0, 0]); ctx.stroke(); });
+      K.layer(c, 0.3, () => { K.parchment(9); K.cut(K.P_rr(-1100, 300, W + 2200, 1200, 0), '#C9A878', { shadow: 0, edge: 0 }); ctx.save(); ctx.beginPath(); ctx.roundRect(560, 420, 400, 520, [200, 200, 0, 0]); ctx.clip(); K.sky(0.1, 520, 820); K.wave(760, t, { amp: 10 }); K.caravel(790, 800, 0.32, t); ctx.restore(); ctx.strokeStyle = P.sepia; ctx.lineWidth = 16; ctx.beginPath(); ctx.roundRect(560, 420, 400, 520, [200, 200, 0, 0]); ctx.stroke(); });
       K.layer(c, 1.0, () => { K.cut(K.P_rr(-100, 1260, 800, 60, 8), '#6E4E30', { shadow: 0.6, edge: 4 }); K.person({ role: 'arab', x: 330, y: 1560, h: 760, arm: 50, brow: lt > le ? -1 : 0, t }); });
     } });
     cue(st, 'whoosh', { gain: 0.6 }); cue(st + le, 'thud', { gain: 0.35 }); }
@@ -165,7 +165,7 @@ export default function (B) {
     const s2 = st + Wd('cargo', i) - st - 0.08;
     add({ id: 'C2m2', ch, at: s2, note: 'deck close-up: sacks of pepper piled high, A FORTUNE slip on "fortune"', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.08 }, { zoom: 1.0 }), f2 = fo - (s2 - st);
-      K.layer(c, 0.3, () => { K.sky(0.5, 500, 260); for (let k = 0; k < 10; k++) K.cut(K.P_rr(-60, 1000 + k * 110, W + 120, 100, 0), k % 2 ? '#A88A5E' : '#B49668', { shadow: 0.2, edge: 3 }); });
+      K.layer(c, 0.3, () => { K.sky(0.5, 500, 260); for (let k = 0; k < 10; k++) K.cut(K.P_rr(-1100, 1000 + k * 110, W + 2200, 100, 0), k % 2 ? '#A88A5E' : '#B49668', { shadow: 0.2, edge: 3 }); });
       K.layer(c, 1.0, () => { [[300, 1400, 1.1], [620, 1420, 1.15], [460, 1180, 1.0], [800, 1200, 0.95]].forEach(([x, y, s], k) => K.sack(x, y, s * eob(clamp((lt - k * 0.12) / 0.35)), { open: k === 2 })); });
       if (lt > f2) K.slip('A FORTUNE', 540, 520, eob(seg(lt, f2, f2 + 0.3)), 0.03, 64);
     } }); }

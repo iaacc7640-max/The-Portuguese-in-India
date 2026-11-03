@@ -28,10 +28,10 @@ export const P_poly = (pts) => () => { ctx.beginPath(); pts.forEach((p, i) => (i
 
 /** aged parchment page: base, blotches, fibres, darker edges */
 export function parchment(seed = 0) {
-  ctx.fillStyle = P.parch; ctx.fillRect(-300, -300, W + 600, H + 600);
-  for (let i = 0; i < 14; i++) { const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 1); ctx.save(); ctx.translate(rnd(i + seed) * W, rnd(i + 30 + seed) * H); ctx.scale(160 + rnd(i + 5) * 260, 120 + rnd(i + 9) * 200); g.addColorStop(0, 'rgba(160,120,70,0.13)'); g.addColorStop(1, 'rgba(160,120,70,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, 1, 0, TAU); ctx.fill(); ctx.restore(); }
-  ctx.strokeStyle = 'rgba(120,90,50,0.08)'; ctx.lineWidth = 2; for (let i = 0; i < 160; i++) { const x = rnd(i * 2 + seed) * W, y = rnd(i * 3 + seed) * H; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 30 + rnd(i) * 60, y + (rnd(i + 1) - 0.5) * 10); ctx.stroke(); }
-  const g = ctx.createRadialGradient(540, 960, 500, 540, 960, 1250); g.addColorStop(0, 'rgba(90,60,30,0)'); g.addColorStop(1, 'rgba(90,60,30,0.38)'); ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+  ctx.fillStyle = P.parch; ctx.fillRect(-1100, -300, W + 2200, H + 600);
+  for (let i = 0; i < 26; i++) { const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 1); ctx.save(); ctx.translate(-800 + rnd(i + seed) * (W + 1600), rnd(i + 30 + seed) * H); ctx.scale(160 + rnd(i + 5) * 260, 120 + rnd(i + 9) * 200); g.addColorStop(0, 'rgba(160,120,70,0.13)'); g.addColorStop(1, 'rgba(160,120,70,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, 1, 0, TAU); ctx.fill(); ctx.restore(); }
+  ctx.strokeStyle = 'rgba(120,90,50,0.08)'; ctx.lineWidth = 2; for (let i = 0; i < 300; i++) { const x = -800 + rnd(i * 2 + seed) * (W + 1600), y = rnd(i * 3 + seed) * H; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 30 + rnd(i) * 60, y + (rnd(i + 1) - 0.5) * 10); ctx.stroke(); }
+  const g = ctx.createRadialGradient(540, 960, 900, 540, 960, 2000); g.addColorStop(0, 'rgba(90,60,30,0)'); g.addColorStop(1, 'rgba(90,60,30,0.2)'); ctx.fillStyle = g; ctx.fillRect(-1100, -300, W + 2200, H + 600);
 }
 
 // ═════════════════════════ MAPS ═════════════════════════
@@ -109,7 +109,7 @@ export function hall() {
 }
 /** harbor: layered paper waves, a ship, a pier */
 export function harbor(t = 0, shipX = 600) {
-  parchment(11); ctx.fillStyle = P.sky; ctx.fillRect(-300, -300, W + 600, 1300);
+  parchment(11); ctx.fillStyle = P.sky; ctx.fillRect(-1100, -300, W + 2200, 1300);
   cut(P_circ(820, 420, 90), '#EFC66A', { shadow: 0.4, edge: 5 });
   for (let i = 0; i < 4; i++) { const y = 1000 + i * 150; cut(() => { ctx.beginPath(); ctx.moveTo(-300, H + 300); ctx.lineTo(-300, y); for (let x = -300; x <= W + 300; x += 40) ctx.lineTo(x, y + Math.sin(x * 0.012 + t * 1.5 + i) * 24); ctx.lineTo(W + 300, H + 300); ctx.closePath(); }, i % 2 ? P.seaDark : P.sea, { shadow: 0.7, edge: 5 }); if (i === 1) ship(shipX, 1080 + Math.sin(t * 2) * 10, 1, Math.sin(t * 1.6) * 0.04); }
   cut(P_rr(-40, 1250, 300, 40, 6), P.sepia); for (const x of [0, 120, 230]) cut(P_rr(x, 1250, 26, 300, 4), P.sepia);
@@ -144,7 +144,7 @@ export function timeline(years, x, y, w, p = 0, active = -1) {
 export function slip(text, x, y, sc = 1, rot = -0.03, size = 54) { if (sc <= 0) return; ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(sc, sc); ctx.font = `700 ${size}px ${SERIF}`; const w = ctx.measureText(text).width + 70; cut(P_rr(-w / 2, -size * 0.8, w, size * 1.6, 4), P.edge); ctx.fillStyle = P.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 0, 4); circle(0, -size * 0.8 + 6, 10, P.crimson); ctx.restore(); }
 
 // ═════════════════════════ CAPTION LOOK ═════════════════════════
-export const CAPLOOK = { font: `700 88px ${SERIF}`, y: 1640, maxW: 940, fg: P.ink, hi: P.crimson };
+export const CAPLOOK = { font: `700 72px ${SERIF}`, y: 978, maxW: 1400, fg: P.ink, hi: P.crimson };
 /** caption on a torn paper strip */
 export function captionStrip(words, x, y, sc = 1, look = CAPLOOK) {
   ctx.save(); ctx.translate(x, y); ctx.scale(sc, sc); ctx.font = look.font; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';

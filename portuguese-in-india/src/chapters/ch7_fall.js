@@ -132,7 +132,7 @@ export default function (B) {
     const s2 = st + mr - 0.08;
     add({ id: 'C7s', ch, at: s2, year: 1739, note: 'Bassein fort: the Portuguese flag lowers, the saffron Maratha flag rises; a Maratha soldier stands by', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.05 }); K.layer(c, 0.2, () => { K.sky(0.2, 420, 820); K.wave(1250, t, { color: P.seaDark }); });
-      K.layer(c, 1, () => { K.cut(K.P_rr(-300, 1240, W + 600, 900, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(100, 1000, 880, 260, 4), P.stone, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 11; k++) K.cut(K.P_rr(100 + k * 82, 966, 56, 40, 3), P.stone, { shadow: 0, edge: 3 });
+      K.layer(c, 1, () => { K.cut(K.P_rr(-1100, 1240, W + 2200, 900, 0), '#C9A878', { shadow: 0.5, edge: 5 }); K.cut(K.P_rr(100, 1000, 880, 260, 4), P.stone, { shadow: 0.6, edge: 5 }); for (let k = 0; k < 11; k++) K.cut(K.P_rr(100 + k * 82, 966, 56, 40, 3), P.stone, { shadow: 0, edge: 3 });
         const sw = eio(clamp((lt - 0.2) / 1.2)); K.flag(380, 1000, 'portugal', t, 1, { lower: sw, h: 560 }); K.flag(680, 1000, 'maratha', t, 1, { lower: 1 - sw, h: 560 }); K.person({ role: 'maratha', x: 860, y: 1500, h: 560, dir: -1, t }); });
       K.slip('BASSEIN', 540, 420, eob(seg(lt, 0.2, 0.5)), -0.02, 50);
     } });

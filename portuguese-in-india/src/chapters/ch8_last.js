@@ -57,7 +57,7 @@ export default function (B) {
   // 5 · were the last to leave. : the caravels sail away to the left
   { const i = I(5), st = cut_(i);
     add({ id: 'C8h', ch, at: st, year: 1961, noBar: true, note: 'the three caravels sail out of frame to the left', draw(lt, d, t) {
-      ctx.save(); dawnArrival(lt + 3, d + 3, t, 1, 0, K.cam(lt, d, { x: -40 + 0, zoom: 1.06 }, { x: 1500, zoom: 1.06 })); ctx.restore(); } });
+      ctx.save(); dawnArrival(lt + 3, d + 3, t, 1, 0, K.cam(lt, d, { x: -40, zoom: 1.06 }, { x: 40, zoom: 1.06 }), clamp(lt / d)); ctx.restore(); } });
     cue(st, 'creak', { gain: 0.5 }); }
 
   // 6 · And it all began with three small ships, : the ships at anchor, calm
@@ -69,7 +69,7 @@ export default function (B) {
   { const i = I(7), st = cut_(i), pe = Wd('pepper', i) - st;
     add({ id: 'C8j', ch, at: st, year: 1961, noBar: true, note: 'the peppercorn rolls into the sack on "pepper"; end card FIRST IN, LAST OUT', draw(lt, d, t) {
       pepperShot(lt, d, t, clamp((lt - pe + 0.6) / 0.9)); const e = seg(lt, pe + 0.6, pe + 1.0);
-      if (e > 0) { ctx.save(); ctx.globalAlpha = clamp(e * 1.5) * 0.85; ctx.fillStyle = P.parch; ctx.fillRect(-300, -300, W + 600, H + 600); ctx.restore(); K.ribbon('1498 → 1961', 540, 640, eob(e), 92); K.torn('FIRST IN, LAST OUT', 540, 860, eob(seg(lt, pe + 0.8, pe + 1.2)), -0.02, 92); K.slip('The Portuguese in India', 600, 1010, eob(seg(lt, pe + 1.0, pe + 1.4)), 0.03, 40); }
+      if (e > 0) { ctx.save(); ctx.globalAlpha = clamp(e * 1.5) * 0.85; ctx.fillStyle = P.parch; ctx.fillRect(-1100, -300, W + 2200, H + 600); ctx.restore(); K.ribbon('1498 → 1961', 540, 640, eob(e), 92); K.torn('FIRST IN, LAST OUT', 540, 860, eob(seg(lt, pe + 0.8, pe + 1.2)), -0.02, 92); K.slip('The Portuguese in India', 600, 1010, eob(seg(lt, pe + 1.0, pe + 1.4)), 0.03, 40); }
     } });
     cue(st + pe + 0.3, 'plop', { gain: 0.6 }); cue(st + pe + 0.7, 'seal'); }
 }

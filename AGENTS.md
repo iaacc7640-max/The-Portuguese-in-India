@@ -14,7 +14,7 @@ Instructions for coding agents in this repository.
 Run from `portuguese-in-india/` (SKILL = the faceless-shorts skill folder):
 - Setup: `bash SKILL/scripts/setup.sh`
 - Script: `python3 -I tools/plan_to_script.py` (from PLAN.md)
-- Voice + timing: `SKILL/scripts/py SKILL/scripts/voice.py .` then `SKILL/scripts/py SKILL/scripts/words.py .` then `python3 -I tools/chapters.py`
+- Voice + timing: `SKILL/scripts/py tools/voice.py .` (project copy with fixed name phonemes) then `SKILL/scripts/py SKILL/scripts/words.py .` then `python3 -I tools/chapters.py`
 - Check (must print CHECK OK before "done"): `node tools/capture.mjs check`
 - QA sheet for one chapter: `node tools/capture.mjs sheet review/chN.jpg 0.5 9 START END`
 - Sound: `node tools/capture.mjs cues` then `SKILL/scripts/py tools/mix.py .`

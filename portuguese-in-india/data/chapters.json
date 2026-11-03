@@ -1,5 +1,5 @@
 {
- "duration": 346.176,
+ "duration": 358.928,
  "chapters": [
   {
    "chapter": 0,
@@ -16,89 +16,89 @@
    "chapter": 1,
    "title": "1453: The Spice Problem",
    "start": 17.64,
-   "first_line": 19.258,
+   "first_line": 17.958,
    "lines": [
     7,
-    19
+    20
    ],
-   "end": 55.05
+   "end": 56.62
   },
   {
    "chapter": 2,
    "title": "1498: Hello, Calicut",
-   "start": 55.05,
-   "first_line": 56.671,
+   "start": 56.62,
+   "first_line": 56.938,
    "lines": [
-    20,
-    34
+    21,
+    36
    ],
-   "end": 101.15
+   "end": 104.29
   },
   {
    "chapter": 3,
    "title": "1500: Traders Become Raiders",
-   "start": 101.15,
-   "first_line": 102.773,
+   "start": 104.29,
+   "first_line": 104.611,
    "lines": [
-    35,
-    48
+    37,
+    51
    ],
-   "end": 140.06
+   "end": 145.28
   },
   {
    "chapter": 4,
    "title": "1505: Rule the Water",
-   "start": 140.06,
-   "first_line": 141.678,
+   "start": 145.28,
+   "first_line": 145.605,
    "lines": [
-    49,
-    62
+    52,
+    66
    ],
-   "end": 178.18
+   "end": 184.95
   },
   {
    "chapter": 5,
    "title": "1510: Albuquerque's Goa",
-   "start": 178.18,
-   "first_line": 179.799,
+   "start": 184.95,
+   "first_line": 185.266,
    "lines": [
-    63,
-    75
+    67,
+    80
    ],
-   "end": 218.75
+   "end": 227.33
   },
   {
    "chapter": 6,
    "title": "1580: Priests and Emperors",
-   "start": 218.75,
-   "first_line": 220.374,
+   "start": 227.33,
+   "first_line": 227.652,
    "lines": [
-    76,
-    88
+    81,
+    94
    ],
-   "end": 259.53
+   "end": 269.7
   },
   {
    "chapter": 7,
    "title": "1632: The Fall",
-   "start": 259.53,
-   "first_line": 261.148,
+   "start": 269.7,
+   "first_line": 270.022,
    "lines": [
-    89,
-    105
+    95,
+    112
    ],
-   "end": 317.71
+   "end": 329.08
   },
   {
    "chapter": 8,
    "title": "1961: Last to Leave",
-   "start": 317.71,
-   "first_line": 319.328,
+   "start": 329.08,
+   "first_line": 329.397,
    "lines": [
-    106,
-    113
+    113,
+    121
    ],
-   "end": 346.176
+   "end": 358.928
   }
  ]
 }
