@@ -24,7 +24,7 @@ export function layer(c, depth, fn) {
 export function sky(night = 0, sunY = 420, sunX = 800) {
   parchment(5);
   const top = night < 0.5 ? mix(P.sky, P.dusk, night * 2) : mix(P.dusk, P.navy, (night - 0.5) * 2);
-  ctx.save(); ctx.globalAlpha = 0.75; ctx.fillStyle = top; ctx.fillRect(-400, -400, W + 800, 1500); ctx.restore();
+  ctx.save(); ctx.globalAlpha = 0.55; ctx.fillStyle = top; ctx.fillRect(-400, -400, W + 800, 1500); ctx.restore();
   if (night < 0.8) cut(P_circ(sunX, sunY + night * 260, 90), night < 0.4 ? '#EFC66A' : '#E39A5A', { shadow: 0.4, edge: 5 });
 }
 /** the Paper Atlas night: the same page under a navy wash (+ paper stars when fully dark) */
@@ -56,7 +56,7 @@ export function seascape(o) {
   layer(c, 0.35, () => { wave(hz, t, { amp: 8, len: 0.02, speed: 0.6, color: P.seaDark, shadow: 0.3 }); o.far && o.far(t); });
   layer(c, 0.7, () => { wave(hz + 120, t, { amp: 16, len: 0.013, speed: 0.9, phase: 1, color: P.sea, shadow: 0.5 }); o.mid && o.mid(t); });
   layer(c, 1.0, () => { wave(hz + 330, t, { amp: 24, len: 0.01, speed: 1.2, phase: 2, color: P.seaDark }); o.near && o.near(t); });
-  nightWash(n * 0.9, 3);
+  nightWash(clamp((n - 0.5) / 0.5), 3);                       // dusk = warm sky only; the navy wash is for real night
   o.lights && o.lights(t);
   layer(c, 1.4, () => { wave(hz + 560, t, { amp: 30, len: 0.008, speed: 1.4, phase: 3, color: mix(P.sea, P.navy, n * 0.6) }); o.fore && o.fore(t); });
 }

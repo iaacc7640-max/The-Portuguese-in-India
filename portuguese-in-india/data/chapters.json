@@ -1,0 +1,104 @@
+{
+ "duration": 346.176,
+ "chapters": [
+  {
+   "chapter": 0,
+   "title": "Cold open",
+   "start": 0.0,
+   "first_line": 0.5,
+   "lines": [
+    0,
+    6
+   ],
+   "end": 17.64
+  },
+  {
+   "chapter": 1,
+   "title": "1453: The Spice Problem",
+   "start": 17.64,
+   "first_line": 19.258,
+   "lines": [
+    7,
+    19
+   ],
+   "end": 55.05
+  },
+  {
+   "chapter": 2,
+   "title": "1498: Hello, Calicut",
+   "start": 55.05,
+   "first_line": 56.671,
+   "lines": [
+    20,
+    34
+   ],
+   "end": 101.15
+  },
+  {
+   "chapter": 3,
+   "title": "1500: Traders Become Raiders",
+   "start": 101.15,
+   "first_line": 102.773,
+   "lines": [
+    35,
+    48
+   ],
+   "end": 140.06
+  },
+  {
+   "chapter": 4,
+   "title": "1505: Rule the Water",
+   "start": 140.06,
+   "first_line": 141.678,
+   "lines": [
+    49,
+    62
+   ],
+   "end": 178.18
+  },
+  {
+   "chapter": 5,
+   "title": "1510: Albuquerque's Goa",
+   "start": 178.18,
+   "first_line": 179.799,
+   "lines": [
+    63,
+    75
+   ],
+   "end": 218.75
+  },
+  {
+   "chapter": 6,
+   "title": "1580: Priests and Emperors",
+   "start": 218.75,
+   "first_line": 220.374,
+   "lines": [
+    76,
+    88
+   ],
+   "end": 259.53
+  },
+  {
+   "chapter": 7,
+   "title": "1632: The Fall",
+   "start": 259.53,
+   "first_line": 261.148,
+   "lines": [
+    89,
+    105
+   ],
+   "end": 317.71
+  },
+  {
+   "chapter": 8,
+   "title": "1961: Last to Leave",
+   "start": 317.71,
+   "first_line": 319.328,
+   "lines": [
+    106,
+    113
+   ],
+   "end": 346.176
+  }
+ ]
+}

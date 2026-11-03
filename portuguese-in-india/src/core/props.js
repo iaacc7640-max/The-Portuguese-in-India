@@ -114,7 +114,7 @@ export function lawScroll(x, y, s = 1, sealP = 1, title = 'DECREE') {
 export function calendar(x, y, s, labels, flip = 0) {
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s); const i = Math.min(labels.length - 1, Math.floor(flip)), f = flip - Math.floor(flip);
   cut(P_rr(-170, -200, 340, 400, 12), P.edge, { shadow: 0.9, edge: 0 }); cut(P_rr(-170, -200, 340, 90, 12), P.crimson, { shadow: 0, edge: 0 });
-  ctx.font = '700 84px Caladea'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = P.ink; ctx.fillText(labels[i], 0, 40);
+  ctx.font = `700 ${labels[i].length > 5 ? 60 : 84}px Caladea`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = P.ink; ctx.fillText(labels[i], 0, 40);
   if (f > 0 && i < labels.length - 1) { ctx.save(); ctx.translate(0, -110); ctx.rotate(-f * 1.6); ctx.globalAlpha = 1 - f; cut(P_rr(-170, 0, 340, 310, 8), P.edge, { shadow: 0.5, edge: 0 }); ctx.restore(); }
   ctx.restore();
 }

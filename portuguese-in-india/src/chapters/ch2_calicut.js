@@ -71,7 +71,7 @@ export default function (B) {
     add({ id: 'C2e', ch, at: st, note: 'Calicut court: the Zamorin seated, parasol bearer behind; slip THE ZAMORIN', draw(lt, d, t) {
       const c = K.cam(lt, d, { zoom: 1.0 }, { zoom: 1.08, y: -30 });
       K.layer(c, 0.5, () => K.calicutCourt(t));
-      K.layer(c, 1.0, () => { K.person({ role: 'bearer', x: 330, y: 1460, h: 560, arm: 80, t }); K.person({ role: 'zamorin', x: 560, y: 1440, h: 620, arm: 20, t }); });
+      K.layer(c, 1.0, () => { K.person({ role: 'bearer', x: 400, y: 1430, h: 540, arm: 165, t }); K.person({ role: 'zamorin', x: 590, y: 1450, h: 620, arm: 20, t }); });
       if (lt > ki) K.slip('THE ZAMORIN', 540, 300, eob(seg(lt, ki, ki + 0.3)), -0.02, 58);
     } });
     cue(st, 'whoosh'); cue(st + ki, 'pop', { gain: 0.5 }); }
@@ -96,7 +96,7 @@ export default function (B) {
     add({ id: 'C2g', ch, at: st, note: 'court: da Gama bows with a gift chest, the Zamorin raises a hand in welcome', draw(lt, d, t) {
       const c = K.cam(lt, d, { x: -30, zoom: 1.04 }, { x: 20, zoom: 1.08 });
       K.layer(c, 0.5, () => K.calicutCourt(t));
-      K.layer(c, 1.0, () => { K.person({ role: 'bearer', x: 760, y: 1460, h: 520, arm: 80, dir: -1, t }); K.person({ role: 'zamorin', x: 640, y: 1440, h: 580, dir: -1, arm: lt > we ? 70 * eob(seg(lt, we, we + 0.3)) : 10, t });
+      K.layer(c, 1.0, () => { K.person({ role: 'bearer', x: 760, y: 1430, h: 520, arm: 165, dir: -1, t }); K.person({ role: 'zamorin', x: 640, y: 1440, h: 580, dir: -1, arm: lt > we ? 70 * eob(seg(lt, we, we + 0.3)) : 10, t });
         const bow = Math.sin(clamp(lt / 1.2) * Math.PI) * 0.15; ctx.save(); ctx.translate(280, 1460); ctx.rotate(bow); K.person({ role: 'gama', x: 0, y: 0, h: 560, arm: 40, t }); ctx.restore();
         const gx = lerp(400, 460, eio(clamp(lt / d))); K.cut(K.P_rr(gx - 60, 1340, 120, 90, 10), P.wine, { shadow: 0.7, edge: 4 }); K.cut(K.P_rr(gx - 66, 1330, 132, 24, 8), P.gold, { shadow: 0, edge: 3 }); });
     } });

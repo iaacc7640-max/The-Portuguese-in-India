@@ -6,7 +6,7 @@ const { P } = K;
 /** the dawn arrival: shared with the CH8 callback. ships 0..1 = how far the caravels have slid in, anchor 0..1 */
 export function dawnArrival(lt, d, t, ships = 1, anchor = 0, c = null) {
   c = c || K.cam(lt, d, { x: 40, zoom: 1.0 }, { x: -40, zoom: 1.06 });
-  K.seascape({ t, c, night: 0.42, horizon: 980, sunY: lerp(470, 400, clamp(lt / d)), sunX: 760,
+  K.seascape({ t, c, night: 0.38, horizon: 980, sunY: lerp(470, 400, clamp(lt / d)), sunX: 760,
     far: () => { for (let i = 0; i < 6; i++) K.palm(-40 + i * 60, 1000, 0.25 + (i % 2) * 0.06, t + i, P.forest); cut_coast(); },
     mid: (tt) => { [[620, 0.42], [820, 0.36], [990, 0.3]].forEach(([x, s], k) => { const xx = lerp(x + 700, x - 140, eo(clamp(ships - k * 0.12))); const y = K.waveY(xx, 1100, tt, { amp: 16, len: 0.013, speed: 0.9, phase: 1 }) + 10; K.caravel(xx, y, s, tt + k, { rot: Math.sin(tt * 1.3 + k) * 0.03 });
       if (anchor > 0) { const a = eo(clamp(anchor * 1.4 - k * 0.2)); line([[xx - 240 * s, y - 20 * s], [xx - 260 * s, y + a * 160 * s]], P.ink, 4); } }); },
@@ -52,11 +52,11 @@ export default function (B) {
   // 3 · all the way around Africa, : the route draws on
   { const st = cut_(3), af = Wd('africa', 3) - st;
     add({ id: 'C0d', ch, at: st, year: 1498, note: 'real map: crimson route Lisbon -> Cape -> Calicut draws on', draw(lt, d, t) {
-      const v = K.lerpView(K.VIEWS.route, { ...K.VIEWS.route, w: 112 }, eio(clamp(lt / d)));
+      const v = K.lerpView(K.VIEWS.route, { ...K.VIEWS.route, lat: 3 }, eio(clamp(lt / d)));
       const pr = K.realMap(v, { gold: ['portugal'] }); const p = eio(clamp(lt / (d * 0.95)));
       const head = K.placeRoute(pr, K.SEA_ROUTE, p);
       K.pin(pr, 'LISBON', { side: 'up' }); if (p > 0.5) K.pin(pr, 'CAPE OF GOOD HOPE', { side: 'down', sc: eob(seg(p, 0.5, 0.6)), size: 30 });
-      if (p > 0.97) K.pin(pr, 'CALICUT', { side: 'up', sc: eob(seg(p, 0.97, 1)), dx: -60 });
+      if (p > 0.97) K.pin(pr, 'CALICUT', { side: 'down', sc: eob(seg(p, 0.97, 1)), dx: -70 });
       ctx.save(); ctx.translate(head[0], head[1]); K.caravel(0, 0, 0.12, t); ctx.restore();
       if (lt > af) K.slip('AFRICA', 470, 1030, eob(seg(lt, af, af + 0.3)), 0.03, 44);
     } });
@@ -80,7 +80,7 @@ export default function (B) {
     cue(st + 0.05, 'quill', { dur: 1.6 }); }
 
   // 6 · that would last 463 years. : 1498 -> 1961 ribbon, title slip, era bar races to 1961
-  { const st = cut_(6), yr = Wd('years', 6) - st, ln = Le(6) - st;
+  { const st = cut_(6), yr = Wd('last', 6) - st, ln = Le(6) - st;
     add({ id: 'C0g', ch, at: st, bar: true, barIn: 0.1, barP: (lt) => lerp(1 / 6, 1, eio(clamp((lt - 0.2) / (yr - 0.1)))), barYear: (lt) => (lt > yr ? 1961 : 1498),
       note: 'era bar races 1498 -> 1961, ribbon "1498 -> 1961", title slip FIRST IN, LAST OUT on "years"', draw(lt, d, t) {
         dawnArrival(lt + 6, d + 6, t, 1, 1, K.cam(lt, d, { x: -40, zoom: 1.06 }, { x: -60, zoom: 1.1 }));

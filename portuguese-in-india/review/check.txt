@@ -1,0 +1,369 @@
+duration 346.18 s
+C0a     0.00 →   2.10  (2.10 s)  dawn sea off Kerala, sun lifts, palms on the far coast
+C0b     2.10 →   5.76  (3.66 s)  three caravels slide in from the right, anchors drop on "anchor"
+C0c     5.76 →   8.78  (3.02 s)  deck: hourglass runs, calendar peels JUL 1497 -> MAY 1498
+C0d     8.78 →  10.44  (1.66 s)  real map: crimson route Lisbon -> Cape -> Calicut draws on
+C0e    10.44 →  12.30  (1.86 s)  pepper vine close-up; a peppercorn rolls into the sack on "pepper"
+C0f    12.30 →  14.25  (1.95 s)  a quill writes the first line of a page
+C0g    14.25 →  17.38  (3.13 s)  era bar races 1498 -> 1961, ribbon "1498 -> 1961", title slip FIRST IN, LAST OUT on "years"
+CARD1  17.38 →  19.18  (1.80 s)  chapter card 1453: The Spice Problem
+C1L7   19.18 →  21.00  (1.82 s)  [storyboard] map Europe–Med, era bar tick 1453 turns crimson
+C1L8   21.00 →  23.89  (2.89 s)  [storyboard] Constantinople seal turns crimson → "captured"
+C1L9   23.89 →  27.30  (3.41 s)  [storyboard] land route gets a padlock → "hands"
+C1L10  27.30 →  30.75  (3.45 s)  [storyboard] three goods pop on the route one by one
+C1L11  30.75 →  32.81  (2.06 s)  [storyboard] sack passes hand to hand along 4 merchants
+C1L12  32.81 →  34.83  (2.02 s)  [storyboard] a coin drops at each hand, price slip grows
+C1L13  34.83 →  37.98  (3.16 s)  [storyboard] map pulls back: tiny Portugal at the Atlantic edge
+C1L14  37.98 →  39.45  (1.47 s)  [storyboard] compass needle spins, "idea" flash
+C1L15  39.45 →  41.77  (2.32 s)  [storyboard] arrow hits padlock, bends around Africa → "around"
+C1L16  41.77 →  43.73  (1.96 s)  [storyboard] Henry (dark hood) points at wall map
+C1L17  43.73 →  46.72  (2.99 s)  [storyboard] caravels step down the coast, each leaves a pin
+C1L18  46.72 →  51.81  (5.09 s)  [storyboard] Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE
+C1L19  51.81 →  54.79  (2.98 s)  [storyboard] paper wall, door-shaped gap swings open, sea light → "open"
+CARD2  54.79 →  56.59  (1.80 s)  chapter card 1498: Hello, Calicut
+C2a    56.59 →  60.28  (3.69 s)  paper door open on the sea; da Gama walks in and through
+C2b    60.28 →  63.68  (3.40 s)  Malindi harbour: the Gujarati pilot (kamal) walks the pier to the caravel
+C2c    63.68 →  65.71  (2.03 s)  ocean map: monsoon wind arrows push the caravel Malindi -> Calicut
+C2d    65.71 →  69.02  (3.31 s)  zoom to the Malabar coast: Calicut pin and ribbon MAY 1498
+C2e    69.02 →  71.84  (2.82 s)  Calicut court: the Zamorin seated, parasol bearer behind; slip THE ZAMORIN
+C2f    71.84 →  74.04  (2.20 s)  harbour full of many-coloured sails; coins drop into a chest
+C2g    74.04 →  76.03  (1.99 s)  court: da Gama bows with a gift chest, the Zamorin raises a hand in welcome
+C2h    76.03 →  78.96  (2.92 s)  Arab merchant over his ledger frowns at a blue-cross sail in the window
+C2i    78.96 →  82.83  (3.88 s)  ocean map fills with sails of four colours, one group per name
+C2j    82.83 →  85.98  (3.14 s)  ink trade lanes criss-cross the ocean, sails moving along them
+C2k    85.98 →  88.92  (2.94 s)  sails swap places along the lanes; coins pop between; NO OWNER slip on "nobody"
+C2l    88.92 →  91.57  (2.66 s)  one blue-cross caravel grows in the middle of the ocean, the other sails shrink to their coasts
+C2m    91.57 →  95.61  (4.04 s)  sunset sea: the caravel, deck piled with sacks, sails west (left)
+C2n    95.61 →  98.17  (2.56 s)  spice scale: one sack of pepper against two coins (cheap in Kerala)
+C2o    98.17 → 100.89  (2.72 s)  IN EUROPE: the coin pan fills tall and the scale tips the other way on "many"
+CARD3 100.89 → 102.69  (1.80 s)  chapter card 1500: Traders Become Raiders
+C3L35 102.69 → 105.34  (2.65 s)  [storyboard] Cabral on deck (helmet, red sash)
+C3L36 105.34 → 109.05  (3.71 s)  [storyboard] factory hut with blue flag goes up
+C3L37 109.05 → 110.61  (1.56 s)  [storyboard] the hut door slams shut
+C3L38 110.61 → 112.75  (2.14 s)  [storyboard] torn flag, empty stools, dropped cap (no people)
+C3L39 112.75 → 114.21  (1.46 s)  [storyboard] night wash, caravel silhouette turns
+C3L40 114.21 → 116.20  (1.99 s)  [storyboard] far-horizon dhows, orange glow + smoke
+C3L41 116.20 → 118.35  (2.15 s)  [storyboard] cannon puff, crimson-tinted smoke (muffled boom)
+C3L42 118.35 → 122.24  (3.89 s)  [storyboard] map: ship slides south along Malabar
+C3L43 122.24 → 124.12  (1.87 s)  [storyboard] handshake slips pinned on Cochin + Cannanore
+C3L44 124.12 → 125.98  (1.86 s)  [storyboard] da Gama's blue sail back on the horizon
+C3L45 125.98 → 130.03  (4.05 s)  [storyboard] da Gama holds out a demand letter
+C3L46 130.03 → 131.93  (1.90 s)  [storyboard] Zamorin shakes head, tears the paper
+C3L47 131.93 → 135.33  (3.40 s)  [storyboard] the hut grows walls
+C3L48 135.33 → 139.80  (4.47 s)  [storyboard] walls → towers, ribbon "Cochin 1503"
+CARD4 139.80 → 141.60  (1.80 s)  chapter card 1505: Rule the Water
+C4L49 141.60 → 145.23  (3.63 s)  [storyboard] Almeida arrives (grey beard, armour)
+C4L50 145.23 → 148.69  (3.46 s)  [storyboard] Almeida unrolls a map
+C4L51 148.69 → 151.31  (2.63 s)  [storyboard] blue wash floods the sea on the map → "water"
+C4L52 151.31 → 153.88  (2.57 s)  [storyboard] cartaz paper, seal stamps on → "pass"
+C4L53 153.88 → 155.76  (1.87 s)  [storyboard] a dhow with no pass: chain across its bow
+C4L54 155.76 → 158.25  (2.49 s)  [storyboard] Gujarat and Cairo pins light
+C4L55 158.25 → 160.20  (1.95 s)  [storyboard] Venice pin, crimson thread links the three
+C4L56 160.20 → 163.37  (3.17 s)  [storyboard] crimson-brown sails gather
+C4L57 163.37 → 167.21  (3.84 s)  [storyboard] night: one Portuguese ship silhouette sinks under navy wash
+C4L58 167.21 → 169.59  (2.39 s)  [storyboard] empty helmet on a table, candle
+C4L59 169.59 → 171.68  (2.09 s)  [storyboard] dawn sea, Diu pin
+C4L60 171.68 → 173.88  (2.19 s)  [storyboard] their paper sails fall one by one
+C4L61 173.88 → 175.45  (1.57 s)  [storyboard] Almeida close-up
+C4L62 175.45 → 177.92  (2.47 s)  [storyboard] slip "Rule the sea, hold India" — paraphrase · Almeida
+CARD5 177.92 → 179.72  (1.80 s)  chapter card 1510: Albuquerque's Goa
+C5L63 179.72 → 183.66  (3.94 s)  [storyboard] Albuquerque (very long white beard, tall hat)
+C5L64 183.66 → 186.61  (2.95 s)  [storyboard] map: padlock-forts on the sea's doors
+C5L65 186.61 → 188.54  (1.93 s)  [storyboard] pins pop at Hormuz, then Malacca
+C5L66 188.54 → 193.44  (4.89 s)  [storyboard] Goa flag swaps Bijapur → Portugal
+C5L67 193.44 → 197.56  (4.12 s)  [storyboard] wedding garland, two small houses
+C5L68 197.56 → 199.64  (2.08 s)  [storyboard] tobacco + cashew plants grow
+C5L69 199.64 → 202.35  (2.71 s)  [storyboard] law scroll, wax seal stamps → "banned"
+C5L70 202.35 → 205.20  (2.85 s)  [storyboard] Goa street at dusk
+C5L71 205.20 → 206.99  (1.79 s)  [storyboard] mosque door closes, padlock
+C5L72 206.99 → 210.06  (3.07 s)  [storyboard] Goa skyline with church, "capital" seal
+C5L73 210.06 → 214.49  (4.43 s)  [storyboard] Bahadur Shah (crimson-brown)
+C5L74 214.49 → 217.15  (2.66 s)  [storyboard] he steps onto a ship at dusk
+C5L75 217.15 → 218.49  (1.34 s)  [storyboard] his turban floating on dark water
+CARD6 218.49 → 220.29  (1.80 s)  chapter card 1580: Priests and Emperors
+C6L76 220.29 → 223.70  (3.41 s)  [storyboard] two priests on the road
+C6L77 223.70 → 226.06  (2.36 s)  [storyboard] Fatehpur Sikri arch
+C6L78 226.06 → 228.35  (2.29 s)  [storyboard] Akbar among scholars of several faiths
+C6L79 228.35 → 231.91  (3.56 s)  [storyboard] thought bubble rises
+C6L80 231.91 → 233.98  (2.06 s)  [storyboard] bubble map turns blue
+C6L81 233.98 → 235.15  (1.17 s)  [storyboard] bubble pops
+C6L82 235.15 → 238.25  (3.11 s)  [storyboard] Goa church
+C6L83 238.25 → 240.37  (2.12 s)  [storyboard] temple door closes
+C6L84 240.37 → 244.57  (4.20 s)  [storyboard] Hawkins steps off at Surat
+C6L85 244.57 → 247.33  (2.76 s)  [storyboard] letter with red seal
+C6L86 247.33 → 250.25  (2.92 s)  [storyboard] Jesuit blocks a doorway
+C6L87 250.25 → 255.16  (4.91 s)  [storyboard] small English sails vs bigger fleet; big sails tear
+C6L88 255.16 → 259.27  (4.11 s)  [storyboard] Jahangir raises an eyebrow
+CARD7 259.27 → 261.07  (1.80 s)  chapter card 1632: The Fall
+C7L89 261.07 → 263.61  (2.55 s)  [storyboard] map: Bengal, Hooghly pin
+C7L90 263.61 → 267.57  (3.96 s)  [storyboard] Hooghly river port
+C7L91 267.57 → 270.20  (2.63 s)  [storyboard] ledger page with a broken chain
+C7L92 270.20 → 275.40  (5.20 s)  [storyboard] Mughal seal over an empty doorway
+C7L93 275.40 → 280.00  (4.60 s)  [storyboard] seal stamps the map, tents ring the port
+C7L94 280.00 → 284.07  (4.06 s)  [storyboard] calendar flips 3 pages, flag lowers
+C7L95 284.07 → 286.67  (2.61 s)  [storyboard] map tilts, pins slide
+C7L96 286.67 → 289.27  (2.60 s)  [storyboard] crown slides onto a Spanish crown
+C7L97 289.27 → 291.54  (2.27 s)  [storyboard] smoke on a far horizon
+C7L98 291.54 → 294.13  (2.59 s)  [storyboard] map swings west, coins roll to Brazil
+C7L99 294.13 → 296.99  (2.86 s)  [storyboard] route map copied onto Dutch + English parchment
+C7L100 296.99 → 303.24  (6.25 s)  [storyboard] Malabar forts flip to Dutch flags one by one
+C7L101 303.24 → 307.17  (3.93 s)  [storyboard] Bassein flag → saffron
+C7L102 307.17 → 309.78  (2.61 s)  [storyboard] slip with the speaker's name
+C7L103 309.78 → 313.18  (3.40 s)  [storyboard] paper figure holds sword + cross
+C7L104 313.18 → 315.14  (1.96 s)  [storyboard] pockets bulge with coins
+C7L105 315.14 → 317.45  (2.31 s)  [storyboard] drops both; slip "paraphrase · Portuguese governor (de Souza)"
+CARD8 317.45 → 319.25  (1.80 s)  chapter card 1961: Last to Leave
+C8L106 319.25 → 322.97  (3.72 s)  [storyboard] three blue pins
+C8L107 322.97 → 327.22  (4.26 s)  [storyboard] other powers' flags fade around them
+C8L108 327.22 → 331.24  (4.02 s)  [storyboard] era bar races to 1961, Indian tricolour rises over Goa
+C8L109 331.24 → 335.85  (4.61 s)  [storyboard] ribbon 1498 → 1961
+C8L110 335.85 → 338.06  (2.21 s)  [storyboard] the cold-open dawn sea, three caravels
+C8L111 338.06 → 339.60  (1.54 s)  [storyboard] caravels sail out left
+C8L112 339.60 → 342.26  (2.66 s)  [storyboard] caravels on the horizon
+C8L113 342.26 → 346.18  (3.91 s)  [storyboard] peppercorn rolls into the sack (loops to cut 5), end card
+captions:
+    0.45–2.13   In *1498,
+    2.13–4.02   three small *ships
+    4.02–5.79   off *Kerala.
+    5.79–8.81   almost eleven *months,
+    8.81–9.45   all the way
+    9.45–10.47  around *Africa,
+   10.47–11.54  for one thing:
+   11.54–12.33  *pepper.
+   12.33–13.09  they had just
+   13.09–14.28  started a *story
+   14.28–16.00  that would last
+   16.00–17.61  *463 years.
+   19.21–21.03  In *1453,
+   21.03–22.59  the Ottomans took
+   22.59–23.92  *Constantinople,
+   23.92–25.01  the old roads
+   25.01–27.33  to the *East
+   27.33–28.47  pepper, silk
+   28.47–29.08  and *cotton
+   29.08–30.78  still reached *Europe,
+   30.78–31.94  only through
+   31.94–32.84  *middlemen,
+   32.84–33.96  every one
+   33.96–34.85  took a *cut.
+   34.85–36.04  so little *Portugal,
+   36.04–38.02  on the *edge
+   38.02–39.48  made a bold *bet:
+   39.48–40.21  can't go *through?
+   40.21–41.80  go *around.
+   41.80–42.59  Prince Henry,
+   42.59–43.76  the *Navigator,
+   43.76–44.92  ship after *ship
+   44.92–46.75  down *Africa's coast,
+   46.75–49.26  in *1488,
+   49.26–50.06  Dias rounded
+   50.06–51.84  the *Cape
+   51.84–53.95  the door
+   53.95–55.02  was *open.
+   56.62–57.84  ten years *later,
+   57.84–60.31  Vasco da *Gama
+   60.31–62.36  in East *Africa,
+   62.36–63.71  a Gujarati *pilot
+   63.71–64.23  who knew
+   64.23–65.74  the *monsoon winds,
+   65.74–67.67  in May *1498,
+   67.67–69.05  he reached *Calicut.
+   69.05–70.53  Calicut's Hindu *king,
+   70.53–71.87  the *Zamorin,
+   71.87–72.46  grew *rich
+   72.46–74.07  by welcoming *traders,
+   74.07–74.97  so he welcomed
+   74.97–76.06  this one *too.
+   76.06–77.66  the Arab *merchants
+   77.66–78.99  far less *happy.
+   78.99–80.12  for *centuries,
+   80.12–81.39  Indians, Arabs,
+   81.39–82.86  Africans, *Chinese
+   82.86–84.33  shared this *ocean
+   84.33–86.01  by unwritten *rules:
+   86.01–87.33  everyone *traded,
+   87.33–88.95  nobody *owned it.
+   88.95–89.98  the Portuguese
+   89.98–91.60  wanted to *own it.
+   91.60–93.94  da Gama sailed *home
+   93.94–95.64  worth a *fortune,
+   95.64–96.97  pepper that cost
+   96.97–98.20  *little in Kerala
+   98.20–99.51  sold for *many times
+   99.51–101.12 as much in *Europe.
+  102.72–103.78 the next fleet,
+  103.78–105.37 under *Cabral,
+  105.37–106.87 a trading *post
+  106.87–109.08 in *1500.
+  109.08–110.64 locals *attacked it,
+  110.64–112.13 several Portuguese
+  112.13–112.78 *died.
+  112.78–114.24 Cabral struck *back:
+  114.24–114.74 he *burned
+  114.74–116.23 Arab ships
+  116.23–117.41 turned his *cannons
+  117.41–118.38 on the city.
+  118.38–119.98 then he sailed *south,
+  119.98–122.27 made *friends
+  122.27–122.80 *Cochin
+  122.80–124.15 and Cannanore.
+  124.15–124.98 when da Gama
+  124.98–126.01 *returned,
+  126.01–128.33 he demanded
+  128.33–128.71 *every Arab trader
+  128.71–130.06 be *expelled,
+  130.06–130.92 the Zamorin
+  130.92–131.96 *refused,
+  131.96–134.10 trading posts grew
+  134.10–134.47 *walls
+  134.47–135.36 and guns.
+  135.36–136.70 in *1503,
+  136.70–138.89 the first *fort
+  138.89–140.03 at Cochin.
+  141.63–143.59 in *1505,
+  143.59–145.26 its first *governor,
+  145.26–147.24 Francisco de *Almeida,
+  147.24–148.72 a simple *plan:
+  148.72–149.89 forget the *land,
+  149.89–151.34 control the *water.
+  151.34–152.53 every ship needed
+  152.53–153.91 a *pass,
+  153.91–155.03 or risked being
+  155.03–155.79 *seized.
+  155.79–156.79 that threatened
+  156.79–157.43 *Gujarat,
+  157.43–158.28 *Egypt,
+  158.28–159.47 and even
+  159.47–160.23 *Venice,
+  160.23–162.54 so they joined
+  162.54–163.40 *forces.
+  163.40–164.54 in *1508,
+  164.54–165.25 at *Chaul,
+  165.25–167.24 they *won,
+  167.24–168.61 Almeida's own *son
+  168.61–169.62 was killed.
+  169.62–170.63 a year *later,
+  170.63–171.71 off *Diu,
+  171.71–172.82 Almeida *destroyed
+  172.82–173.91 their fleet.
+  173.91–174.54 his lesson
+  174.54–175.48 was *clear:
+  175.48–176.96 rule the *sea,
+  176.96–178.15 hold *India.
+  179.75–182.46 Afonso de *Albuquerque
+  182.46–183.69 went *further.
+  183.69–184.90 strongholds at
+  184.90–186.64 every *gate
+  186.64–187.37 from *Hormuz
+  187.37–188.57 to *Malacca,
+  188.57–189.96 in *1510,
+  189.96–191.09 he took *Goa
+  191.09–193.47 from *Bijapur.
+  193.47–196.46 marry *local women,
+  196.46–197.59 settle *down.
+  197.59–198.25 they brought
+  198.25–198.64 *tobacco
+  198.64–199.67 and cashew,
+  199.67–201.13 Albuquerque banned
+  201.13–202.38 *sati in Goa.
+  202.38–203.37 but *Muslims,
+  203.37–205.23 Portugal's old rivals,
+  205.23–206.09 were bitterly
+  206.09–207.02 *persecuted.
+  207.02–208.18 by *1530,
+  208.18–210.09 Goa was the *capital,
+  210.09–212.52 in *1537,
+  212.52–213.41 Bahadur *Shah
+  213.41–214.52 of Gujarat
+  214.52–216.15 went *aboard
+  216.15–217.18 for *talks,
+  217.18–217.75 and never
+  217.75–218.72 came *home.
+  220.32–221.55 in *1580,
+  221.55–223.73 two *Jesuit priests
+  223.73–225.25 the court of
+  225.25–226.09 *Akbar,
+  226.09–226.85 who loved
+  226.85–227.47 *debating
+  227.47–228.38 religion.
+  228.38–230.91 if the emperor
+  230.91–231.94 *converted,
+  231.94–232.83 Mughal India
+  232.83–234.01 would *follow.
+  234.01–235.18 he *didn't.
+  235.18–236.46 back in *Goa,
+  236.46–238.28 the *Inquisition
+  238.28–239.11 Hindus were
+  239.11–240.40 *persecuted too.
+  240.40–243.11 in *1608,
+  243.11–244.60 William *Hawkins,
+  244.60–245.75 landed at *Surat
+  245.75–246.27 a *letter
+  246.27–247.36 from his king.
+  247.36–249.02 the Portuguese tried
+  249.02–250.28 to *stop him,
+  250.28–251.72 in *1612,
+  251.72–253.95 English ships *won
+  253.95–255.19 near Surat,
+  255.19–256.00 Jahangir,
+  256.00–258.18 with no *navy,
+  258.18–259.50 was *impressed.
+  261.10–262.22 the worst *blow
+  262.22–263.64 came in *Bengal.
+  263.64–265.79 at *Hooghly,
+  265.79–266.33 a cruel
+  266.33–267.60 *slave trade,
+  267.60–268.16 seizing *children,
+  268.16–270.23 Hindu and Muslim
+  270.23–272.47 chroniclers say,
+  272.47–274.29 two girls of
+  274.29–275.43 *Mumtaz Mahal.
+  275.43–277.06 in *1632,
+  277.06–278.31 Shah *Jahan
+  278.31–280.03 besieged Hooghly,
+  280.03–281.83 three months *later,
+  281.83–284.10 they were *gone.
+  284.10–285.49 everything was
+  285.49–286.70 *slipping too.
+  286.70–287.88 Portugal's *crown
+  287.88–289.30 passed to *Spain,
+  289.30–290.31 dragging it into
+  290.31–291.57 Spain's *wars,
+  291.57–292.75 *Brazil was worth
+  292.75–294.16 more than India,
+  294.16–295.55 the sea route
+  295.55–297.02 no longer a *secret.
+  297.02–298.61 by *1663,
+  298.61–300.45 the *Dutch
+  300.45–303.27 took Malabar's forts.
+  303.27–305.06 in *1739,
+  305.06–305.98 the *Marathas
+  305.98–307.20 took Bassein.
+  307.20–308.57 as one governor
+  308.57–309.81 put it:
+  309.81–310.51 a *sword in one hand,
+  310.51–313.21 a *cross in the other,
+  313.21–314.21 pockets full
+  314.21–315.17 of *gold,
+  315.17–316.35 too *heavy
+  316.35–317.68 to hold either.
+  319.28–320.00 and *yet,
+  320.00–321.57 Goa, Daman, Diu
+  321.57–323.00 stayed *Portuguese.
+  323.00–324.23 they *outlasted
+  324.23–325.83 Mughals, Marathas,
+  325.83–327.25 even the *British.
+  327.25–328.91 only in *1961
+  328.91–329.58 did India
+  329.58–331.27 take them *back,
+  331.27–333.54 *463 years
+  333.54–335.88 after da Gama.
+  335.88–337.12 the *first
+  337.12–338.09 to arrive
+  338.09–338.84 were the *last
+  338.84–339.63 to leave.
+  339.63–340.61 it all began
+  340.61–342.29 with three *ships,
+  342.29–343.01 and a taste
+  343.01–346.18 for *pepper.
+CHECK OK
