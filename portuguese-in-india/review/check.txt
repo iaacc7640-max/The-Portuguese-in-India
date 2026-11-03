@@ -73,19 +73,23 @@ C4l   171.68 → 173.88  (2.19 s)  the brown paper sails fall one by one like cu
 C4m   173.88 → 175.45  (1.57 s)  Almeida close-up, looking out to sea
 C4n   175.45 → 178.18  (2.73 s)  torn slip "Rule the sea, hold India." labelled paraphrase · Almeida, over the blue-water map
 CARD5 178.18 → 179.72  (1.54 s)  chapter card 1510: Albuquerque's Goa
-C5L63 179.72 → 183.66  (3.94 s)  [storyboard] Albuquerque (very long white beard, tall hat)
-C5L64 183.66 → 186.61  (2.95 s)  [storyboard] map: padlock-forts on the sea's doors
-C5L65 186.61 → 188.54  (1.93 s)  [storyboard] pins pop at Hormuz, then Malacca
-C5L66 188.54 → 193.44  (4.89 s)  [storyboard] Goa flag swaps Bijapur → Portugal
-C5L67 193.44 → 197.56  (4.12 s)  [storyboard] wedding garland, two small houses
-C5L68 197.56 → 199.64  (2.08 s)  [storyboard] tobacco + cashew plants grow
-C5L69 199.64 → 202.35  (2.71 s)  [storyboard] law scroll, wax seal stamps → "banned"
-C5L70 202.35 → 205.20  (2.85 s)  [storyboard] Goa street at dusk
-C5L71 205.20 → 206.99  (1.79 s)  [storyboard] mosque door closes, padlock
-C5L72 206.99 → 210.06  (3.07 s)  [storyboard] Goa skyline with church, "capital" seal
-C5L73 210.06 → 214.49  (4.43 s)  [storyboard] Bahadur Shah (crimson-brown)
-C5L74 214.49 → 217.15  (2.66 s)  [storyboard] he steps onto a ship at dusk
-C5L75 217.15 → 218.75  (1.60 s)  [storyboard] his turban floating on dark water
+C5a   179.72 → 182.43  (2.71 s)  Albuquerque (very long white beard, tall hat) steps forward; name slip
+C5b   182.43 → 183.66  (1.23 s)  ocean map: his pointing hand sweeps across; a crimson arrow pushes past Cochin
+C5c   183.66 → 186.61  (2.95 s)  ocean map: royal-blue forts appear at the sea gates, a small padlock on each
+C5d   186.61 → 188.54  (1.93 s)  Hormuz and Malacca pinned (Hormuz at the Gulf mouth, Malacca on the Malay peninsula)
+C5e   188.54 → 190.18  (1.63 s)  map: zoom to Goa, ribbon 1510
+C5f   190.18 → 193.44  (3.26 s)  flag swap on Goa: Bijapur brown flag slides down, the Portuguese flag rises
+C5g   193.44 → 196.43  (3.00 s)  a marigold wedding garland strings across the frame
+C5h   196.43 → 197.56  (1.13 s)  small family houses go up, smoke from the hearths
+C5i   197.56 → 199.64  (2.08 s)  a tobacco plant then a cashew tree grow from the soil, each on its word
+C5j   199.64 → 202.35  (2.71 s)  a decree scroll "SATI BANNED IN GOA"; the seal stamps on "banned"
+C5k   202.35 → 205.20  (2.85 s)  a quiet Goa street at dusk, a mosque at its end
+C5l   205.20 → 206.99  (1.79 s)  the mosque door swings shut and a padlock snaps on (no people)
+C5m   206.99 → 210.06  (3.07 s)  Goa skyline with its white church; ribbon 1530; seal + CAPITAL slip on "capital"
+C5n   210.06 → 212.02  (1.96 s)  Gujarat map: Diu pinned, ribbon 1537
+C5o   212.02 → 214.49  (2.47 s)  Bahadur Shah (crimson-brown robe and turban) on the shore at Diu
+C5p   214.49 → 217.15  (2.66 s)  dusk: Bahadur Shah walks up the gangplank onto a Portuguese ship
+C5q   217.15 → 218.75  (1.60 s)  night: only his crimson-brown turban floats on the dark water
 CARD6 218.75 → 220.29  (1.54 s)  chapter card 1580: Priests and Emperors
 C6L76 220.29 → 223.70  (3.41 s)  [storyboard] two priests on the road
 C6L77 223.70 → 226.06  (2.36 s)  [storyboard] Fatehpur Sikri arch
