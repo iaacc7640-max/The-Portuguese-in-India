@@ -132,14 +132,16 @@ C7u   309.78 → 313.18  (3.40 s)  a paper figure holds a sword in one hand and 
 C7v   313.18 → 315.14  (1.96 s)  coins pile into his pockets and weigh him down
 C7w   315.14 → 317.71  (2.57 s)  he drops the sword and the cross; the slip: paraphrase · de Souza
 CARD8 317.71 → 319.25  (1.54 s)  chapter card 1961: Last to Leave
-C8L106 319.25 → 322.97  (3.72 s)  [storyboard] three blue pins
-C8L107 322.97 → 327.22  (4.26 s)  [storyboard] other powers' flags fade around them
-C8L108 327.22 → 331.24  (4.02 s)  [storyboard] era bar races to 1961, Indian tricolour rises over Goa
-C8L109 331.24 → 335.85  (4.61 s)  [storyboard] ribbon 1498 → 1961
-C8L110 335.85 → 338.06  (2.21 s)  [storyboard] the cold-open dawn sea, three caravels
-C8L111 338.06 → 339.60  (1.54 s)  [storyboard] caravels sail out left
-C8L112 339.60 → 342.26  (2.66 s)  [storyboard] caravels on the horizon
-C8L113 342.26 → 346.18  (3.91 s)  [storyboard] peppercorn rolls into the sack (loops to cut 5), end card
+C8a   319.25 → 322.97  (3.72 s)  west India map: Goa, Daman and Diu pinned in royal blue, one per name
+C8b   322.97 → 326.43  (3.46 s)  Mughal and Maratha flags stand around the three pins, then fade on their names
+C8c   326.43 → 327.22  (0.80 s)  a British flag (crimson cross) slides down its pole beside the three blue pins
+C8d   327.22 → 331.24  (4.02 s)  the era bar races to 1961; over the Goa skyline the Portuguese flag lowers and the Indian tricolour rises
+C8e   331.24 → 333.51  (2.26 s)  ribbon 1498 -> 1961 and a 463 YEARS slip
+C8f   333.51 → 335.85  (2.34 s)  the route map: da Gama's crimson route draws on once more, to Calicut
+C8g   335.85 → 338.06  (2.21 s)  callback: the cold-open dawn, three caravels slide in
+C8h   338.06 → 339.60  (1.54 s)  the three caravels sail out of frame to the left
+C8i   339.60 → 342.26  (2.66 s)  dawn, the three small ships at anchor off Kerala
+C8j   342.26 → 346.18  (3.91 s)  the peppercorn rolls into the sack on "pepper"; end card FIRST IN, LAST OUT
 captions:
     0.45–2.13   In *1498,
     2.13–4.02   three small *ships
