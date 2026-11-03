@@ -91,19 +91,22 @@ C5o   212.02 → 214.49  (2.47 s)  Bahadur Shah (crimson-brown robe and turban) 
 C5p   214.49 → 217.15  (2.66 s)  dusk: Bahadur Shah walks up the gangplank onto a Portuguese ship
 C5q   217.15 → 218.75  (1.60 s)  night: only his crimson-brown turban floats on the dark water
 CARD6 218.75 → 220.29  (1.54 s)  chapter card 1580: Priests and Emperors
-C6L76 220.29 → 223.70  (3.41 s)  [storyboard] two priests on the road
-C6L77 223.70 → 226.06  (2.36 s)  [storyboard] Fatehpur Sikri arch
-C6L78 226.06 → 228.35  (2.29 s)  [storyboard] Akbar among scholars of several faiths
-C6L79 228.35 → 231.91  (3.56 s)  [storyboard] thought bubble rises
-C6L80 231.91 → 233.98  (2.06 s)  [storyboard] bubble map turns blue
-C6L81 233.98 → 235.15  (1.17 s)  [storyboard] bubble pops
-C6L82 235.15 → 238.25  (3.11 s)  [storyboard] Goa church
-C6L83 238.25 → 240.37  (2.12 s)  [storyboard] temple door closes
-C6L84 240.37 → 244.57  (4.20 s)  [storyboard] Hawkins steps off at Surat
-C6L85 244.57 → 247.33  (2.76 s)  [storyboard] letter with red seal
-C6L86 247.33 → 250.25  (2.92 s)  [storyboard] Jesuit blocks a doorway
-C6L87 250.25 → 255.16  (4.91 s)  [storyboard] small English sails vs bigger fleet; big sails tear
-C6L88 255.16 → 259.53  (4.37 s)  [storyboard] Jahangir raises an eyebrow
+C6a   220.29 → 223.70  (3.41 s)  two Jesuit priests walk the road north from Goa; ribbon 1580
+C6b   223.70 → 226.06  (2.36 s)  the court arch at Fatehpur Sikri; Akbar (green + gold turban); slip AKBAR
+C6c   226.06 → 228.35  (2.29 s)  Akbar listens to scholars of several faiths; little talk bubbles alternate
+C6d   228.35 → 231.91  (3.56 s)  a thought bubble with a map of India rises over the Jesuits
+C6e   231.91 → 233.98  (2.06 s)  the map in the bubble turns royal blue on "follow"
+C6f   233.98 → 235.15  (1.17 s)  the bubble pops; Akbar turns away
+C6g   235.15 → 238.25  (3.11 s)  Goa at dusk: the white church; slip THE INQUISITION
+C6h   238.25 → 240.37  (2.12 s)  a temple door swings shut and is padlocked (no people)
+C6i   240.37 → 243.08  (2.71 s)  an English ship (crimson cross) sails into Surat; ribbon 1608
+C6j   243.08 → 244.57  (1.49 s)  Hawkins (tall black hat, ruff) steps onto the Surat quay; slip WILLIAM HAWKINS
+C6k   244.57 → 247.33  (2.76 s)  Surat: Hawkins holds out the king's letter with its red wax seal
+C6l   247.33 → 250.25  (2.92 s)  at the court arch a Jesuit spreads his arms across the doorway; Hawkins waits outside
+C6m   250.25 → 252.50  (2.25 s)  off Surat: two small English ships face a bigger Portuguese fleet; ribbon 1612
+C6n   252.50 → 255.16  (2.66 s)  cannon puffs; the Portuguese ships drift back and shrink away (no people)
+C6o   255.16 → 258.45  (3.29 s)  Jahangir (green, gold turban with plume) on his court seat; slip NO NAVY
+C6p   258.45 → 259.53  (1.08 s)  close-up: Jahangir raises an eyebrow
 CARD7 259.53 → 261.07  (1.54 s)  chapter card 1632: The Fall
 C7L89 261.07 → 263.61  (2.55 s)  [storyboard] map: Bengal, Hooghly pin
 C7L90 263.61 → 267.57  (3.96 s)  [storyboard] Hooghly river port
