@@ -108,23 +108,29 @@ C6n   252.50 → 255.16  (2.66 s)  cannon puffs; the Portuguese ships drift back
 C6o   255.16 → 258.45  (3.29 s)  Jahangir (green, gold turban with plume) on his court seat; slip NO NAVY
 C6p   258.45 → 259.53  (1.08 s)  close-up: Jahangir raises an eyebrow
 CARD7 259.53 → 261.07  (1.54 s)  chapter card 1632: The Fall
-C7L89 261.07 → 263.61  (2.55 s)  [storyboard] map: Bengal, Hooghly pin
-C7L90 263.61 → 267.57  (3.96 s)  [storyboard] Hooghly river port
-C7L91 267.57 → 270.20  (2.63 s)  [storyboard] ledger page with a broken chain
-C7L92 270.20 → 275.40  (5.20 s)  [storyboard] Mughal seal over an empty doorway
-C7L93 275.40 → 280.00  (4.60 s)  [storyboard] seal stamps the map, tents ring the port
-C7L94 280.00 → 284.07  (4.06 s)  [storyboard] calendar flips 3 pages, flag lowers
-C7L95 284.07 → 286.67  (2.61 s)  [storyboard] map tilts, pins slide
-C7L96 286.67 → 289.27  (2.60 s)  [storyboard] crown slides onto a Spanish crown
-C7L97 289.27 → 291.54  (2.27 s)  [storyboard] smoke on a far horizon
-C7L98 291.54 → 294.13  (2.59 s)  [storyboard] map swings west, coins roll to Brazil
-C7L99 294.13 → 296.99  (2.86 s)  [storyboard] route map copied onto Dutch + English parchment
-C7L100 296.99 → 303.24  (6.25 s)  [storyboard] Malabar forts flip to Dutch flags one by one
-C7L101 303.24 → 307.17  (3.93 s)  [storyboard] Bassein flag → saffron
-C7L102 307.17 → 309.78  (2.61 s)  [storyboard] slip with the speaker's name
-C7L103 309.78 → 313.18  (3.40 s)  [storyboard] paper figure holds sword + cross
-C7L104 313.18 → 315.14  (1.96 s)  [storyboard] pockets bulge with coins
-C7L105 315.14 → 317.71  (2.57 s)  [storyboard] drops both; slip "paraphrase · Portuguese governor (de Souza)"
+C7a   261.07 → 263.61  (2.55 s)  India map pushes in to Bengal; Hooghly pinned
+C7b   263.61 → 265.49  (1.88 s)  the Hooghly river port, Portuguese flag over the warehouses
+C7c   265.49 → 267.57  (2.08 s)  a trader's ledger page; a broken chain draws across it (the slave trade, as a symbol)
+C7d   267.57 → 270.20  (2.63 s)  close on the ledger: the broken chain, a crimson line under it
+C7e   270.20 → 272.44  (2.24 s)  a Mughal chronicle opens; a quill writes
+C7f   272.44 → 275.40  (2.96 s)  the Mughal seal over an empty palace doorway with two empty cushions
+C7g   275.40 → 278.28  (2.88 s)  Shah Jahan (green, grey beard) raises his seal; ribbon 1632
+C7h   278.28 → 280.00  (1.72 s)  green Mughal tents ring the Hooghly port one by one (no fighting)
+C7i   280.00 → 281.80  (1.80 s)  a calendar flips three months: JUNE, JULY, AUGUST, SEPTEMBER
+C7j   281.80 → 284.07  (2.27 s)  the Portuguese flag slides down the pole over the empty port
+C7k   284.07 → 286.67  (2.61 s)  the ocean map tilts; the Portuguese forts slide toward the edge
+C7l   286.67 → 289.27  (2.60 s)  the Spanish crown slides down onto the Portuguese crown on "Spain"
+C7m   289.27 → 291.54  (2.27 s)  far horizon: smoke columns, a ship under the Spanish flag (no fighting shown)
+C7n   291.54 → 294.13  (2.59 s)  the map swings west to the Atlantic; coins roll from India toward Brazil
+C7o   294.13 → 296.99  (2.86 s)  the crimson route map, then copies slide out under Dutch and English flags
+C7p   296.99 → 300.01  (3.02 s)  Dutch ships (orange-white-blue) sail in; ribbon 1663
+C7q   300.01 → 303.24  (3.24 s)  Malabar map: the forts at Cannanore, Calicut coast and Cochin flip from royal blue to Dutch orange one by one
+C7r   303.24 → 305.34  (2.10 s)  Gujarat-Konkan map: Bassein pinned; ribbon 1739
+C7s   305.34 → 307.17  (1.82 s)  Bassein fort: the Portuguese flag lowers, the saffron Maratha flag rises; a Maratha soldier stands by
+C7t   307.17 → 309.78  (2.61 s)  parchment: slip AS ONE PORTUGUESE GOVERNOR PUT IT (paraphrase follows)
+C7u   309.78 → 313.18  (3.40 s)  a paper figure holds a sword in one hand and a cross in the other
+C7v   313.18 → 315.14  (1.96 s)  coins pile into his pockets and weigh him down
+C7w   315.14 → 317.71  (2.57 s)  he drops the sword and the cross; the slip: paraphrase · de Souza
 CARD8 317.71 → 319.25  (1.54 s)  chapter card 1961: Last to Leave
 C8L106 319.25 → 322.97  (3.72 s)  [storyboard] three blue pins
 C8L107 322.97 → 327.22  (4.26 s)  [storyboard] other powers' flags fade around them
