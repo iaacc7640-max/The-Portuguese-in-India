@@ -2,6 +2,7 @@
 import { ctx, setCtx } from './core/lib.js';
 import { startBoard, panel, frame, cell, small } from './core/board.js';
 import * as K from './core/kit.js';
+import { dawnArrival } from './chapters/ch0_intro.js';
 const { P } = K;
 const q = new URLSearchParams(location.search), board = q.get('board') || 'cast';
 const cv = document.getElementById('cv');
@@ -76,6 +77,14 @@ try {
     else { const pr = K.realMap(K.VIEWS.route, { gold: ['portugal'] }); K.placeRoute(pr, K.SEA_ROUTE, 1); K.pin(pr, 'LISBON', { side: 'up' }); K.pin(pr, 'CALICUT', { side: 'down', dx: -70 });
       ctx.save(); ctx.globalAlpha = 0.55; ctx.fillStyle = P.parch; ctx.fillRect(0, 1180, 1080, 740); ctx.restore(); K.wave(1320, 0.5, { color: P.seaDark }); K.wave(1480, 1.2, { phase: 2 });
       K.caravel(560, 1360, 0.95, 0.4); K.ribbon('1498', 540, 330, 1.3, 120); K.torn('FIRST IN, LAST OUT', 540, 560, 1.15, -0.02, 84); } }
+  if (board === 'cover16') {   // the 16:9 cover / thumbnail (spec 001-video-16x9 FR-12)
+    cv.width = 1920; cv.height = 1080; setCtx(cv.getContext('2d'));
+    ctx.save(); ctx.translate(960, 560); ctx.scale(0.72, 0.72); ctx.translate(-540, -1000); dawnArrival(6, 6, 6, 1, 1, { x: 0, y: 0, zoom: 1 }); ctx.restore();
+    const g = ctx.createRadialGradient(960, 540, 520, 960, 540, 1150); g.addColorStop(0, 'rgba(90,60,30,0)'); g.addColorStop(1, 'rgba(90,60,30,0.32)'); ctx.fillStyle = g; ctx.fillRect(0, 0, 1920, 1080);
+    K.ribbon('1498 → 1961', 960, 150, 1.05, 100); K.torn('FIRST IN, LAST OUT', 960, 330, 1.25, -0.015, 110);
+    K.captionStrip([{ txt: 'The' }, { txt: 'Portuguese' }, { txt: 'in' }, { txt: 'India', hi: 1 }], 960, 960, 1.1, { ...K.CAPLOOK, font: '700 80px Caladea', maxW: 1500 });
+    ctx.strokeStyle = 'rgba(62,44,30,0.85)'; ctx.lineWidth = 6; ctx.strokeRect(16, 16, 1888, 1048); ctx.strokeStyle = 'rgba(62,44,30,0.35)'; ctx.lineWidth = 2; ctx.strokeRect(28, 28, 1864, 1024);
+  }
   if (board === 'map') { cv.width = 1080; cv.height = 1920; setCtx(cv.getContext('2d')); const v = q.get('v') || 'india'; const pr = K.realMap(K.VIEWS[v]); (q.get('pins') || '').split(',').filter(Boolean).forEach((n, j) => K.pin(pr, n, { side: j % 2 ? 'right' : 'left' })); K.eraBar(1); }
   window.REVIEW_READY = true;
 } catch (e) { window.REVIEW_ERROR = String(e.stack || e); }

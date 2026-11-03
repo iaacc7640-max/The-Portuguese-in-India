@@ -1,7 +1,9 @@
 // Inside Out engine: canvas, palette, math and drawing primitives.
 // Every drawing function in the kit uses the shared `ctx` exported here (set once by main.js).
 export const W = 1080, H = 1920, FPS = 30;          // stage (design) size; shots draw in these coordinates
-export const SW = 1920, SH = 1080;                  // screen size: the 16:9 frame (main.js places the stage in it)
+export let SW = 1920, SH = 1080;                    // screen size: the 16:9 frame (main.js places the stage in it)
+/** switch the screen size (9:16 Reels render the stage 1:1 at 1080x1920) */
+export function setScreen(w, h) { SW = w; SH = h; }
 export let ctx = null;
 export function setCtx(c) { ctx = c; }
 

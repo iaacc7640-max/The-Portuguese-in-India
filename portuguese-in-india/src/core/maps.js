@@ -11,6 +11,8 @@ export async function loadGeo() {
   GEO = await r.json();
   BOX = GEO.land.map((p) => { let a = 1e9, b = 1e9, c = -1e9, d = -1e9; for (const [x, y] of p) { a = Math.min(a, x); b = Math.min(b, y); c = Math.max(c, x); d = Math.max(d, y); } return [a, b, c, d]; });
 }
+/** the visible stage width, for keeping pin slips on screen (16:9 shows far more than the 1080 stage; main.js narrows it for 9:16) */
+export const VIS = { x0: -700, x1: W + 700 };
 export const place = (name) => { const p = GEO.places[name]; if (!p) throw new Error(`no place "${name}" in geo.json`); return p; };
 
 const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360)) * 180 / Math.PI;
@@ -83,7 +85,7 @@ export function pin(pr, name, o = {}) {
   if (side === 'down' && y + gap > 1430) side = 'up';
   const [lx, ly] = side === 'up' ? [x, y - gap] : side === 'down' ? [x, y + gap] : side === 'left' ? [x - 30 - (o.text || name).length * size * 0.36, y] : [x + 30 + (o.text || name).length * size * 0.36, y];
   ctx.font = `700 ${size}px Caladea`; const hw = (ctx.measureText(o.text || name).width + 70) / 2;   // keep the slip inside the frame
-  const sx = clamp(lx + dx, -700 + hw, W + 700 - hw);   // the visible 16:9 width in stage coordinates
+  const sx = clamp(lx + dx, VIS.x0 + hw, VIS.x1 - hw);
   slip(o.text || name, sx, Math.min(1430, ly + dy), sc, o.rot ?? (rnd(x) - 0.5) * 0.06, size);
   return [x, y];
 }

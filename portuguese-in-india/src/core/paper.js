@@ -144,7 +144,7 @@ export function timeline(years, x, y, w, p = 0, active = -1) {
 export function slip(text, x, y, sc = 1, rot = -0.03, size = 54) { if (sc <= 0) return; ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(sc, sc); ctx.font = `700 ${size}px ${SERIF}`; const w = ctx.measureText(text).width + 70; cut(P_rr(-w / 2, -size * 0.8, w, size * 1.6, 4), P.edge); ctx.fillStyle = P.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 0, 4); circle(0, -size * 0.8 + 6, 10, P.crimson); ctx.restore(); }
 
 // ═════════════════════════ CAPTION LOOK ═════════════════════════
-export const CAPLOOK = { font: `700 72px ${SERIF}`, y: 978, maxW: 1400, fg: P.ink, hi: P.crimson };
+export const CAPLOOK = { font: `700 72px ${SERIF}`, x: 960, y: 978, maxW: 1400, fg: P.ink, hi: P.crimson };
 /** caption on a torn paper strip */
 export function captionStrip(words, x, y, sc = 1, look = CAPLOOK) {
   ctx.save(); ctx.translate(x, y); ctx.scale(sc, sc); ctx.font = look.font; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';

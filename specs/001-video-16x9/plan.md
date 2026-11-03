@@ -1,7 +1,7 @@
 ---
 id: 001-video-16x9
 spec: spec.md
-spec_version: 35bcb8e22df7b4f67f7015024189a7143a542857dfd316be90d16b76c5a91e01
+spec_version: 5b86f0e93e82a0a829f0d2027e4baa4935220a45e5f0f9457402315736e4eeb5
 created: 2026-11-03
 ---
 
@@ -14,6 +14,8 @@ created: 2026-11-03
 - Voice: a project copy of voice.py (tools/voice.py) replaces marked names with fixed phonemes (Akbar ˈʌkbəɹ, Jahangir dʒəhˈɑːŋɡiəɹ) and sends phonemes to Kokoro (FR-9).
 - CH1: a new army-and-fire shot replaces the seal shot; the seal is removed from the map shots (FR-5, FR-6). The Dias slip is removed and its captions changed in PLAN.md (FR-8).
 - flag('portugal') is redrawn to the attached design (FR-11).
+- Cover (FR-12): a review board `cover16` draws the title, ribbon, caravels and a caption strip at 1920x1080, saved by tools/snap.mjs as renders/cover_16x9.jpg.
+- Reels (FR-13): main.js gets a portrait mode (`?portrait=1`, passed by tools/shorts.sh through QS): the 1080x1920 screen shows the stage at scale 1 (the original 9:16 framing), captions at y 1640, the era bar across the top, the same border, and the Reel's hook line. tools/shorts.sh renders the three segments from the current data/chapters.json times and adds the end card.
 
 ## 2. Affected modules and files
 The repo keeps its own structure: portuguese-in-india/index.html, src/main.js, src/core/{lib,paper,scene,maps,captions}.js, src/shots.js, src/chapters/ch1_spice.js (plus small fixes in other chapters as the sheets show), tools/plan_to_script.py, tools/chapters.py, new tools/voice.py, PLAN.md.

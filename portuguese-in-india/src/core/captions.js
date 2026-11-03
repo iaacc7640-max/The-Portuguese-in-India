@@ -43,5 +43,5 @@ export const captionList = () => caps;
 export function drawCaption(t) {
   const c = caps.find((c) => t >= c.s && t < c.e); if (!c) return;
   const lt = t - c.s, sc = lt < 0.18 ? lerp(0.7, 1, eob(seg(lt, 0, 0.18))) : 1;
-  captionStrip(c.words, 960, CAPLOOK.y, sc);
+  captionStrip(c.words, CAPLOOK.x, CAPLOOK.y, sc);
 }
