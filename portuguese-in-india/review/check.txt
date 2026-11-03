@@ -5,8 +5,8 @@ C0c     5.76 →   8.78  (3.02 s)  deck: hourglass runs, calendar peels JUL 1497
 C0d     8.78 →  10.44  (1.66 s)  real map: crimson route Lisbon -> Cape -> Calicut draws on
 C0e    10.44 →  12.30  (1.86 s)  pepper vine close-up; a peppercorn rolls into the sack on "pepper"
 C0f    12.30 →  14.25  (1.95 s)  a quill writes the first line of a page
-C0g    14.25 →  17.38  (3.13 s)  era bar races 1498 -> 1961, ribbon "1498 -> 1961", title slip FIRST IN, LAST OUT on "years"
-CARD1  17.38 →  19.18  (1.80 s)  chapter card 1453: The Spice Problem
+C0g    14.25 →  17.64  (3.39 s)  era bar races 1498 -> 1961, ribbon "1498 -> 1961", title slip FIRST IN, LAST OUT on "years"
+CARD1  17.64 →  19.18  (1.54 s)  chapter card 1453: The Spice Problem
 C1L7   19.18 →  21.00  (1.82 s)  [storyboard] map Europe–Med, era bar tick 1453 turns crimson
 C1L8   21.00 →  23.89  (2.89 s)  [storyboard] Constantinople seal turns crimson → "captured"
 C1L9   23.89 →  27.30  (3.41 s)  [storyboard] land route gets a padlock → "hands"
@@ -19,8 +19,8 @@ C1L15  39.45 →  41.77  (2.32 s)  [storyboard] arrow hits padlock, bends around
 C1L16  41.77 →  43.73  (1.96 s)  [storyboard] Henry (dark hood) points at wall map
 C1L17  43.73 →  46.72  (2.99 s)  [storyboard] caravels step down the coast, each leaves a pin
 C1L18  46.72 →  51.81  (5.09 s)  [storyboard] Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE
-C1L19  51.81 →  54.79  (2.98 s)  [storyboard] paper wall, door-shaped gap swings open, sea light → "open"
-CARD2  54.79 →  56.59  (1.80 s)  chapter card 1498: Hello, Calicut
+C1L19  51.81 →  55.05  (3.24 s)  [storyboard] paper wall, door-shaped gap swings open, sea light → "open"
+CARD2  55.05 →  56.59  (1.54 s)  chapter card 1498: Hello, Calicut
 C2a    56.59 →  60.28  (3.69 s)  paper door open on the sea; da Gama walks in and through
 C2b    60.28 →  63.68  (3.40 s)  Malindi harbour: the Gujarati pilot (kamal) walks the pier to the caravel
 C2c    63.68 →  65.71  (2.03 s)  ocean map: monsoon wind arrows push the caravel Malindi -> Calicut
@@ -29,14 +29,16 @@ C2e    69.02 →  71.84  (2.82 s)  Calicut court: the Zamorin seated, parasol be
 C2f    71.84 →  74.04  (2.20 s)  harbour full of many-coloured sails; coins drop into a chest
 C2g    74.04 →  76.03  (1.99 s)  court: da Gama bows with a gift chest, the Zamorin raises a hand in welcome
 C2h    76.03 →  78.96  (2.92 s)  Arab merchant over his ledger frowns at a blue-cross sail in the window
-C2i    78.96 →  82.83  (3.88 s)  ocean map fills with sails of four colours, one group per name
+C2i    78.96 →  81.36  (2.40 s)  ocean map fills with sails of four colours, one group per name
+C2i2   81.36 →  82.83  (1.47 s)  closer: African and Chinese sails join the shared ocean
 C2j    82.83 →  85.98  (3.14 s)  ink trade lanes criss-cross the ocean, sails moving along them
 C2k    85.98 →  88.92  (2.94 s)  sails swap places along the lanes; coins pop between; NO OWNER slip on "nobody"
 C2l    88.92 →  91.57  (2.66 s)  one blue-cross caravel grows in the middle of the ocean, the other sails shrink to their coasts
-C2m    91.57 →  95.61  (4.04 s)  sunset sea: the caravel, deck piled with sacks, sails west (left)
+C2m    91.57 →  93.51  (1.93 s)  sunset sea: the caravel, deck piled with sacks, sails west (left)
+C2m2   93.51 →  95.61  (2.11 s)  deck close-up: sacks of pepper piled high, A FORTUNE slip on "fortune"
 C2n    95.61 →  98.17  (2.56 s)  spice scale: one sack of pepper against two coins (cheap in Kerala)
-C2o    98.17 → 100.89  (2.72 s)  IN EUROPE: the coin pan fills tall and the scale tips the other way on "many"
-CARD3 100.89 → 102.69  (1.80 s)  chapter card 1500: Traders Become Raiders
+C2o    98.17 → 101.15  (2.98 s)  IN EUROPE: the coin pan fills tall and the scale tips the other way on "many"
+CARD3 101.15 → 102.69  (1.54 s)  chapter card 1500: Traders Become Raiders
 C3L35 102.69 → 105.34  (2.65 s)  [storyboard] Cabral on deck (helmet, red sash)
 C3L36 105.34 → 109.05  (3.71 s)  [storyboard] factory hut with blue flag goes up
 C3L37 109.05 → 110.61  (1.56 s)  [storyboard] the hut door slams shut
@@ -50,8 +52,8 @@ C3L44 124.12 → 125.98  (1.86 s)  [storyboard] da Gama's blue sail back on the 
 C3L45 125.98 → 130.03  (4.05 s)  [storyboard] da Gama holds out a demand letter
 C3L46 130.03 → 131.93  (1.90 s)  [storyboard] Zamorin shakes head, tears the paper
 C3L47 131.93 → 135.33  (3.40 s)  [storyboard] the hut grows walls
-C3L48 135.33 → 139.80  (4.47 s)  [storyboard] walls → towers, ribbon "Cochin 1503"
-CARD4 139.80 → 141.60  (1.80 s)  chapter card 1505: Rule the Water
+C3L48 135.33 → 140.06  (4.73 s)  [storyboard] walls → towers, ribbon "Cochin 1503"
+CARD4 140.06 → 141.60  (1.54 s)  chapter card 1505: Rule the Water
 C4L49 141.60 → 145.23  (3.63 s)  [storyboard] Almeida arrives (grey beard, armour)
 C4L50 145.23 → 148.69  (3.46 s)  [storyboard] Almeida unrolls a map
 C4L51 148.69 → 151.31  (2.63 s)  [storyboard] blue wash floods the sea on the map → "water"
@@ -65,8 +67,8 @@ C4L58 167.21 → 169.59  (2.39 s)  [storyboard] empty helmet on a table, candle
 C4L59 169.59 → 171.68  (2.09 s)  [storyboard] dawn sea, Diu pin
 C4L60 171.68 → 173.88  (2.19 s)  [storyboard] their paper sails fall one by one
 C4L61 173.88 → 175.45  (1.57 s)  [storyboard] Almeida close-up
-C4L62 175.45 → 177.92  (2.47 s)  [storyboard] slip "Rule the sea, hold India" — paraphrase · Almeida
-CARD5 177.92 → 179.72  (1.80 s)  chapter card 1510: Albuquerque's Goa
+C4L62 175.45 → 178.18  (2.73 s)  [storyboard] slip "Rule the sea, hold India" — paraphrase · Almeida
+CARD5 178.18 → 179.72  (1.54 s)  chapter card 1510: Albuquerque's Goa
 C5L63 179.72 → 183.66  (3.94 s)  [storyboard] Albuquerque (very long white beard, tall hat)
 C5L64 183.66 → 186.61  (2.95 s)  [storyboard] map: padlock-forts on the sea's doors
 C5L65 186.61 → 188.54  (1.93 s)  [storyboard] pins pop at Hormuz, then Malacca
@@ -79,8 +81,8 @@ C5L71 205.20 → 206.99  (1.79 s)  [storyboard] mosque door closes, padlock
 C5L72 206.99 → 210.06  (3.07 s)  [storyboard] Goa skyline with church, "capital" seal
 C5L73 210.06 → 214.49  (4.43 s)  [storyboard] Bahadur Shah (crimson-brown)
 C5L74 214.49 → 217.15  (2.66 s)  [storyboard] he steps onto a ship at dusk
-C5L75 217.15 → 218.49  (1.34 s)  [storyboard] his turban floating on dark water
-CARD6 218.49 → 220.29  (1.80 s)  chapter card 1580: Priests and Emperors
+C5L75 217.15 → 218.75  (1.60 s)  [storyboard] his turban floating on dark water
+CARD6 218.75 → 220.29  (1.54 s)  chapter card 1580: Priests and Emperors
 C6L76 220.29 → 223.70  (3.41 s)  [storyboard] two priests on the road
 C6L77 223.70 → 226.06  (2.36 s)  [storyboard] Fatehpur Sikri arch
 C6L78 226.06 → 228.35  (2.29 s)  [storyboard] Akbar among scholars of several faiths
@@ -93,8 +95,8 @@ C6L84 240.37 → 244.57  (4.20 s)  [storyboard] Hawkins steps off at Surat
 C6L85 244.57 → 247.33  (2.76 s)  [storyboard] letter with red seal
 C6L86 247.33 → 250.25  (2.92 s)  [storyboard] Jesuit blocks a doorway
 C6L87 250.25 → 255.16  (4.91 s)  [storyboard] small English sails vs bigger fleet; big sails tear
-C6L88 255.16 → 259.27  (4.11 s)  [storyboard] Jahangir raises an eyebrow
-CARD7 259.27 → 261.07  (1.80 s)  chapter card 1632: The Fall
+C6L88 255.16 → 259.53  (4.37 s)  [storyboard] Jahangir raises an eyebrow
+CARD7 259.53 → 261.07  (1.54 s)  chapter card 1632: The Fall
 C7L89 261.07 → 263.61  (2.55 s)  [storyboard] map: Bengal, Hooghly pin
 C7L90 263.61 → 267.57  (3.96 s)  [storyboard] Hooghly river port
 C7L91 267.57 → 270.20  (2.63 s)  [storyboard] ledger page with a broken chain
@@ -111,8 +113,8 @@ C7L101 303.24 → 307.17  (3.93 s)  [storyboard] Bassein flag → saffron
 C7L102 307.17 → 309.78  (2.61 s)  [storyboard] slip with the speaker's name
 C7L103 309.78 → 313.18  (3.40 s)  [storyboard] paper figure holds sword + cross
 C7L104 313.18 → 315.14  (1.96 s)  [storyboard] pockets bulge with coins
-C7L105 315.14 → 317.45  (2.31 s)  [storyboard] drops both; slip "paraphrase · Portuguese governor (de Souza)"
-CARD8 317.45 → 319.25  (1.80 s)  chapter card 1961: Last to Leave
+C7L105 315.14 → 317.71  (2.57 s)  [storyboard] drops both; slip "paraphrase · Portuguese governor (de Souza)"
+CARD8 317.71 → 319.25  (1.54 s)  chapter card 1961: Last to Leave
 C8L106 319.25 → 322.97  (3.72 s)  [storyboard] three blue pins
 C8L107 322.97 → 327.22  (4.26 s)  [storyboard] other powers' flags fade around them
 C8L108 327.22 → 331.24  (4.02 s)  [storyboard] era bar races to 1961, Indian tricolour rises over Goa

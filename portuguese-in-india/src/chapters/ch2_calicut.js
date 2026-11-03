@@ -118,7 +118,14 @@ export default function (B) {
       sails(pr, t, { show });
       [['ARABS', 'HORMUZ', w[1]], ['INDIANS', 'CALICUT', w[0]], ['AFRICANS', 'MALINDI', w[2]], ['CHINESE', 'MALACCA', w[3]]].forEach(([tx, pl, a]) => { if (lt > a) K.pin(pr, pl, { text: tx, side: pl === 'MALACCA' ? 'up' : 'down', sc: eob(seg(lt, a, a + 0.3)), size: 36 }); });
     } });
-    cue(st, 'whoosh', { gain: 0.6 }); w.forEach((a) => cue(st + a, 'pop', { gain: 0.45 })); }
+    cue(st, 'whoosh', { gain: 0.6 }); w.forEach((a) => cue(st + a, 'pop', { gain: 0.45 }));
+    // second cut inside the long line: push in on the western ocean as Africans and Chinese join
+    const s2 = st + w[2] - 0.08;
+    add({ id: 'C2i2', ch, at: s2, year: 1498, note: 'closer: African and Chinese sails join the shared ocean', draw(lt, d, t) {
+      const L0 = lt + (s2 - st), pr = K.realMap(K.lerpView(K.VIEWS.ocean, { lon: 71, lat: 8, w: 70 }, eio(clamp(lt / 0.6))));
+      sails(pr, t, { show: [w[1], w[0], w[2], w[3]].map((a) => clamp((L0 - a + 0.1) / 0.35)) });
+      [['ARABS', 'HORMUZ', w[1]], ['INDIANS', 'CALICUT', w[0]], ['AFRICANS', 'MALINDI', w[2]], ['CHINESE', 'MALACCA', w[3]]].forEach(([tx, pl, a]) => { if (L0 > a) K.pin(pr, pl, { text: tx, side: pl === 'MALACCA' ? 'up' : 'down', sc: L0 - a < 0.3 ? eob(seg(L0, a, a + 0.3)) : 1, size: 36 }); });
+    } }); }
 
   // 9 · had shared this ocean by unwritten rules: : trade lanes criss-cross (ink dashes, no flags)
   { const i = I(9), st = cut_(i);
@@ -152,9 +159,16 @@ export default function (B) {
       const c = K.cam(lt, d, { x: 30 }, { x: -30, zoom: 1.04 });
       K.seascape({ t, c, night: 0.5, horizon: 960, sunX: 220, sunY: 470,
         mid: (tt) => { const x = lerp(820, 330, eio(clamp(lt / d))), y = K.waveY(x, 1080, tt, { amp: 16, len: 0.013, speed: 0.9, phase: 1 }) + 20; ctx.save(); ctx.translate(x, y); ctx.scale(-1, 1); K.caravel(0, 0, 0.7, tt); for (let k = 0; k < 5; k++) K.sack(-120 + k * 50, -60 - (k % 2) * 30, 0.22, { open: false }); ctx.restore(); } });
-      if (lt > fo) { K.slip('A FORTUNE', 540, 440, eob(seg(lt, fo, fo + 0.3)), 0.03, 56); }
     } });
-    cue(st, 'whoosh', { gain: 0.6 }); cue(st, 'creak', { gain: 0.5 }); cue(st + fo, 'coins', { dur: 0.8, gain: 0.6 }); }
+    cue(st, 'whoosh', { gain: 0.6 }); cue(st, 'creak', { gain: 0.5 }); cue(st + fo, 'coins', { dur: 0.8, gain: 0.6 });
+    // second cut: the cargo close-up (sacks of pepper piled on deck)
+    const s2 = st + Wd('cargo', i) - st - 0.08;
+    add({ id: 'C2m2', ch, at: s2, note: 'deck close-up: sacks of pepper piled high, A FORTUNE slip on "fortune"', draw(lt, d, t) {
+      const c = K.cam(lt, d, { zoom: 1.08 }, { zoom: 1.0 }), f2 = fo - (s2 - st);
+      K.layer(c, 0.3, () => { K.sky(0.5, 500, 260); for (let k = 0; k < 10; k++) K.cut(K.P_rr(-60, 1000 + k * 110, W + 120, 100, 0), k % 2 ? '#A88A5E' : '#B49668', { shadow: 0.2, edge: 3 }); });
+      K.layer(c, 1.0, () => { [[300, 1400, 1.1], [620, 1420, 1.15], [460, 1180, 1.0], [800, 1200, 0.95]].forEach(([x, y, s], k) => K.sack(x, y, s * eob(clamp((lt - k * 0.12) / 0.35)), { open: k === 2 })); });
+      if (lt > f2) K.slip('A FORTUNE', 540, 520, eob(seg(lt, f2, f2 + 0.3)), 0.03, 64);
+    } }); }
 
   // 13 · because pepper that cost little in Kerala : the scale, one sack vs two coins
   { const i = I(13), st = cut_(i), li = Wd('little', i) - st;
