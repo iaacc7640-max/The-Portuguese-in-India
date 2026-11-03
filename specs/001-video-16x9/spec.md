@@ -2,7 +2,7 @@
 id: 001-video-16x9
 rfc: RFC-0001
 title: 16:9 revision of the video
-status: draft
+status: approved
 created: 2026-11-03
 author: noreply@anthropic.com
 requested_by: Pratik Mekhe
@@ -13,6 +13,7 @@ extends: []
 depends_on: []
 builds_against: []
 amends: []
+approved_by: [noreply@anthropic.com]
 ---
 
 # Spec: 16:9 revision of the video
