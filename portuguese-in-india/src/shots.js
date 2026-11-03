@@ -38,7 +38,7 @@ export function buildShots() {
   for (let c = 1; c < CHAPTERS.length; c++) {
     const i0 = first(c), st = Le(i0 - 1) + 0.38, card = script.cards[String(c)];
     S.filter((s) => s.at >= st && s.at < cut_(i0)).forEach((s) => (s.at = cut_(i0)));       // nothing else may start inside the card
-    add({ id: `CARD${c}`, at: st, card: true, zoom: 0.02, note: `chapter card ${card.year}: ${card.title}`, draw(lt, d) { K.chapterCard(lt, d, { year: card.year, title: card.title, n: c, letter: card.year.slice(-2, -1) === '9' ? 'I' : 'P', seed: 20 + c }); } });
+    add({ id: `CARD${c}`, at: st, card: true, zoom: 0.02, note: `chapter card ${card.year}: ${card.title}`, draw(lt, d) { K.chapterCard(lt, d, { year: card.year, title: card.title, n: c, letter: card.year === '1961' ? 'I' : 'P', seed: 20 + c }); } });
     cue(st, 'rustle'); cue(st + 0.9, 'seal');
   }
 

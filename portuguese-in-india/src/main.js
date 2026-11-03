@@ -31,7 +31,7 @@ function draw(t) {
   if (fade < 1) { ctx.fillStyle = '#000'; ctx.globalAlpha = 1 - fade; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
   drawCaption(t);
   // Shorts cut-downs: ?hook=TEXT&hs=START draws the Short's own hook line on a torn slip for its first 2.4 s
-  if (HOOK && t >= HOOK.s && t < HOOK.s + 2.4) { const k = clamp((t - HOOK.s) / 0.25), out = clamp((HOOK.s + 2.4 - t) / 0.3); ctx.save(); ctx.globalAlpha = Math.min(1, out); torn(HOOK.text, 540, 330, eo(k), -0.02, 64); ctx.restore(); }
+  if (HOOK && t >= HOOK.s && t < HOOK.s + 2.4) { const k = clamp((t - HOOK.s) / 0.25), out = clamp((HOOK.s + 2.4 - t) / 0.3); ctx.save(); ctx.globalAlpha = Math.min(1, out); torn(HOOK.text, 540, 178, eo(k), -0.01, 66); ctx.restore(); }
 }
 const QP = new URLSearchParams(location.search), HOOK = QP.get('hook') ? { text: QP.get('hook'), s: +(QP.get('hs') || 0) } : null;
 
