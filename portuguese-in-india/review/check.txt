@@ -7,19 +7,20 @@ C0e    10.44 →  12.30  (1.86 s)  pepper vine close-up; a peppercorn rolls into
 C0f    12.30 →  14.25  (1.95 s)  a quill writes the first line of a page
 C0g    14.25 →  17.64  (3.39 s)  era bar races 1498 -> 1961, ribbon "1498 -> 1961", title slip FIRST IN, LAST OUT on "years"
 CARD1  17.64 →  19.18  (1.54 s)  chapter card 1453: The Spice Problem
-C1L7   19.18 →  21.00  (1.82 s)  [storyboard] map Europe–Med, era bar tick 1453 turns crimson
-C1L8   21.00 →  23.89  (2.89 s)  [storyboard] Constantinople seal turns crimson → "captured"
-C1L9   23.89 →  27.30  (3.41 s)  [storyboard] land route gets a padlock → "hands"
-C1L10  27.30 →  30.75  (3.45 s)  [storyboard] three goods pop on the route one by one
-C1L11  30.75 →  32.81  (2.06 s)  [storyboard] sack passes hand to hand along 4 merchants
-C1L12  32.81 →  34.83  (2.02 s)  [storyboard] a coin drops at each hand, price slip grows
-C1L13  34.83 →  37.98  (3.16 s)  [storyboard] map pulls back: tiny Portugal at the Atlantic edge
-C1L14  37.98 →  39.45  (1.47 s)  [storyboard] compass needle spins, "idea" flash
-C1L15  39.45 →  41.77  (2.32 s)  [storyboard] arrow hits padlock, bends around Africa → "around"
-C1L16  41.77 →  43.73  (1.96 s)  [storyboard] Henry (dark hood) points at wall map
-C1L17  43.73 →  46.72  (2.99 s)  [storyboard] caravels step down the coast, each leaves a pin
-C1L18  46.72 →  51.81  (5.09 s)  [storyboard] Dias's ship rounds the Cape, slip CAPE OF GOOD HOPE
-C1L19  51.81 →  55.05  (3.24 s)  [storyboard] paper wall, door-shaped gap swings open, sea light → "open"
+C1a    19.18 →  21.00  (1.82 s)  map: Europe to the Gulf, Constantinople pinned
+C1b    21.00 →  23.89  (2.89 s)  a crimson Ottoman seal stamps onto Constantinople on "captured"
+C1c    23.89 →  27.30  (3.41 s)  ink land road Venice -> Constantinople -> east; padlock snaps on at "hands"
+C1d    27.30 →  30.75  (3.45 s)  pepper, silk, cotton pop onto the road one by one and slide west to Europe
+C1e    30.75 →  32.81  (2.06 s)  a pepper sack passes hand to hand along four traders
+C1f    32.81 →  34.83  (2.02 s)  a coin drops at each trader; the PRICE slip grows bigger each time
+C1g    34.83 →  37.98  (3.16 s)  map pulls back: tiny gold Portugal on the edge of the Atlantic
+C1h    37.98 →  39.45  (1.47 s)  a big compass, the needle spins and settles south
+C1i    39.45 →  41.77  (2.32 s)  route map: arrow hits the Constantinople padlock and bounces; on "around" the crimson route bends round Africa
+C1j    41.77 →  43.73  (1.96 s)  Prince Henry (dark hood) points at a wall map of Africa
+C1k    43.73 →  46.72  (2.99 s)  Africa map: caravel steps down the west coast, a pin at each stop
+C1l    46.72 →  49.55  (2.83 s)  southern Africa: ribbon 1488, Dias sails toward the Cape
+C1m    49.55 →  51.81  (2.26 s)  Dias rounds the Cape of Good Hope, crimson route bends east
+C1n    51.81 →  55.05  (3.24 s)  paper wall: a door swings open onto the Indian Ocean on "open"
 CARD2  55.05 →  56.59  (1.54 s)  chapter card 1498: Hello, Calicut
 C2a    56.59 →  60.28  (3.69 s)  paper door open on the sea; da Gama walks in and through
 C2b    60.28 →  63.68  (3.40 s)  Malindi harbour: the Gujarati pilot (kamal) walks the pier to the caravel
@@ -39,20 +40,23 @@ C2m2   93.51 →  95.61  (2.11 s)  deck close-up: sacks of pepper piled high, A 
 C2n    95.61 →  98.17  (2.56 s)  spice scale: one sack of pepper against two coins (cheap in Kerala)
 C2o    98.17 → 101.15  (2.98 s)  IN EUROPE: the coin pan fills tall and the scale tips the other way on "many"
 CARD3 101.15 → 102.69  (1.54 s)  chapter card 1500: Traders Become Raiders
-C3L35 102.69 → 105.34  (2.65 s)  [storyboard] Cabral on deck (helmet, red sash)
-C3L36 105.34 → 109.05  (3.71 s)  [storyboard] factory hut with blue flag goes up
-C3L37 109.05 → 110.61  (1.56 s)  [storyboard] the hut door slams shut
-C3L38 110.61 → 112.75  (2.14 s)  [storyboard] torn flag, empty stools, dropped cap (no people)
-C3L39 112.75 → 114.21  (1.46 s)  [storyboard] night wash, caravel silhouette turns
-C3L40 114.21 → 116.20  (1.99 s)  [storyboard] far-horizon dhows, orange glow + smoke
-C3L41 116.20 → 118.35  (2.15 s)  [storyboard] cannon puff, crimson-tinted smoke (muffled boom)
-C3L42 118.35 → 122.24  (3.89 s)  [storyboard] map: ship slides south along Malabar
-C3L43 122.24 → 124.12  (1.87 s)  [storyboard] handshake slips pinned on Cochin + Cannanore
-C3L44 124.12 → 125.98  (1.86 s)  [storyboard] da Gama's blue sail back on the horizon
-C3L45 125.98 → 130.03  (4.05 s)  [storyboard] da Gama holds out a demand letter
-C3L46 130.03 → 131.93  (1.90 s)  [storyboard] Zamorin shakes head, tears the paper
-C3L47 131.93 → 135.33  (3.40 s)  [storyboard] the hut grows walls
-C3L48 135.33 → 140.06  (4.73 s)  [storyboard] walls → towers, ribbon "Cochin 1503"
+C3a   102.69 → 105.34  (2.65 s)  Cabral (helmet, red sash) at the rail; a fleet of caravels behind
+C3b   105.34 → 109.05  (3.71 s)  the Portuguese trading post on the Calicut beach; ribbon 1500 on "hundred"
+C3c   109.05 → 110.61  (1.56 s)  the post door slams shut on "attacked"; the flag jolts
+C3d   110.61 → 112.75  (2.14 s)  dusk, quiet: torn flag, two empty stools, a dropped sailor cap in the sand
+C3e   112.75 → 114.21  (1.46 s)  night: a caravel silhouette turns its broadside toward the shore
+C3f   114.21 → 116.20  (1.99 s)  far horizon at night: dhow silhouettes, orange glow and smoke rising (no people)
+C3g   116.20 → 118.35  (2.15 s)  a ship cannon fires a crimson-tinted puff toward far city roofs (muffled)
+C3h   118.35 → 119.95  (1.60 s)  Malabar map: the caravel slides south from Calicut
+C3i   119.95 → 122.24  (2.29 s)  two hands shake on a slip: Portugal blue and the rival king
+C3j   122.24 → 124.12  (1.87 s)  Malabar map: Cochin and Cannanore pinned in royal blue, Calicut stays forest green
+C3k   124.12 → 125.98  (1.86 s)  day sea: a blue-cross sail grows on the horizon; ribbon 1502
+C3l   125.98 → 127.92  (1.95 s)  court: da Gama holds out a demand scroll to the Zamorin
+C3m   127.92 → 130.03  (2.10 s)  the demand on a scroll: EXPEL EVERY ARAB TRADER
+C3n   130.03 → 131.93  (1.90 s)  the Zamorin turns his head away, the demand scroll tears in two on "refused"
+C3o   131.93 → 135.33  (3.40 s)  the post grows stone walls on "walls", a cannon appears on the wall
+C3p   135.33 → 138.50  (3.17 s)  walls grow towers and a gate: the first fort; ribbon 1503
+C3q   138.50 → 140.06  (1.56 s)  Malabar map: a royal-blue fort icon rises on Cochin, slip COCHIN 1503
 CARD4 140.06 → 141.60  (1.54 s)  chapter card 1505: Rule the Water
 C4L49 141.60 → 145.23  (3.63 s)  [storyboard] Almeida arrives (grey beard, armour)
 C4L50 145.23 → 148.69  (3.46 s)  [storyboard] Almeida unrolls a map
