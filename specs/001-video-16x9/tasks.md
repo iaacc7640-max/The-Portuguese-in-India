@@ -28,13 +28,13 @@ created: 2026-11-03
   - **Files:** src/core/scene.js
   - **Done when:** a flag frame matches the attached design
   - **Covers:** FR-11
-- [ ] **T005** — review every chapter sheet, fix collisions, render and probe
+- [x] **T005** — review every chapter sheet, fix collisions, render and probe
   - **Files:** src/chapters/*.js as needed, renders/
   - **Done when:** all 9 sheets reviewed; ffprobe shows 1920x1080 30 fps H.264 AAC
   - **Covers:** FR-1, FR-2, FR-7, FR-10
 
 ## Verification
-- [ ] **T900** — `groundwork.py verify` passes (format, lint, types, tests)
-- [ ] **T901** — every FR in the spec maps to at least one completed task
+- [x] **T900** — `groundwork.py verify` passes (format, lint, types, tests)
+- [x] **T901** — every FR in the spec maps to at least one completed task
 - [ ] **T902** — the spec's manual-test section was run by hand and matches
-- [ ] **T903** — foundation docs (ARCHITECTURE/AGENTS/CONTRACTS/PROJECT) updated or explicitly unchanged; `groundwork.py fresh` is clean
+- [x] **T903** — foundation docs (ARCHITECTURE/AGENTS/CONTRACTS/PROJECT) updated or explicitly unchanged; `groundwork.py fresh` is clean

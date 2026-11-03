@@ -7,7 +7,7 @@ created: 2026-11-03
 author: noreply@anthropic.com
 requested_by: Pratik Mekhe
 owner: Pratik Mekhe
-implemented_by: []
+implemented_by: [noreply@anthropic.com]
 support: []
 extends: []
 depends_on: []
