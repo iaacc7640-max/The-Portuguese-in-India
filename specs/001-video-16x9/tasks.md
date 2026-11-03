@@ -33,11 +33,11 @@ created: 2026-11-03
   - **Done when:** all 9 sheets reviewed; ffprobe shows 1920x1080 30 fps H.264 AAC
   - **Covers:** FR-1, FR-2, FR-7, FR-10
 
-- [ ] **T006** — 16:9 cover frame with caption strip
+- [x] **T006** — 16:9 cover frame with caption strip
   - **Files:** src/review.js, renders/cover_16x9.jpg
   - **Done when:** the image is 1920x1080 and shows title, ribbon, caravels, caption strip
   - **Covers:** FR-12
-- [ ] **T007** — portrait mode + three 9:16 Reels
+- [x] **T007** — portrait mode + three 9:16 Reels
   - **Files:** src/main.js, src/core/maps.js, tools/capture.mjs, tools/shorts.sh, renders/reels/
   - **Done when:** each Reel is 1080x1920, 45-58 s, with hook and end card; a sheet of each is reviewed
   - **Covers:** FR-13

@@ -44,7 +44,9 @@ All art is drawn in code (cut-paper style); maps use public-domain Natural Earth
 ## Hashtags
 #History #IndianHistory #Portuguese #VascoDaGama #Goa #UPSC #AnimatedHistory #ModernIndia
 
-## Shorts (9:16, renders/shorts/) — made from the earlier 9:16 cut; not updated for the 16:9 revision
+## Instagram Reels (9:16, renders/reels/) — made from the 16:9 version: reel1_calicut (50 s), reel2_pass (50 s), reel3_last (53 s)
+
+## Old Shorts (9:16, renders/shorts/) — from the earlier cut; superseded by the Reels
 | file | hook line (on screen) | span of the film |
 |---|---|---|
 | short1_calicut.mp4 | Why a king welcomed Vasco da Gama | 0:54–1:40 (CH2) + end card |
