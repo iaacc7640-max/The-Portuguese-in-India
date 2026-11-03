@@ -71,6 +71,11 @@ try {
     frame(570, 600, 250, () => { K.parchment(9); K.quoteSlip('Rule the sea, hold India.', 'Almeida', 540, 700, 1, 60); K.eraBar(2); });
   }
 
+  if (board === 'endcard' || board === 'cover') { cv.width = 1080; cv.height = 1920; setCtx(cv.getContext('2d'));
+    if (board === 'endcard') { K.parchment(41); K.ribbon('FIRST IN, LAST OUT', 540, 700, 1, 84); K.torn('Full story on the channel', 540, 960, 1, -0.02, 70); K.seal(540, 1230, 1, 'P'); }
+    else { const pr = K.realMap(K.VIEWS.route, { gold: ['portugal'] }); K.placeRoute(pr, K.SEA_ROUTE, 1); K.pin(pr, 'LISBON', { side: 'up' }); K.pin(pr, 'CALICUT', { side: 'down', dx: -70 });
+      ctx.save(); ctx.globalAlpha = 0.55; ctx.fillStyle = P.parch; ctx.fillRect(0, 1180, 1080, 740); ctx.restore(); K.wave(1320, 0.5, { color: P.seaDark }); K.wave(1480, 1.2, { phase: 2 });
+      K.caravel(560, 1360, 0.95, 0.4); K.ribbon('1498', 540, 330, 1.3, 120); K.torn('FIRST IN, LAST OUT', 540, 560, 1.15, -0.02, 84); } }
   if (board === 'map') { cv.width = 1080; cv.height = 1920; setCtx(cv.getContext('2d')); const v = q.get('v') || 'india'; const pr = K.realMap(K.VIEWS[v]); (q.get('pins') || '').split(',').filter(Boolean).forEach((n, j) => K.pin(pr, n, { side: j % 2 ? 'right' : 'left' })); K.eraBar(1); }
   window.REVIEW_READY = true;
 } catch (e) { window.REVIEW_ERROR = String(e.stack || e); }
