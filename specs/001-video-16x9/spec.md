@@ -40,6 +40,8 @@ Pratik Mekhe (owner) uploads the film to YouTube for Indian students and history
 - **FR-9**: "Akbar" MUST be spoken like "UHK-bur" and "Jahangir" like "juh-HAHN-geer".
 - **FR-10**: The map at "every Portuguese fort on the Malabar coast" (4:53 in the old cut) and every other map MUST show the whole relevant coast, nothing cut off.
 - **FR-11**: Every Portuguese flag MUST use the owner's attached design: green hoist (about 2/5), red fly, yellow armillary sphere with a red-and-white shield on the line between them.
+- **FR-12**: A 16:9 cover frame (1920x1080 JPEG) MUST show the title "FIRST IN, LAST OUT", the 1498 → 1961 ribbon, the caravels and a caption strip.
+- **FR-13**: Three Instagram Reels MUST be made from this version in 9:16 (1080x1920, 30 fps, H.264 + AAC), 45-58 s each, with their own hook line and the end card "Full story on the channel": "Why a king welcomed Vasco da Gama" (chapter 2), "The pass that ruled an ocean" (end of chapter 3 + chapter 4), "First in, last out" (Dutch, Bassein, the governor's remark + chapter 8). They carry every fix in FR-4 to FR-11.
 
 ## 5. Non-functional requirements
 - **NFR-1**: Everything stays drawn in code in the Paper Atlas look; no AI images.
@@ -54,6 +56,8 @@ Pratik Mekhe (owner) uploads the film to YouTube for Indian students and history
 - **AC-6**: Given the Dias shots, then no "BARTOLOMEU DIAS" slip shows and the captions match FR-8. (covers FR-8)
 - **AC-7**: Given the phonemes sent to the voice for the Akbar and Jahangir lines, then they contain the planned sounds. (covers FR-9)
 - **AC-8**: Given frames with a Portuguese flag, then it matches the attached design. (covers FR-11)
+- **AC-9**: Given renders/cover_16x9.jpg, then it is 1920x1080 and shows the title, ribbon, caravels and caption strip. (covers FR-12)
+- **AC-10**: Given each Reel, when probed and its sheet reviewed, then it is 1080x1920, 45-58 s, shows its hook line and end card, and nothing is cut off at the sides. (covers FR-13)
 
 ## 7. Failure behaviour
 If a render or check fails, the previous 9:16 film stays as the delivered version and the failure is reported to the owner with the error.
@@ -65,9 +69,14 @@ If a render or check fails, the previous 9:16 film stays as the delivered versio
 4. Check the Atlantic label, the Dias captions and the Malabar forts map are fully visible.
 5. Listen to the Akbar line and the Jahangir line in chapter 6.
 6. Look at a Portuguese flag (e.g. the trading post in chapter 3): green and red with the yellow sphere.
+7. Open renders/cover_16x9.jpg: title, ribbon, caravels, caption strip.
+8. Play each file in renders/reels/ on a phone: full-screen vertical, hook line at the start, end card at the end, chapter voice line where the Reel crosses a chapter card.
 
 ## 9. Out of scope
-The three 9:16 Shorts; any new facts or other script changes.
+Any new facts or other script changes.
+
+## Changes
+- 2026-11-03: added FR-12 (16:9 cover with caption) and FR-13 (three 9:16 Instagram Reels from this version), AC-9, AC-10 and manual tests 7-8; Shorts moved from out of scope into scope. Requested by Pratik Mekhe after the 16:9 delivery.
 
 ## 10. Constitution check
 Facts sourced and unchanged (NFR-2). Paraphrased quotes stay labelled. Every frame reviewed via contact sheets (AC-2, AC-3). No AI images (NFR-1). Renders not committed.
