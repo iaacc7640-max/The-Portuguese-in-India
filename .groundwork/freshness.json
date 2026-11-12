@@ -1,0 +1,26 @@
+{
+  "AGENTS.md": {
+    "at": "2026-11-03T17:00:00+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1793725200,
+    "hash": "a4e1fefa720a333a",
+    "snapshot": {
+      "signals": {}
+    }
+  },
+  "ARCHITECTURE.md": {
+    "at": "2026-11-03T17:00:00+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1793725200,
+    "hash": "483a2d5ef390918e",
+    "snapshot": {
+      "layout": {
+        "mode": "\"keep\""
+      },
+      "signals": {},
+      "toplevel": [
+        "portuguese-in-india"
+      ]
+    }
+  }
+}

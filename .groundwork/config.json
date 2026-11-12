@@ -1,0 +1,18 @@
+{
+  "standard": "0.7.0",
+  "layout": {
+    "mode": "keep",
+    "decided_by": "noreply@anthropic.com",
+    "decided": "2026-11-03"
+  },
+  "quality": {
+    "mode": "keep",
+    "commands": {
+      "test": [
+        "cd portuguese-in-india && node tools/capture.mjs check"
+      ]
+    },
+    "decided_by": "noreply@anthropic.com",
+    "decided": "2026-11-03"
+  }
+}

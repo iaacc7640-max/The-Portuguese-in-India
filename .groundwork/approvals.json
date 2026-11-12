@@ -1,0 +1,12 @@
+{
+  "specs/001-video-16x9/spec.md": {
+    "hash": "5b86f0e93e82a0a829f0d2027e4baa4935220a45e5f0f9457402315736e4eeb5",
+    "signers": [
+      {
+        "who": "noreply@anthropic.com",
+        "at": "2026-11-03T17:32:06+0000"
+      }
+    ],
+    "changes": 1
+  }
+}
